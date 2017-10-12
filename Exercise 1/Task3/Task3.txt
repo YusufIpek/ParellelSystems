@@ -1,0 +1,10 @@
+Solution 1:
+Changing the array access of matrix b increases the computation speed of the multiplication operation. Matrix b is accessed as row same as matrix a, so whole row is loaded
+to the cache and the data can be accessed from the cache without needing to load data from RAM each time when accessing matrix b, this leads to fewer cache misses.
+Prerequisite is that matrix b has to be transposed, but as matrix b is a identity matrix no transpose required.
+
+example:
+c[i][j] = a[i][k]*b[j][k]
+
+Solution 2:
+Tiling the array to smaller portions to utilize the cache. 6 for loops required.
