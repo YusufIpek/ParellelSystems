@@ -1,0 +1,10 @@
+Difference between O0 and O3 optimization:
+
+ O0:
+ - much more entries in flat and call graph sections
+ - contains entries for vector array operator
+ - more detailed profile information
+ 
+
+ O3:
+ - hard to tell which part of the functions causes the high computation time
