@@ -1,5 +1,7 @@
 #include <vector>
 #include <cstdlib>
+#include <ctime>
+#include <iostream>
 
 using Matrix = std::vector<std::vector<double>>;
 
@@ -34,6 +36,9 @@ Matrix operator*(const Matrix& a, const Matrix& b) {
 
 int main(int argc, char** argv) {
 	
+	std::clock_t start;
+	start = std::clock();
+	
 	if(argc!=2) return EXIT_FAILURE;
 	unsigned n = atoi(argv[1]);
 	if(n==0) return EXIT_FAILURE;
@@ -47,5 +52,11 @@ int main(int argc, char** argv) {
 	auto c = a * b;
 
 	// check that the result is correct
-	return (c == a) ? EXIT_SUCCESS : EXIT_FAILURE;
+	if(c == a){
+		double duration = (std::clock() - start) / (double) CLOCKS_PER_SEC;
+		std::cout << "Time: " << duration << std::endl;
+		return EXIT_SUCCESS;
+	}else{
+		return EXIT_FAILURE;
+	}
 }
