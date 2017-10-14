@@ -1,13 +1,13 @@
-v1 (row access to matrix b):	Wall time in s:
+v1 (row access to matrix b):	CPU time in s:
 N:			
 2048				125.806|126.057|125.758
-1024				15.768|15.858|15.807
+1024				15.768|15.858|15807
 512				1.981|1.969|1.97
 256				0.251|0.248|0.25
 128				0.031|0.032|0.031
 
 
-v2 (tiling)	Wall time in s:
+v2 (tiling)			CPU time in s:
 N:		tiling
 2048		64		133.569|133.513|133.467
 1024		64		16.444|16.45|16.449
