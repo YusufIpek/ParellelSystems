@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
+#include <chrono>
 
 using Matrix = std::vector<std::vector<double>>;
 
@@ -36,8 +37,8 @@ Matrix operator*(const Matrix& a, const Matrix& b) {
 
 int main(int argc, char** argv) {
 	
-	std::clock_t start;
-	start = std::clock();
+	auto t_start = std::chrono::high_resolution_clock::now();
+	auto start = std::clock();
 	
 	if(argc!=2) return EXIT_FAILURE;
 	unsigned n = atoi(argv[1]);
@@ -54,7 +55,9 @@ int main(int argc, char** argv) {
 	// check that the result is correct
 	if(c == a){
 		double duration = (std::clock() - start) / (double) CLOCKS_PER_SEC;
-		std::cout << "Time: " << duration << std::endl;
+		double t_duration = std::chrono::duration<double, std::milli>(std::chrono::high_resolution_clock::now() - t_start).count()/1000.0;
+		std::cout << "CPU Time: " << duration << std::endl;
+		std::cout << "Wall Time: " << t_duration << std::endl;
 		return EXIT_SUCCESS;
 	}else{
 		return EXIT_FAILURE;
