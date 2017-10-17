@@ -1,7 +1,7 @@
 N: 128,256,512,1024,2048
 Hardware: 
 	- Hardware 1: Cpu: Intel i7-7500U 2.70GHz 2.90GHz, 2 Physical Cores/4 Logical Cores, Ram: 12GB, L1-Cache: 128KB, L2-Cache: 512KB, L3-Cache: 4MB
-	- Hardware 2: ...
+	- Hardware 2: Cpu: Intel i7-3770 3.40GHz, 4 Physcial Cores/ 8 Logical Cores, Ram: 8GB, L-Cache: 8192 KB,
 Metrics:
 	- Wall Time
 	- Cpu Time
