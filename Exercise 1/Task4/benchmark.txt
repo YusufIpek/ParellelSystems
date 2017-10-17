@@ -5,3 +5,11 @@ N 	Threads		CPU time in s:
 512	4		1.115|1.287|1.258
 256	4		0.124|0.142|0.141
 128	4		0.016|0.019|0.018
+
+Hardware 1:
+Speedup: 345.221/160.2 = 2,1
+
+Hardware 2 (Wall-Time):
+Speedup:
+8-Threads: 23.2/4.7 = 4,9
+4-Threads: 23.2/8.4 = 2,8
