@@ -1,1938 +1,6 @@
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.001026057 seconds time elapsed                                          ( +- 27.40% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000885191 seconds time elapsed                                          ( +-  9.12% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000814926 seconds time elapsed                                          ( +-  9.76% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000798630 seconds time elapsed                                          ( +-  4.04% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000778272 seconds time elapsed                                          ( +-  6.70% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000779072 seconds time elapsed                                          ( +-  2.60% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000772535 seconds time elapsed                                          ( +-  2.01% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000785337 seconds time elapsed                                          ( +-  2.34% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000720691 seconds time elapsed                                          ( +-  2.46% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000768103 seconds time elapsed                                          ( +-  1.63% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000762061 seconds time elapsed                                          ( +-  1.55% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000777790 seconds time elapsed                                          ( +-  1.80% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000767704 seconds time elapsed                                          ( +-  3.30% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000791493 seconds time elapsed                                          ( +-  1.58% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000782214 seconds time elapsed                                          ( +-  2.05% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000768743 seconds time elapsed                                          ( +-  2.83% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000738258 seconds time elapsed                                          ( +-  2.88% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000895910 seconds time elapsed                                          ( +-  1.15% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000795754 seconds time elapsed                                          ( +-  1.61% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000775440 seconds time elapsed                                          ( +-  3.45% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000849707 seconds time elapsed                                          ( +-  2.13% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000754569 seconds time elapsed                                          ( +-  4.19% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000876082 seconds time elapsed                                          ( +-  3.41% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000749702 seconds time elapsed                                          ( +-  2.70% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000762841 seconds time elapsed                                          ( +-  2.09% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000792154 seconds time elapsed                                          ( +-  4.06% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000803355 seconds time elapsed                                          ( +-  3.00% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000823242 seconds time elapsed                                          ( +-  4.54% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000776118 seconds time elapsed                                          ( +-  3.35% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000775406 seconds time elapsed                                          ( +-  1.71% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000796228 seconds time elapsed                                          ( +-  1.46% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000800159 seconds time elapsed                                          ( +-  4.80% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000770468 seconds time elapsed                                          ( +-  1.71% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000764847 seconds time elapsed                                          ( +-  2.02% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000771571 seconds time elapsed                                          ( +-  2.89% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000732596 seconds time elapsed                                          ( +-  1.76% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000798649 seconds time elapsed                                          ( +- 10.39% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000797915 seconds time elapsed                                          ( +-  8.62% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000764973 seconds time elapsed                                          ( +-  9.82% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000723399 seconds time elapsed                                          ( +-  1.19% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000742432 seconds time elapsed                                          ( +-  1.54% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000707248 seconds time elapsed                                          ( +-  1.12% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000686653 seconds time elapsed                                          ( +-  1.05% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000717989 seconds time elapsed                                          ( +-  1.52% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000716247 seconds time elapsed                                          ( +-  0.70% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000722259 seconds time elapsed                                          ( +-  1.13% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000701512 seconds time elapsed                                          ( +-  0.87% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000714016 seconds time elapsed                                          ( +-  1.19% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000723585 seconds time elapsed                                          ( +-  0.63% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000722252 seconds time elapsed                                          ( +-  0.38% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000731240 seconds time elapsed                                          ( +-  3.90% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000721601 seconds time elapsed                                          ( +-  1.94% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000721072 seconds time elapsed                                          ( +-  1.35% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000735964 seconds time elapsed                                          ( +-  1.62% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000703111 seconds time elapsed                                          ( +-  2.23% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000707524 seconds time elapsed                                          ( +-  1.20% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000715500 seconds time elapsed                                          ( +-  0.98% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000723013 seconds time elapsed                                          ( +-  2.77% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000699821 seconds time elapsed                                          ( +-  1.38% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000699256 seconds time elapsed                                          ( +-  0.97% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000730858 seconds time elapsed                                          ( +-  1.80% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000720263 seconds time elapsed                                          ( +-  1.96% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 256' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000746344 seconds time elapsed                                          ( +-  2.34% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000721921 seconds time elapsed                                          ( +-  1.14% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000735628 seconds time elapsed                                          ( +-  1.09% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 512' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000697012 seconds time elapsed                                          ( +-  0.99% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000720404 seconds time elapsed                                          ( +-  1.47% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000762623 seconds time elapsed                                          ( +-  2.47% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 1024' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000729941 seconds time elapsed                                          ( +-  1.22% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-./mmul_nes: No such file or directory
-
- Performance counter stats for './mmul_nes 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000698417 seconds time elapsed                                          ( +-  0.96% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-./mmul_conmul: No such file or directory
-
- Performance counter stats for './mmul_conmul 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000709472 seconds time elapsed                                          ( +-  0.83% )
-
---------------------------------------------------------------------------------------------------------
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-./mmul_conin: No such file or directory
-
- Performance counter stats for './mmul_conin 2048' (5 runs):
-
-     <not counted> task-clock              
-     <not counted> context-switches        
-     <not counted> cpu-migrations          
-     <not counted> page-faults             
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.000739960 seconds time elapsed                                          ( +-  2.11% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 10 ms 
-Ret: 0
-Timer - Multiplication: 10 ms 
-Ret: 0
 Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 10 ms 
-Ret: 0
 Timer - Multiplication: 9 ms 
-Ret: 0
-
- Performance counter stats for './mmul_nes 256' (5 runs):
-
-         12.180406 task-clock                #    0.861 CPUs utilized            ( +-  1.41% )
-                 3 context-switches          #    0.263 K/sec                    ( +-  6.25% )
-                 0 cpu-migrations            #    0.000 K/sec                  
-               736 page-faults               #    0.060 M/sec                  
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.014139227 seconds time elapsed                                          ( +-  2.15% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 11 ms 
-Ret: 0
-Timer - Multiplication: 11 ms 
-Ret: 0
-Timer - Multiplication: 11 ms 
-Ret: 0
-Timer - Multiplication: 11 ms 
-Ret: 0
-Timer - Multiplication: 10 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conmul 256' (5 runs):
-
-         12.821175 task-clock                #    0.877 CPUs utilized            ( +-  1.02% )
-                 3 context-switches          #    0.234 K/sec                  
-                 0 cpu-migrations            #    0.000 K/sec                  
-               730 page-faults               #    0.057 M/sec                  
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.014612060 seconds time elapsed                                          ( +-  1.79% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 10 ms 
 Ret: 0
 Timer - Multiplication: 9 ms 
 Ret: 0
@@ -1940,13 +8,73 @@ Timer - Multiplication: 9 ms
 Ret: 0
 Timer - Multiplication: 10 ms 
 Ret: 0
-Timer - Multiplication: 9 ms 
-Ret: 0
 
- Performance counter stats for './mmul_conin 256' (5 runs):
+ Performance counter stats for './mmul_nes 256' (5 runs):
 
-         11.664757 task-clock                #    0.869 CPUs utilized            ( +-  0.34% )
+         11.677828 task-clock                #    0.850 CPUs utilized            ( +-  1.06% )
                  3 context-switches          #    0.274 K/sec                    ( +-  6.25% )
+                 0 cpu-migrations            #    0.000 K/sec                  
+               736 page-faults               #    0.063 M/sec                    ( +-  0.03% )
+   <not supported> cycles                  
+   <not supported> stalled-cycles-frontend 
+   <not supported> stalled-cycles-backend  
+   <not supported> instructions            
+   <not supported> branches                
+   <not supported> branch-misses           
+   <not supported> L1-dcache-loads         
+   <not supported> L1-dcache-load-misses   
+   <not supported> LLC-loads               
+   <not supported> LLC-load-misses         
+
+       0.013734593 seconds time elapsed                                          ( +-  1.90% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 10 ms 
+Ret: 0
+Timer - Multiplication: 10 ms 
+Ret: 0
+Timer - Multiplication: 11 ms 
+Ret: 0
+Timer - Multiplication: 11 ms 
+Ret: 0
+Timer - Multiplication: 11 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conmul 256' (5 runs):
+
+         12.758272 task-clock                #    0.874 CPUs utilized            ( +-  0.63% )
+                 3 context-switches          #    0.235 K/sec                  
+                 0 cpu-migrations            #    0.000 K/sec                  
+               730 page-faults               #    0.057 M/sec                    ( +-  0.03% )
+   <not supported> cycles                  
+   <not supported> stalled-cycles-frontend 
+   <not supported> stalled-cycles-backend  
+   <not supported> instructions            
+   <not supported> branches                
+   <not supported> branch-misses           
+   <not supported> L1-dcache-loads         
+   <not supported> L1-dcache-load-misses   
+   <not supported> LLC-loads               
+   <not supported> LLC-load-misses         
+
+       0.014603183 seconds time elapsed                                          ( +-  0.72% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 10 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conin 256' (5 runs):
+
+         11.685000 task-clock                #    0.858 CPUs utilized            ( +-  0.40% )
+                 3 context-switches          #    0.291 K/sec                    ( +-  7.20% )
                  0 cpu-migrations            #    0.000 K/sec                  
                731 page-faults               #    0.063 M/sec                  
    <not supported> cycles                  
@@ -1960,26 +88,26 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.013420517 seconds time elapsed                                          ( +-  0.76% )
+       0.013613225 seconds time elapsed                                          ( +-  0.77% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 77 ms 
+Timer - Multiplication: 75 ms 
 Ret: 0
 Timer - Multiplication: 75 ms 
 Ret: 0
-Timer - Multiplication: 78 ms 
+Timer - Multiplication: 74 ms 
 Ret: 0
-Timer - Multiplication: 79 ms 
+Timer - Multiplication: 74 ms 
 Ret: 0
-Timer - Multiplication: 78 ms 
+Timer - Multiplication: 73 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 512' (5 runs):
 
-         83.251927 task-clock                #    0.976 CPUs utilized            ( +-  1.06% )
-                 3 context-switches          #    0.034 K/sec                    ( +-  7.14% )
+         78.823290 task-clock                #    0.976 CPUs utilized            ( +-  0.60% )
+                 3 context-switches          #    0.043 K/sec                    ( +- 15.00% )
                  0 cpu-migrations            #    0.000 K/sec                  
-             1,896 page-faults               #    0.023 M/sec                  
+             1,896 page-faults               #    0.024 M/sec                  
    <not supported> cycles                  
    <not supported> stalled-cycles-frontend 
    <not supported> stalled-cycles-backend  
@@ -1991,26 +119,26 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.085298282 seconds time elapsed                                          ( +-  1.10% )
+       0.080779451 seconds time elapsed                                          ( +-  0.52% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 83 ms 
+Timer - Multiplication: 81 ms 
+Ret: 0
+Timer - Multiplication: 81 ms 
 Ret: 0
 Timer - Multiplication: 83 ms 
 Ret: 0
-Timer - Multiplication: 84 ms 
+Timer - Multiplication: 82 ms 
 Ret: 0
-Timer - Multiplication: 84 ms 
-Ret: 0
-Timer - Multiplication: 84 ms 
+Timer - Multiplication: 80 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conmul 512' (5 runs):
 
-         88.847349 task-clock                #    0.978 CPUs utilized            ( +-  0.42% )
-                 3 context-switches          #    0.032 K/sec                    ( +-  7.14% )
+         85.759504 task-clock                #    0.979 CPUs utilized            ( +-  0.49% )
+                 3 context-switches          #    0.033 K/sec                    ( +-  7.14% )
                  0 cpu-migrations            #    0.000 K/sec                  
-             1,882 page-faults               #    0.021 M/sec                  
+             1,882 page-faults               #    0.022 M/sec                    ( +-  0.01% )
    <not supported> cycles                  
    <not supported> stalled-cycles-frontend 
    <not supported> stalled-cycles-backend  
@@ -2022,26 +150,26 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.090877259 seconds time elapsed                                          ( +-  0.47% )
+       0.087625297 seconds time elapsed                                          ( +-  0.54% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 75 ms 
+Timer - Multiplication: 77 ms 
 Ret: 0
-Timer - Multiplication: 74 ms 
+Timer - Multiplication: 80 ms 
 Ret: 0
-Timer - Multiplication: 74 ms 
+Timer - Multiplication: 78 ms 
 Ret: 0
 Timer - Multiplication: 77 ms 
 Ret: 0
-Timer - Multiplication: 78 ms 
+Timer - Multiplication: 77 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conin 512' (5 runs):
 
-         80.919345 task-clock                #    0.976 CPUs utilized            ( +-  1.51% )
-                 3 context-switches          #    0.037 K/sec                    ( +- 10.54% )
+         83.710941 task-clock                #    0.976 CPUs utilized            ( +-  0.67% )
+                 3 context-switches          #    0.036 K/sec                    ( +- 10.54% )
                  0 cpu-migrations            #    0.000 K/sec                  
-             1,885 page-faults               #    0.023 M/sec                    ( +-  0.01% )
+             1,885 page-faults               #    0.023 M/sec                  
    <not supported> cycles                  
    <not supported> stalled-cycles-frontend 
    <not supported> stalled-cycles-backend  
@@ -2053,24 +181,24 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.082926632 seconds time elapsed                                          ( +-  1.45% )
+       0.085761300 seconds time elapsed                                          ( +-  0.65% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 616 ms 
+Timer - Multiplication: 644 ms 
 Ret: 0
-Timer - Multiplication: 601 ms 
+Timer - Multiplication: 614 ms 
 Ret: 0
-Timer - Multiplication: 625 ms 
+Timer - Multiplication: 647 ms 
 Ret: 0
-Timer - Multiplication: 628 ms 
+Timer - Multiplication: 611 ms 
 Ret: 0
-Timer - Multiplication: 627 ms 
+Timer - Multiplication: 641 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 1024' (5 runs):
 
-        636.055824 task-clock                #    0.996 CPUs utilized            ( +-  0.85% )
-                 5 context-switches          #    0.008 K/sec                    ( +-  3.85% )
+        647.218748 task-clock                #    0.996 CPUs utilized            ( +-  1.20% )
+                 5 context-switches          #    0.008 K/sec                    ( +- 18.97% )
                  0 cpu-migrations            #    0.000 K/sec                  
              6,519 page-faults               #    0.010 M/sec                  
    <not supported> cycles                  
@@ -2084,24 +212,24 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.638552433 seconds time elapsed                                          ( +-  0.85% )
+       0.649586885 seconds time elapsed                                          ( +-  1.19% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 648 ms 
+Timer - Multiplication: 655 ms 
 Ret: 0
-Timer - Multiplication: 650 ms 
+Timer - Multiplication: 638 ms 
 Ret: 0
-Timer - Multiplication: 619 ms 
+Timer - Multiplication: 639 ms 
 Ret: 0
-Timer - Multiplication: 637 ms 
+Timer - Multiplication: 641 ms 
 Ret: 0
-Timer - Multiplication: 629 ms 
+Timer - Multiplication: 638 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conmul 1024' (5 runs):
 
-        648.549556 task-clock                #    0.996 CPUs utilized            ( +-  0.90% )
-                 6 context-switches          #    0.009 K/sec                    ( +- 42.16% )
+        654.206232 task-clock                #    0.997 CPUs utilized            ( +-  0.66% )
+                 4 context-switches          #    0.006 K/sec                    ( +- 12.89% )
                  0 cpu-migrations            #    0.000 K/sec                  
              1,891 page-faults               #    0.003 M/sec                  
    <not supported> cycles                  
@@ -2115,24 +243,24 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.650831039 seconds time elapsed                                          ( +-  0.88% )
+       0.656484761 seconds time elapsed                                          ( +-  0.65% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 589 ms 
+Timer - Multiplication: 613 ms 
 Ret: 0
-Timer - Multiplication: 587 ms 
+Timer - Multiplication: 622 ms 
 Ret: 0
-Timer - Multiplication: 584 ms 
+Timer - Multiplication: 612 ms 
 Ret: 0
-Timer - Multiplication: 597 ms 
+Timer - Multiplication: 626 ms 
 Ret: 0
-Timer - Multiplication: 619 ms 
+Timer - Multiplication: 604 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conin 1024' (5 runs):
 
-        607.262139 task-clock                #    0.996 CPUs utilized            ( +-  1.15% )
-                 6 context-switches          #    0.010 K/sec                    ( +- 25.28% )
+        627.471951 task-clock                #    0.996 CPUs utilized            ( +-  0.70% )
+                 5 context-switches          #    0.007 K/sec                    ( +- 11.08% )
                  0 cpu-migrations            #    0.000 K/sec                  
              1,897 page-faults               #    0.003 M/sec                    ( +-  0.01% )
    <not supported> cycles                  
@@ -2146,396 +274,24 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.609702449 seconds time elapsed                                          ( +-  1.14% )
+       0.630053150 seconds time elapsed                                          ( +-  0.71% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 5672 ms 
+Timer - Multiplication: 6156 ms 
 Ret: 0
-Timer - Multiplication: 5960 ms 
+Timer - Multiplication: 6005 ms 
 Ret: 0
-Timer - Multiplication: 5869 ms 
+Timer - Multiplication: 5965 ms 
 Ret: 0
-Timer - Multiplication: 5895 ms 
+Timer - Multiplication: 6003 ms 
 Ret: 0
-Timer - Multiplication: 5923 ms 
+Timer - Multiplication: 6169 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 2048' (5 runs):
 
-       5919.892803 task-clock                #    0.999 CPUs utilized            ( +-  0.86% )
-                13 context-switches          #    0.002 K/sec                    ( +- 12.19% )
-                 0 cpu-migrations            #    0.000 K/sec                    ( +-100.00% )
-            24,980 page-faults               #    0.004 M/sec                    ( +-  0.00% )
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       5.924514740 seconds time elapsed                                          ( +-  0.88% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 6208 ms 
-Ret: 0
-Timer - Multiplication: 6161 ms 
-Ret: 0
-Timer - Multiplication: 6226 ms 
-Ret: 0
-Timer - Multiplication: 5852 ms 
-Ret: 0
-Timer - Multiplication: 6157 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conmul 2048' (5 runs):
-
-       6155.091851 task-clock                #    0.999 CPUs utilized            ( +-  1.12% )
-                13 context-switches          #    0.002 K/sec                    ( +- 21.53% )
-                 0 cpu-migrations            #    0.000 K/sec                    ( +-100.00% )
-             1,723 page-faults               #    0.280 K/sec                    ( +- 11.87% )
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       6.158846795 seconds time elapsed                                          ( +-  1.11% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 5869 ms 
-Ret: 0
-Timer - Multiplication: 5991 ms 
-Ret: 0
-Timer - Multiplication: 5979 ms 
-Ret: 0
-Timer - Multiplication: 5542 ms 
-Ret: 0
-Timer - Multiplication: 5924 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conin 2048' (5 runs):
-
-       5897.954726 task-clock                #    0.999 CPUs utilized            ( +-  1.41% )
-                22 context-switches          #    0.004 K/sec                    ( +- 45.85% )
-                 0 cpu-migrations            #    0.000 K/sec                    ( +-100.00% )
-             1,940 page-faults               #    0.329 K/sec                  
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       5.901496097 seconds time elapsed                                          ( +-  1.41% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 10 ms 
-Ret: 0
-Timer - Multiplication: 10 ms 
-Ret: 0
-Timer - Multiplication: 10 ms 
-Ret: 0
-Timer - Multiplication: 10 ms 
-Ret: 0
-Timer - Multiplication: 9 ms 
-Ret: 0
-
- Performance counter stats for './mmul_nes 256' (5 runs):
-
-         12.397659 task-clock                #    0.871 CPUs utilized            ( +-  1.29% )
-                 3 context-switches          #    0.226 K/sec                    ( +-  7.14% )
-                 0 cpu-migrations            #    0.000 K/sec                  
-               736 page-faults               #    0.059 M/sec                  
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.014226663 seconds time elapsed                                          ( +-  1.03% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 11 ms 
-Ret: 0
-Timer - Multiplication: 11 ms 
-Ret: 0
-Timer - Multiplication: 10 ms 
-Ret: 0
-Timer - Multiplication: 10 ms 
-Ret: 0
-Timer - Multiplication: 10 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conmul 256' (5 runs):
-
-         12.808922 task-clock                #    0.883 CPUs utilized            ( +-  1.08% )
-                 3 context-switches          #    0.219 K/sec                    ( +-  7.14% )
-                 0 cpu-migrations            #    0.000 K/sec                  
-               730 page-faults               #    0.057 M/sec                  
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.014513921 seconds time elapsed                                          ( +-  0.74% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 9 ms 
-Ret: 0
-Timer - Multiplication: 9 ms 
-Ret: 0
-Timer - Multiplication: 9 ms 
-Ret: 0
-Timer - Multiplication: 18 ms 
-Ret: 0
-Timer - Multiplication: 10 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conin 256' (5 runs):
-
-         13.797420 task-clock                #    0.890 CPUs utilized            ( +- 13.89% )
-                 3 context-switches          #    0.203 K/sec                    ( +-  7.14% )
-                 0 cpu-migrations            #    0.000 K/sec                  
-               731 page-faults               #    0.053 M/sec                  
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.015502123 seconds time elapsed                                          ( +- 12.58% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 76 ms 
-Ret: 0
-Timer - Multiplication: 76 ms 
-Ret: 0
-Timer - Multiplication: 75 ms 
-Ret: 0
-Timer - Multiplication: 78 ms 
-Ret: 0
-Timer - Multiplication: 78 ms 
-Ret: 0
-
- Performance counter stats for './mmul_nes 512' (5 runs):
-
-         81.297634 task-clock                #    0.977 CPUs utilized            ( +-  0.71% )
-                 3 context-switches          #    0.034 K/sec                    ( +-  7.14% )
-                 0 cpu-migrations            #    0.000 K/sec                  
-             1,896 page-faults               #    0.023 M/sec                    ( +-  0.01% )
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.083221152 seconds time elapsed                                          ( +-  0.61% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 82 ms 
-Ret: 0
-Timer - Multiplication: 83 ms 
-Ret: 0
-Timer - Multiplication: 82 ms 
-Ret: 0
-Timer - Multiplication: 83 ms 
-Ret: 0
-Timer - Multiplication: 84 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conmul 512' (5 runs):
-
-         87.161757 task-clock                #    0.980 CPUs utilized            ( +-  0.48% )
-                 3 context-switches          #    0.034 K/sec                  
-                 0 cpu-migrations            #    0.000 K/sec                  
-             1,882 page-faults               #    0.022 M/sec                  
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.088925035 seconds time elapsed                                          ( +-  0.51% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 76 ms 
-Ret: 0
-Timer - Multiplication: 78 ms 
-Ret: 0
-Timer - Multiplication: 77 ms 
-Ret: 0
-Timer - Multiplication: 76 ms 
-Ret: 0
-Timer - Multiplication: 75 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conin 512' (5 runs):
-
-         80.943788 task-clock                #    0.976 CPUs utilized            ( +-  0.66% )
-                 3 context-switches          #    0.040 K/sec                    ( +- 11.69% )
-                 0 cpu-migrations            #    0.000 K/sec                  
-             1,885 page-faults               #    0.023 M/sec                    ( +-  0.01% )
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.082952073 seconds time elapsed                                          ( +-  0.70% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 604 ms 
-Ret: 0
-Timer - Multiplication: 617 ms 
-Ret: 0
-Timer - Multiplication: 609 ms 
-Ret: 0
-Timer - Multiplication: 616 ms 
-Ret: 0
-Timer - Multiplication: 642 ms 
-Ret: 0
-
- Performance counter stats for './mmul_nes 1024' (5 runs):
-
-        633.748087 task-clock                #    0.996 CPUs utilized            ( +-  1.07% )
-                 7 context-switches          #    0.011 K/sec                    ( +- 39.02% )
-                 0 cpu-migrations            #    0.000 K/sec                  
-             6,519 page-faults               #    0.010 M/sec                    ( +-  0.00% )
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.636124657 seconds time elapsed                                          ( +-  1.08% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 630 ms 
-Ret: 0
-Timer - Multiplication: 634 ms 
-Ret: 0
-Timer - Multiplication: 632 ms 
-Ret: 0
-Timer - Multiplication: 626 ms 
-Ret: 0
-Timer - Multiplication: 660 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conmul 1024' (5 runs):
-
-        647.462382 task-clock                #    0.996 CPUs utilized            ( +-  0.90% )
-                 5 context-switches          #    0.007 K/sec                    ( +- 17.92% )
-                 0 cpu-migrations            #    0.000 K/sec                  
-             1,891 page-faults               #    0.003 M/sec                  
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.649967512 seconds time elapsed                                          ( +-  0.92% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 599 ms 
-Ret: 0
-Timer - Multiplication: 627 ms 
-Ret: 0
-Timer - Multiplication: 597 ms 
-Ret: 0
-Timer - Multiplication: 594 ms 
-Ret: 0
-Timer - Multiplication: 605 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conin 1024' (5 runs):
-
-        615.609448 task-clock                #    0.996 CPUs utilized            ( +-  1.01% )
-                 4 context-switches          #    0.006 K/sec                    ( +- 12.89% )
-                 0 cpu-migrations            #    0.000 K/sec                  
-             1,897 page-faults               #    0.003 M/sec                  
-   <not supported> cycles                  
-   <not supported> stalled-cycles-frontend 
-   <not supported> stalled-cycles-backend  
-   <not supported> instructions            
-   <not supported> branches                
-   <not supported> branch-misses           
-   <not supported> L1-dcache-loads         
-   <not supported> L1-dcache-load-misses   
-   <not supported> LLC-loads               
-   <not supported> LLC-load-misses         
-
-       0.618003459 seconds time elapsed                                          ( +-  1.02% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 6142 ms 
-Ret: 0
-Timer - Multiplication: 5990 ms 
-Ret: 0
-Timer - Multiplication: 5891 ms 
-Ret: 0
-Timer - Multiplication: 6128 ms 
-Ret: 0
-Timer - Multiplication: 6292 ms 
-Ret: 0
-
- Performance counter stats for './mmul_nes 2048' (5 runs):
-
-       6145.942616 task-clock                #    0.999 CPUs utilized            ( +-  1.12% )
-                12 context-switches          #    0.002 K/sec                    ( +- 14.98% )
+       6113.130710 task-clock                #    0.999 CPUs utilized            ( +-  0.71% )
+                16 context-switches          #    0.003 K/sec                    ( +- 17.34% )
                  0 cpu-migrations            #    0.000 K/sec                  
             24,981 page-faults               #    0.004 M/sec                    ( +-  0.00% )
    <not supported> cycles                  
@@ -2549,26 +305,26 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       6.150466917 seconds time elapsed                                          ( +-  1.14% )
+       6.117616200 seconds time elapsed                                          ( +-  0.70% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 6463 ms 
+Timer - Multiplication: 6073 ms 
 Ret: 0
-Timer - Multiplication: 5924 ms 
+Timer - Multiplication: 6005 ms 
 Ret: 0
-Timer - Multiplication: 6389 ms 
+Timer - Multiplication: 6259 ms 
 Ret: 0
-Timer - Multiplication: 6082 ms 
+Timer - Multiplication: 5918 ms 
 Ret: 0
-Timer - Multiplication: 6508 ms 
+Timer - Multiplication: 5974 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conmul 2048' (5 runs):
 
-       6308.594577 task-clock                #    0.999 CPUs utilized            ( +-  1.82% )
-                13 context-switches          #    0.002 K/sec                    ( +- 17.32% )
-                 0 cpu-migrations            #    0.000 K/sec                    ( +-100.00% )
-             1,927 page-faults               #    0.305 K/sec                  
+       6082.585568 task-clock                #    0.999 CPUs utilized            ( +-  0.97% )
+                13 context-switches          #    0.002 K/sec                    ( +- 35.50% )
+                 0 cpu-migrations            #    0.000 K/sec                  
+             1,927 page-faults               #    0.317 K/sec                  
    <not supported> cycles                  
    <not supported> stalled-cycles-frontend 
    <not supported> stalled-cycles-backend  
@@ -2580,25 +336,25 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       6.311884333 seconds time elapsed                                          ( +-  1.82% )
+       6.086633835 seconds time elapsed                                          ( +-  0.95% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 5949 ms 
+Timer - Multiplication: 5631 ms 
 Ret: 0
-Timer - Multiplication: 5985 ms 
+Timer - Multiplication: 5672 ms 
 Ret: 0
-Timer - Multiplication: 5927 ms 
+Timer - Multiplication: 6326 ms 
 Ret: 0
-Timer - Multiplication: 5932 ms 
+Timer - Multiplication: 6298 ms 
 Ret: 0
-Timer - Multiplication: 6242 ms 
+Timer - Multiplication: 6121 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conin 2048' (5 runs):
 
-       6042.738202 task-clock                #    0.999 CPUs utilized            ( +-  0.99% )
-                13 context-switches          #    0.002 K/sec                    ( +- 14.11% )
-                 0 cpu-migrations            #    0.000 K/sec                    ( +-100.00% )
+       6044.415249 task-clock                #    0.999 CPUs utilized            ( +-  2.50% )
+                16 context-switches          #    0.003 K/sec                    ( +- 31.60% )
+                 1 cpu-migrations            #    0.000 K/sec                    ( +- 63.25% )
              1,940 page-faults               #    0.321 K/sec                  
    <not supported> cycles                  
    <not supported> stalled-cycles-frontend 
@@ -2611,26 +367,26 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       6.046517929 seconds time elapsed                                          ( +-  0.99% )
+       6.051020084 seconds time elapsed                                          ( +-  2.51% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 9 ms 
+Timer - Multiplication: 10 ms 
+Ret: 0
+Timer - Multiplication: 10 ms 
 Ret: 0
 Timer - Multiplication: 9 ms 
 Ret: 0
 Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 9 ms 
-Ret: 0
-Timer - Multiplication: 9 ms 
+Timer - Multiplication: 10 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 256' (5 runs):
 
-         11.644589 task-clock                #    0.873 CPUs utilized            ( +-  1.24% )
-                 3 context-switches          #    0.240 K/sec                    ( +-  7.14% )
+         12.127202 task-clock                #    0.879 CPUs utilized            ( +-  0.97% )
+                 3 context-switches          #    0.247 K/sec                    ( +- 10.54% )
                  0 cpu-migrations            #    0.000 K/sec                  
-               736 page-faults               #    0.063 M/sec                  
+               736 page-faults               #    0.061 M/sec                  
    <not supported> cycles                  
    <not supported> stalled-cycles-frontend 
    <not supported> stalled-cycles-backend  
@@ -2642,7 +398,7 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.013343151 seconds time elapsed                                          ( +-  0.83% )
+       0.013796799 seconds time elapsed                                          ( +-  0.77% )
 
 --------------------------------------------------------------------------------------------------------
 Timer - Multiplication: 11 ms 
@@ -2658,10 +414,10 @@ Ret: 0
 
  Performance counter stats for './mmul_conmul 256' (5 runs):
 
-         13.061561 task-clock                #    0.881 CPUs utilized            ( +-  0.99% )
-                 3 context-switches          #    0.214 K/sec                    ( +-  7.14% )
+         12.872239 task-clock                #    0.884 CPUs utilized            ( +-  0.63% )
+                 3 context-switches          #    0.233 K/sec                  
                  0 cpu-migrations            #    0.000 K/sec                  
-               730 page-faults               #    0.056 M/sec                  
+               730 page-faults               #    0.057 M/sec                    ( +-  0.03% )
    <not supported> cycles                  
    <not supported> stalled-cycles-frontend 
    <not supported> stalled-cycles-backend  
@@ -2673,26 +429,26 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.014824046 seconds time elapsed                                          ( +-  0.61% )
+       0.014560911 seconds time elapsed                                          ( +-  0.46% )
 
 --------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 10 ms 
+Ret: 0
+Timer - Multiplication: 10 ms 
+Ret: 0
 Timer - Multiplication: 9 ms 
 Ret: 0
 Timer - Multiplication: 10 ms 
 Ret: 0
 Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 9 ms 
-Ret: 0
-Timer - Multiplication: 9 ms 
-Ret: 0
 
  Performance counter stats for './mmul_conin 256' (5 runs):
 
-         11.605786 task-clock                #    0.867 CPUs utilized            ( +-  0.27% )
-                 3 context-switches          #    0.241 K/sec                    ( +-  7.14% )
+         11.806640 task-clock                #    0.872 CPUs utilized            ( +-  0.49% )
+                 3 context-switches          #    0.237 K/sec                    ( +-  7.14% )
                  0 cpu-migrations            #    0.000 K/sec                  
-               731 page-faults               #    0.063 M/sec                    ( +-  0.03% )
+               731 page-faults               #    0.062 M/sec                    ( +-  0.03% )
    <not supported> cycles                  
    <not supported> stalled-cycles-frontend 
    <not supported> stalled-cycles-backend  
@@ -2704,24 +460,24 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.013392202 seconds time elapsed                                          ( +-  0.47% )
+       0.013543557 seconds time elapsed                                          ( +-  0.68% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 75 ms 
+Timer - Multiplication: 77 ms 
 Ret: 0
-Timer - Multiplication: 75 ms 
+Timer - Multiplication: 77 ms 
 Ret: 0
-Timer - Multiplication: 76 ms 
+Timer - Multiplication: 78 ms 
 Ret: 0
-Timer - Multiplication: 76 ms 
+Timer - Multiplication: 77 ms 
 Ret: 0
 Timer - Multiplication: 78 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 512' (5 runs):
 
-         81.046212 task-clock                #    0.976 CPUs utilized            ( +-  0.91% )
-                 3 context-switches          #    0.042 K/sec                    ( +- 11.76% )
+         82.553782 task-clock                #    0.976 CPUs utilized            ( +-  0.28% )
+                 3 context-switches          #    0.036 K/sec                    ( +- 10.54% )
                  0 cpu-migrations            #    0.000 K/sec                  
              1,896 page-faults               #    0.023 M/sec                  
    <not supported> cycles                  
@@ -2735,26 +491,26 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.083056716 seconds time elapsed                                          ( +-  0.94% )
+       0.084582216 seconds time elapsed                                          ( +-  0.34% )
 
 --------------------------------------------------------------------------------------------------------
 Timer - Multiplication: 83 ms 
 Ret: 0
 Timer - Multiplication: 83 ms 
 Ret: 0
-Timer - Multiplication: 88 ms 
+Timer - Multiplication: 82 ms 
 Ret: 0
-Timer - Multiplication: 87 ms 
+Timer - Multiplication: 83 ms 
 Ret: 0
-Timer - Multiplication: 84 ms 
+Timer - Multiplication: 85 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conmul 512' (5 runs):
 
-         90.283025 task-clock                #    0.977 CPUs utilized            ( +-  1.26% )
-                 3 context-switches          #    0.033 K/sec                    ( +- 10.54% )
+         88.400986 task-clock                #    0.977 CPUs utilized            ( +-  0.57% )
+                 3 context-switches          #    0.034 K/sec                    ( +- 10.54% )
                  0 cpu-migrations            #    0.000 K/sec                  
-             1,678 page-faults               #    0.019 M/sec                    ( +- 12.18% )
+             1,882 page-faults               #    0.021 M/sec                    ( +-  0.01% )
    <not supported> cycles                  
    <not supported> stalled-cycles-frontend 
    <not supported> stalled-cycles-backend  
@@ -2766,26 +522,26 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.092438684 seconds time elapsed                                          ( +-  1.32% )
+       0.090516118 seconds time elapsed                                          ( +-  0.51% )
 
 --------------------------------------------------------------------------------------------------------
 Timer - Multiplication: 77 ms 
 Ret: 0
+Timer - Multiplication: 78 ms 
+Ret: 0
+Timer - Multiplication: 79 ms 
+Ret: 0
+Timer - Multiplication: 78 ms 
+Ret: 0
 Timer - Multiplication: 77 ms 
-Ret: 0
-Timer - Multiplication: 75 ms 
-Ret: 0
-Timer - Multiplication: 76 ms 
-Ret: 0
-Timer - Multiplication: 75 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conin 512' (5 runs):
 
-         80.076843 task-clock                #    0.975 CPUs utilized            ( +-  0.52% )
-                 3 context-switches          #    0.037 K/sec                    ( +- 10.54% )
+         83.080492 task-clock                #    0.976 CPUs utilized            ( +-  0.65% )
+                 3 context-switches          #    0.039 K/sec                    ( +- 11.69% )
                  0 cpu-migrations            #    0.000 K/sec                  
-             1,885 page-faults               #    0.024 M/sec                  
+             1,885 page-faults               #    0.023 M/sec                    ( +-  0.01% )
    <not supported> cycles                  
    <not supported> stalled-cycles-frontend 
    <not supported> stalled-cycles-backend  
@@ -2797,26 +553,26 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.082159828 seconds time elapsed                                          ( +-  0.57% )
+       0.085127882 seconds time elapsed                                          ( +-  0.71% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 608 ms 
+Timer - Multiplication: 630 ms 
 Ret: 0
-Timer - Multiplication: 616 ms 
+Timer - Multiplication: 626 ms 
 Ret: 0
-Timer - Multiplication: 622 ms 
+Timer - Multiplication: 621 ms 
 Ret: 0
-Timer - Multiplication: 623 ms 
+Timer - Multiplication: 607 ms 
 Ret: 0
-Timer - Multiplication: 625 ms 
+Timer - Multiplication: 605 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 1024' (5 runs):
 
-        634.622943 task-clock                #    0.996 CPUs utilized            ( +-  0.53% )
-                 6 context-switches          #    0.009 K/sec                    ( +- 29.81% )
+        634.192331 task-clock                #    0.996 CPUs utilized            ( +-  0.81% )
+                 4 context-switches          #    0.007 K/sec                    ( +-  8.91% )
                  0 cpu-migrations            #    0.000 K/sec                  
-             6,519 page-faults               #    0.010 M/sec                  
+             6,519 page-faults               #    0.010 M/sec                    ( +-  0.00% )
    <not supported> cycles                  
    <not supported> stalled-cycles-frontend 
    <not supported> stalled-cycles-backend  
@@ -2828,26 +584,26 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.636951859 seconds time elapsed                                          ( +-  0.55% )
+       0.636536997 seconds time elapsed                                          ( +-  0.80% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 632 ms 
+Timer - Multiplication: 629 ms 
 Ret: 0
-Timer - Multiplication: 631 ms 
+Timer - Multiplication: 638 ms 
 Ret: 0
-Timer - Multiplication: 668 ms 
+Timer - Multiplication: 628 ms 
 Ret: 0
-Timer - Multiplication: 624 ms 
+Timer - Multiplication: 634 ms 
 Ret: 0
-Timer - Multiplication: 624 ms 
+Timer - Multiplication: 639 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conmul 1024' (5 runs):
 
-        647.233834 task-clock                #    0.996 CPUs utilized            ( +-  1.27% )
-                 4 context-switches          #    0.006 K/sec                    ( +- 17.46% )
+        645.696276 task-clock                #    0.996 CPUs utilized            ( +-  0.34% )
+                 6 context-switches          #    0.010 K/sec                    ( +- 35.85% )
                  0 cpu-migrations            #    0.000 K/sec                  
-             1,891 page-faults               #    0.003 M/sec                  
+             1,687 page-faults               #    0.003 M/sec                    ( +- 12.13% )
    <not supported> cycles                  
    <not supported> stalled-cycles-frontend 
    <not supported> stalled-cycles-backend  
@@ -2859,24 +615,24 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.649595942 seconds time elapsed                                          ( +-  1.27% )
+       0.648306311 seconds time elapsed                                          ( +-  0.35% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 633 ms 
+Timer - Multiplication: 608 ms 
 Ret: 0
-Timer - Multiplication: 601 ms 
+Timer - Multiplication: 606 ms 
 Ret: 0
-Timer - Multiplication: 594 ms 
+Timer - Multiplication: 600 ms 
 Ret: 0
-Timer - Multiplication: 594 ms 
+Timer - Multiplication: 599 ms 
 Ret: 0
-Timer - Multiplication: 609 ms 
+Timer - Multiplication: 620 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conin 1024' (5 runs):
 
-        616.691730 task-clock                #    0.996 CPUs utilized            ( +-  1.16% )
-                 4 context-switches          #    0.006 K/sec                    ( +-  6.80% )
+        618.661418 task-clock                #    0.996 CPUs utilized            ( +-  0.72% )
+                 8 context-switches          #    0.014 K/sec                    ( +- 32.52% )
                  0 cpu-migrations            #    0.000 K/sec                  
              1,897 page-faults               #    0.003 M/sec                    ( +-  0.01% )
    <not supported> cycles                  
@@ -2890,24 +646,396 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       0.618893335 seconds time elapsed                                          ( +-  1.16% )
+       0.621148201 seconds time elapsed                                          ( +-  0.72% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 6220 ms 
+Timer - Multiplication: 6314 ms 
 Ret: 0
-Timer - Multiplication: 5965 ms 
+Timer - Multiplication: 6002 ms 
 Ret: 0
-Timer - Multiplication: 6131 ms 
+Timer - Multiplication: 5981 ms 
 Ret: 0
-Timer - Multiplication: 6254 ms 
+Timer - Multiplication: 6212 ms 
 Ret: 0
-Timer - Multiplication: 6363 ms 
+Timer - Multiplication: 6408 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 2048' (5 runs):
 
-       6244.325435 task-clock                #    0.999 CPUs utilized            ( +-  1.06% )
-                14 context-switches          #    0.002 K/sec                    ( +- 21.87% )
+       6242.105046 task-clock                #    0.999 CPUs utilized            ( +-  1.35% )
+                15 context-switches          #    0.002 K/sec                    ( +- 19.21% )
+                 0 cpu-migrations            #    0.000 K/sec                  
+            24,981 page-faults               #    0.004 M/sec                    ( +-  0.00% )
+   <not supported> cycles                  
+   <not supported> stalled-cycles-frontend 
+   <not supported> stalled-cycles-backend  
+   <not supported> instructions            
+   <not supported> branches                
+   <not supported> branch-misses           
+   <not supported> L1-dcache-loads         
+   <not supported> L1-dcache-load-misses   
+   <not supported> LLC-loads               
+   <not supported> LLC-load-misses         
+
+       6.245540743 seconds time elapsed                                          ( +-  1.35% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 6315 ms 
+Ret: 0
+Timer - Multiplication: 6346 ms 
+Ret: 0
+Timer - Multiplication: 6354 ms 
+Ret: 0
+Timer - Multiplication: 6191 ms 
+Ret: 0
+Timer - Multiplication: 6018 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conmul 2048' (5 runs):
+
+       6281.076990 task-clock                #    0.999 CPUs utilized            ( +-  1.02% )
+                15 context-switches          #    0.002 K/sec                    ( +- 21.30% )
+                 1 cpu-migrations            #    0.000 K/sec                    ( +-100.00% )
+             1,927 page-faults               #    0.307 K/sec                  
+   <not supported> cycles                  
+   <not supported> stalled-cycles-frontend 
+   <not supported> stalled-cycles-backend  
+   <not supported> instructions            
+   <not supported> branches                
+   <not supported> branch-misses           
+   <not supported> L1-dcache-loads         
+   <not supported> L1-dcache-load-misses   
+   <not supported> LLC-loads               
+   <not supported> LLC-load-misses         
+
+       6.285488236 seconds time elapsed                                          ( +-  1.03% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 6043 ms 
+Ret: 0
+Timer - Multiplication: 6085 ms 
+Ret: 0
+Timer - Multiplication: 6018 ms 
+Ret: 0
+Timer - Multiplication: 6127 ms 
+Ret: 0
+Timer - Multiplication: 5996 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conin 2048' (5 runs):
+
+       6090.808063 task-clock                #    0.999 CPUs utilized            ( +-  0.35% )
+                15 context-switches          #    0.002 K/sec                    ( +- 17.08% )
+                 0 cpu-migrations            #    0.000 K/sec                    ( +-100.00% )
+             1,940 page-faults               #    0.319 K/sec                    ( +-  0.01% )
+   <not supported> cycles                  
+   <not supported> stalled-cycles-frontend 
+   <not supported> stalled-cycles-backend  
+   <not supported> instructions            
+   <not supported> branches                
+   <not supported> branch-misses           
+   <not supported> L1-dcache-loads         
+   <not supported> L1-dcache-load-misses   
+   <not supported> LLC-loads               
+   <not supported> LLC-load-misses         
+
+       6.094874222 seconds time elapsed                                          ( +-  0.36% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 10 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nes 256' (5 runs):
+
+         11.783982 task-clock                #    0.863 CPUs utilized            ( +-  0.26% )
+                 3 context-switches          #    0.238 K/sec                    ( +-  7.14% )
+                 0 cpu-migrations            #    0.000 K/sec                  
+               736 page-faults               #    0.062 M/sec                    ( +-  0.03% )
+   <not supported> cycles                  
+   <not supported> stalled-cycles-frontend 
+   <not supported> stalled-cycles-backend  
+   <not supported> instructions            
+   <not supported> branches                
+   <not supported> branch-misses           
+   <not supported> L1-dcache-loads         
+   <not supported> L1-dcache-load-misses   
+   <not supported> LLC-loads               
+   <not supported> LLC-load-misses         
+
+       0.013658936 seconds time elapsed                                          ( +-  0.42% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 14 ms 
+Ret: 0
+Timer - Multiplication: 15 ms 
+Ret: 0
+Timer - Multiplication: 11 ms 
+Ret: 0
+Timer - Multiplication: 11 ms 
+Ret: 0
+Timer - Multiplication: 11 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conmul 256' (5 runs):
+
+         14.610915 task-clock                #    0.883 CPUs utilized            ( +-  6.40% )
+                 3 context-switches          #    0.192 K/sec                    ( +-  7.14% )
+                 0 cpu-migrations            #    0.000 K/sec                  
+               730 page-faults               #    0.050 M/sec                  
+   <not supported> cycles                  
+   <not supported> stalled-cycles-frontend 
+   <not supported> stalled-cycles-backend  
+   <not supported> instructions            
+   <not supported> branches                
+   <not supported> branch-misses           
+   <not supported> L1-dcache-loads         
+   <not supported> L1-dcache-load-misses   
+   <not supported> LLC-loads               
+   <not supported> LLC-load-misses         
+
+       0.016551332 seconds time elapsed                                          ( +-  5.58% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 10 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 10 ms 
+Ret: 0
+Timer - Multiplication: 10 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conin 256' (5 runs):
+
+         11.665856 task-clock                #    0.853 CPUs utilized            ( +-  0.74% )
+                 3 context-switches          #    0.257 K/sec                    ( +- 10.54% )
+                 0 cpu-migrations            #    0.000 K/sec                  
+               732 page-faults               #    0.063 M/sec                    ( +-  0.03% )
+   <not supported> cycles                  
+   <not supported> stalled-cycles-frontend 
+   <not supported> stalled-cycles-backend  
+   <not supported> instructions            
+   <not supported> branches                
+   <not supported> branch-misses           
+   <not supported> L1-dcache-loads         
+   <not supported> L1-dcache-load-misses   
+   <not supported> LLC-loads               
+   <not supported> LLC-load-misses         
+
+       0.013671851 seconds time elapsed                                          ( +-  1.54% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 76 ms 
+Ret: 0
+Timer - Multiplication: 75 ms 
+Ret: 0
+Timer - Multiplication: 77 ms 
+Ret: 0
+Timer - Multiplication: 74 ms 
+Ret: 0
+Timer - Multiplication: 72 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nes 512' (5 runs):
+
+         79.339476 task-clock                #    0.974 CPUs utilized            ( +-  1.01% )
+                 3 context-switches          #    0.038 K/sec                    ( +- 10.54% )
+                 0 cpu-migrations            #    0.000 K/sec                  
+             1,896 page-faults               #    0.024 M/sec                    ( +-  0.01% )
+   <not supported> cycles                  
+   <not supported> stalled-cycles-frontend 
+   <not supported> stalled-cycles-backend  
+   <not supported> instructions            
+   <not supported> branches                
+   <not supported> branch-misses           
+   <not supported> L1-dcache-loads         
+   <not supported> L1-dcache-load-misses   
+   <not supported> LLC-loads               
+   <not supported> LLC-load-misses         
+
+       0.081447191 seconds time elapsed                                          ( +-  1.01% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 78 ms 
+Ret: 0
+Timer - Multiplication: 100 ms 
+Ret: 0
+Timer - Multiplication: 82 ms 
+Ret: 0
+Timer - Multiplication: 83 ms 
+Ret: 0
+Timer - Multiplication: 81 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conmul 512' (5 runs):
+
+         89.958842 task-clock                #    0.978 CPUs utilized            ( +-  4.27% )
+                 3 context-switches          #    0.031 K/sec                    ( +-  7.14% )
+                 0 cpu-migrations            #    0.000 K/sec                  
+             1,882 page-faults               #    0.021 M/sec                  
+   <not supported> cycles                  
+   <not supported> stalled-cycles-frontend 
+   <not supported> stalled-cycles-backend  
+   <not supported> instructions            
+   <not supported> branches                
+   <not supported> branch-misses           
+   <not supported> L1-dcache-loads         
+   <not supported> L1-dcache-load-misses   
+   <not supported> LLC-loads               
+   <not supported> LLC-load-misses         
+
+       0.092016163 seconds time elapsed                                          ( +-  4.19% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 76 ms 
+Ret: 0
+Timer - Multiplication: 73 ms 
+Ret: 0
+Timer - Multiplication: 74 ms 
+Ret: 0
+Timer - Multiplication: 97 ms 
+Ret: 0
+Timer - Multiplication: 74 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conin 512' (5 runs):
+
+         83.658466 task-clock                #    0.976 CPUs utilized            ( +-  5.89% )
+                 3 context-switches          #    0.036 K/sec                  
+                 0 cpu-migrations            #    0.000 K/sec                  
+             1,885 page-faults               #    0.023 M/sec                    ( +-  0.02% )
+   <not supported> cycles                  
+   <not supported> stalled-cycles-frontend 
+   <not supported> stalled-cycles-backend  
+   <not supported> instructions            
+   <not supported> branches                
+   <not supported> branch-misses           
+   <not supported> L1-dcache-loads         
+   <not supported> L1-dcache-load-misses   
+   <not supported> LLC-loads               
+   <not supported> LLC-load-misses         
+
+       0.085674653 seconds time elapsed                                          ( +-  5.75% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 621 ms 
+Ret: 0
+Timer - Multiplication: 629 ms 
+Ret: 0
+Timer - Multiplication: 615 ms 
+Ret: 0
+Timer - Multiplication: 598 ms 
+Ret: 0
+Timer - Multiplication: 599 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nes 1024' (5 runs):
+
+        629.143960 task-clock                #    0.996 CPUs utilized            ( +-  1.02% )
+                 7 context-switches          #    0.011 K/sec                    ( +- 34.30% )
+                 0 cpu-migrations            #    0.000 K/sec                  
+             6,519 page-faults               #    0.010 M/sec                  
+   <not supported> cycles                  
+   <not supported> stalled-cycles-frontend 
+   <not supported> stalled-cycles-backend  
+   <not supported> instructions            
+   <not supported> branches                
+   <not supported> branch-misses           
+   <not supported> L1-dcache-loads         
+   <not supported> L1-dcache-load-misses   
+   <not supported> LLC-loads               
+   <not supported> LLC-load-misses         
+
+       0.631648948 seconds time elapsed                                          ( +-  1.02% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 659 ms 
+Ret: 0
+Timer - Multiplication: 629 ms 
+Ret: 0
+Timer - Multiplication: 636 ms 
+Ret: 0
+Timer - Multiplication: 640 ms 
+Ret: 0
+Timer - Multiplication: 637 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conmul 1024' (5 runs):
+
+        651.638228 task-clock                #    0.995 CPUs utilized            ( +-  0.79% )
+                 5 context-switches          #    0.007 K/sec                    ( +- 14.74% )
+                 0 cpu-migrations            #    0.000 K/sec                  
+             1,891 page-faults               #    0.003 M/sec                  
+   <not supported> cycles                  
+   <not supported> stalled-cycles-frontend 
+   <not supported> stalled-cycles-backend  
+   <not supported> instructions            
+   <not supported> branches                
+   <not supported> branch-misses           
+   <not supported> L1-dcache-loads         
+   <not supported> L1-dcache-load-misses   
+   <not supported> LLC-loads               
+   <not supported> LLC-load-misses         
+
+       0.654739768 seconds time elapsed                                          ( +-  0.78% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 595 ms 
+Ret: 0
+Timer - Multiplication: 599 ms 
+Ret: 0
+Timer - Multiplication: 597 ms 
+Ret: 0
+Timer - Multiplication: 602 ms 
+Ret: 0
+Timer - Multiplication: 612 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conin 1024' (5 runs):
+
+        612.778457 task-clock                #    0.995 CPUs utilized            ( +-  0.47% )
+                 6 context-switches          #    0.009 K/sec                    ( +- 14.51% )
+                 0 cpu-migrations            #    0.000 K/sec                  
+             1,897 page-faults               #    0.003 M/sec                    ( +-  0.01% )
+   <not supported> cycles                  
+   <not supported> stalled-cycles-frontend 
+   <not supported> stalled-cycles-backend  
+   <not supported> instructions            
+   <not supported> branches                
+   <not supported> branch-misses           
+   <not supported> L1-dcache-loads         
+   <not supported> L1-dcache-load-misses   
+   <not supported> LLC-loads               
+   <not supported> LLC-load-misses         
+
+       0.616074072 seconds time elapsed                                          ( +-  0.48% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 6151 ms 
+Ret: 0
+Timer - Multiplication: 6218 ms 
+Ret: 0
+Timer - Multiplication: 6417 ms 
+Ret: 0
+Timer - Multiplication: 6032 ms 
+Ret: 0
+Timer - Multiplication: 6307 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nes 2048' (5 runs):
+
+       6283.660676 task-clock                #    0.999 CPUs utilized            ( +-  1.06% )
+                10 context-switches          #    0.002 K/sec                    ( +- 14.49% )
                  0 cpu-migrations            #    0.000 K/sec                  
             24,981 page-faults               #    0.004 M/sec                  
    <not supported> cycles                  
@@ -2921,26 +1049,26 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       6.247600491 seconds time elapsed                                          ( +-  1.06% )
+       6.287329984 seconds time elapsed                                          ( +-  1.07% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 5990 ms 
+Timer - Multiplication: 6314 ms 
 Ret: 0
-Timer - Multiplication: 6231 ms 
+Timer - Multiplication: 6213 ms 
 Ret: 0
-Timer - Multiplication: 6176 ms 
+Timer - Multiplication: 6428 ms 
 Ret: 0
-Timer - Multiplication: 6065 ms 
+Timer - Multiplication: 6340 ms 
 Ret: 0
-Timer - Multiplication: 6002 ms 
+Timer - Multiplication: 6343 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conmul 2048' (5 runs):
 
-       6128.940548 task-clock                #    0.999 CPUs utilized            ( +-  0.81% )
-                12 context-switches          #    0.002 K/sec                    ( +- 27.76% )
+       6363.951881 task-clock                #    0.999 CPUs utilized            ( +-  0.55% )
+                19 context-switches          #    0.003 K/sec                    ( +- 17.39% )
                  0 cpu-migrations            #    0.000 K/sec                  
-             1,927 page-faults               #    0.314 K/sec                  
+             1,927 page-faults               #    0.303 K/sec                  
    <not supported> cycles                  
    <not supported> stalled-cycles-frontend 
    <not supported> stalled-cycles-backend  
@@ -2952,26 +1080,26 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       6.132884340 seconds time elapsed                                          ( +-  0.81% )
+       6.368203170 seconds time elapsed                                          ( +-  0.55% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 5604 ms 
+Timer - Multiplication: 6227 ms 
 Ret: 0
-Timer - Multiplication: 5716 ms 
+Timer - Multiplication: 6043 ms 
 Ret: 0
-Timer - Multiplication: 6025 ms 
+Timer - Multiplication: 6197 ms 
 Ret: 0
-Timer - Multiplication: 5932 ms 
+Timer - Multiplication: 5926 ms 
 Ret: 0
-Timer - Multiplication: 5876 ms 
+Timer - Multiplication: 5873 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conin 2048' (5 runs):
 
-       5865.576414 task-clock                #    0.999 CPUs utilized            ( +-  1.29% )
-                15 context-switches          #    0.003 K/sec                    ( +- 12.82% )
-                 1 cpu-migrations            #    0.000 K/sec                    ( +-100.00% )
-             1,940 page-faults               #    0.331 K/sec                  
+       6090.261508 task-clock                #    0.999 CPUs utilized            ( +-  1.16% )
+                10 context-switches          #    0.002 K/sec                    ( +- 17.61% )
+                 0 cpu-migrations            #    0.000 K/sec                  
+             1,940 page-faults               #    0.319 K/sec                    ( +-  0.01% )
    <not supported> cycles                  
    <not supported> stalled-cycles-frontend 
    <not supported> stalled-cycles-backend  
@@ -2983,6 +1111,6 @@ Ret: 0
    <not supported> LLC-loads               
    <not supported> LLC-load-misses         
 
-       5.871986729 seconds time elapsed                                          ( +-  1.32% )
+       6.093634583 seconds time elapsed                                          ( +-  1.16% )
 
 --------------------------------------------------------------------------------------------------------
