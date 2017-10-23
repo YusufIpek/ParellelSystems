@@ -12,11 +12,11 @@ for i in {0..2};
 do
   for MSIZE in 256 512 1024 2048;
   do
-    perf stat -d -r$repeats ./mmul_nes $MSIZE >>log_test.txt 2>&1
+    perf stat -d -e task-clock,cycles,instructions,cache-references,cache-misses -r$repeats ./mmul_nes $MSIZE >>log_test.txt 2>&1
     echo $seperator >>log_test.txt
-    perf stat -d -r$repeats ./mmul_conmul $MSIZE >>log_test.txt 2>&1
+    perf stat -d -e task-clock,cycles,instructions,cache-references,cache-misses -r$repeats ./mmul_conmul $MSIZE >>log_test.txt 2>&1
     echo $seperator >>log_test.txt
-    perf stat -d -r$repeats ./mmul_conin $MSIZE >>log_test.txt 2>&1
+    perf stat -d -e task-clock,cycles,instructions,cache-references,cache-misses -r$repeats ./mmul_conin $MSIZE >>log_test.txt 2>&1
     echo $seperator >>log_test.txt
   done
 done
