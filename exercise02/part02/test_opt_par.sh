@@ -12,7 +12,7 @@ g++ $input_file -Wall -std=c++11 -O$opt -fopenmp -o mmul_conin -DCONTIGUOUS_WITH
 
 for i in {0..2};
 do
-  for MSIZE in 256 512 1024 2048;
+  for MSIZE in 256 512 1024 2048 4096 8192;
   do
     perf stat -d -e task-clock,cycles,instructions,cache-references,cache-misses -r$repeats ./mmul_nes $MSIZE >> $filename 2>&1
     echo $seperator >>$filename
