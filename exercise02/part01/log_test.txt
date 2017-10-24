@@ -1,1152 +1,1044 @@
-Timer - Multiplication: 19 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 18 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 14 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 14 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 13 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 256' (5 runs):
 
-         17.650800 task-clock:HG             #    0.901 CPUs utilized            ( +-  7.24% )
-                 3 context-switches:HG       #    0.147 K/sec                    ( +-  9.42% )
-                 0 cpu-migrations:HG         #    0.023 K/sec                    ( +- 61.24% )
-               735 page-faults:HG            #    0.042 M/sec                    ( +-  0.03% )
-        45,345,666 cycles:HG                 #    2.569 GHz                      ( +-  4.31% ) [37.56%]
-         6,941,703 stalled-cycles-frontend:HG #   15.31% frontend cycles idle     ( +-  1.89% ) [51.23%]
-   <not supported> stalled-cycles-backend:HG
-       115,266,021 instructions:HG           #    2.54  insns per cycle        
-                                             #    0.06  stalled cycles per insn  ( +-  2.61% ) [64.29%]
-         9,754,668 branches:HG               #  552.647 M/sec                    ( +-  2.65% ) [65.12%]
-            86,609 branch-misses:HG          #    0.89% of all branches          ( +-  0.70% ) [66.31%]
-        44,725,382 L1-dcache-loads:HG        # 2533.901 M/sec                    ( +-  3.21% ) [31.08%]
-         2,298,241 L1-dcache-load-misses:HG  #    5.14% of all L1-dcache hits    ( +-  2.93% ) [24.32%]
-            69,019 LLC-loads:HG              #    3.910 M/sec                    ( +-  8.95% ) [23.81%]
-   <not supported> LLC-load-misses:HG      
+         11.101276 task-clock                #    0.817 CPUs utilized            ( +-  0.35% )
+        36,114,509 cycles                    #    3.253 GHz                      ( +-  0.59% ) [74.46%]
+       124,242,461 instructions              #    3.44  insns per cycle          ( +-  0.29% ) [90.99%]
+         4,353,612 cache-references          #  392.172 M/sec                    ( +-  2.02% ) [91.03%]
+            71,717 cache-misses              #    1.647 % of all cache refs      ( +-  8.39% ) [91.02%]
+        10,025,958 branch                    #  903.136 M/sec                    ( +-  0.26% ) [91.09%]
+            83,671 branch-misses             #    7.537 M/sec                    ( +-  0.23% ) [91.03%]
+               736 page-faults               #    0.066 M/sec                    ( +-  0.03% )
+        42,788,608 L1-dcache-loads           # 3854.387 M/sec                    ( +-  0.25% ) [91.00%]
+         2,251,369 L1-dcache-load-misses     #    5.26% of all L1-dcache hits    ( +-  0.14% ) [91.05%]
+            33,021 LLC-loads                 #    2.975 M/sec                    ( +-  0.22% ) [91.02%]
+             2,497 LLC-load-misses           #    7.56% of all LL-cache hits     ( +- 19.36% ) [88.48%]
 
-       0.019595703 seconds time elapsed                                          ( +-  6.98% )
+       0.013583837 seconds time elapsed                                          ( +-  2.54% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 17 ms 
+Timer - Multiplication: 16 ms 
 Ret: 0
-Timer - Multiplication: 14 ms 
+Timer - Multiplication: 15 ms 
 Ret: 0
-Timer - Multiplication: 14 ms 
+Timer - Multiplication: 16 ms 
 Ret: 0
-Timer - Multiplication: 14 ms 
+Timer - Multiplication: 15 ms 
 Ret: 0
-Timer - Multiplication: 14 ms 
+Timer - Multiplication: 16 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conmul 256' (5 runs):
 
-         16.382403 task-clock:HG             #    0.902 CPUs utilized            ( +-  3.25% )
-                 3 context-switches:HG       #    0.159 K/sec                    ( +-  9.42% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                  
-               730 page-faults:HG            #    0.045 M/sec                  
-        56,660,939 cycles:HG                 #    3.459 GHz                      ( +-  2.38% ) [37.23%]
-         7,451,737 stalled-cycles-frontend:HG #   13.15% frontend cycles idle     ( +-  9.45% ) [50.40%]
-   <not supported> stalled-cycles-backend:HG
-       166,597,742 instructions:HG           #    2.94  insns per cycle        
-                                             #    0.04  stalled cycles per insn  ( +-  0.46% ) [63.25%]
-        17,651,969 branches:HG               # 1077.496 M/sec                    ( +-  0.78% ) [63.42%]
-            89,225 branch-misses:HG          #    0.51% of all branches          ( +-  1.21% ) [63.35%]
-        54,500,432 L1-dcache-loads:HG        # 3326.767 M/sec                    ( +-  3.59% ) [26.75%]
-         2,194,620 L1-dcache-load-misses:HG  #    4.03% of all L1-dcache hits    ( +-  3.37% ) [26.21%]
-            56,579 LLC-loads:HG              #    3.454 M/sec                    ( +- 15.50% ) [26.05%]
-   <not supported> LLC-load-misses:HG      
+         17.384504 task-clock                #    0.881 CPUs utilized            ( +-  0.58% )
+        56,661,631 cycles                    #    3.259 GHz                      ( +-  0.13% ) [77.09%]
+       173,285,261 instructions              #    3.06  insns per cycle          ( +-  0.09% ) [88.59%]
+         4,679,489 cache-references          #  269.176 M/sec                    ( +-  1.34% ) [88.56%]
+            99,768 cache-misses              #    2.132 % of all cache refs      ( +-  9.60% ) [88.58%]
+        17,981,130 branch                    # 1034.319 M/sec                    ( +-  0.10% ) [88.53%]
+            84,440 branch-misses             #    4.857 M/sec                    ( +-  0.12% ) [88.52%]
+               731 page-faults               #    0.042 M/sec                  
+        51,445,370 L1-dcache-loads           # 2959.266 M/sec                    ( +-  0.39% ) [90.21%]
+         2,243,655 L1-dcache-load-misses     #    4.36% of all L1-dcache hits    ( +-  0.16% ) [92.94%]
+            18,723 LLC-loads                 #    1.077 M/sec                    ( +-  0.54% ) [94.26%]
+             3,065 LLC-load-misses           #   16.37% of all LL-cache hits     ( +- 10.20% ) [91.47%]
 
-       0.018166020 seconds time elapsed                                          ( +-  2.80% )
+       0.019736923 seconds time elapsed                                          ( +-  0.86% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 11 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 11 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 11 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 11 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 11 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conin 256' (5 runs):
 
-         13.011971 task-clock:HG             #    0.879 CPUs utilized            ( +-  0.48% )
-                 3 context-switches:HG       #    0.231 K/sec                    ( +- 10.54% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                  
-               731 page-faults:HG            #    0.056 M/sec                  
-        35,614,322 cycles:HG                 #    2.737 GHz                      ( +-  8.85% ) [38.46%]
-         5,202,185 stalled-cycles-frontend:HG #   14.61% frontend cycles idle     ( +- 12.23% ) [54.68%]
-   <not supported> stalled-cycles-backend:HG
-       105,621,984 instructions:HG           #    2.97  insns per cycle        
-                                             #    0.05  stalled cycles per insn  ( +-  3.91% ) [68.57%]
-         9,158,802 branches:HG               #  703.875 M/sec                    ( +-  2.54% ) [72.22%]
-            83,461 branch-misses:HG          #    0.91% of all branches          ( +-  2.11% ) [76.23%]
-        43,001,268 L1-dcache-loads:HG        # 3304.747 M/sec                    ( +-  1.13% ) [25.55%]
-         2,270,065 L1-dcache-load-misses:HG  #    5.28% of all L1-dcache hits    ( +-  1.91% ) [18.47%]
-            48,688 LLC-loads:HG              #    3.742 M/sec                    ( +- 11.79% ) [18.17%]
-   <not supported> LLC-load-misses:HG      
+         10.894208 task-clock                #    0.807 CPUs utilized            ( +-  0.42% )
+        35,383,704 cycles                    #    3.248 GHz                      ( +-  0.14% ) [77.18%]
+       123,499,454 instructions              #    3.49  insns per cycle          ( +-  0.14% ) [90.83%]
+         4,289,183 cache-references          #  393.712 M/sec                    ( +-  1.14% ) [90.86%]
+            79,884 cache-misses              #    1.862 % of all cache refs      ( +-  5.92% ) [91.24%]
+         9,914,817 branch                    #  910.100 M/sec                    ( +-  0.04% ) [90.86%]
+            83,391 branch-misses             #    7.655 M/sec                    ( +-  0.17% ) [90.86%]
+               732 page-faults               #    0.067 M/sec                  
+        42,530,819 L1-dcache-loads           # 3903.984 M/sec                    ( +-  0.06% ) [90.86%]
+         2,219,243 L1-dcache-load-misses     #    5.22% of all L1-dcache hits    ( +-  0.06% ) [90.86%]
+            31,568 LLC-loads                 #    2.898 M/sec                    ( +-  1.43% ) [91.33%]
+             2,001 LLC-load-misses           #    6.34% of all LL-cache hits     ( +- 37.90% ) [86.19%]
 
-       0.014808320 seconds time elapsed                                          ( +-  0.64% )
+       0.013493119 seconds time elapsed                                          ( +-  0.78% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 93 ms 
+Timer - Multiplication: 75 ms 
 Ret: 0
-Timer - Multiplication: 92 ms 
+Timer - Multiplication: 75 ms 
 Ret: 0
-Timer - Multiplication: 89 ms 
+Timer - Multiplication: 75 ms 
 Ret: 0
-Timer - Multiplication: 91 ms 
+Timer - Multiplication: 74 ms 
 Ret: 0
-Timer - Multiplication: 91 ms 
+Timer - Multiplication: 75 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 512' (5 runs):
 
-         94.578667 task-clock:HG             #    0.980 CPUs utilized            ( +-  0.61% )
-                 3 context-switches:HG       #    0.030 K/sec                    ( +- 13.36% )
-                 1 cpu-migrations:HG         #    0.006 K/sec                    ( +- 66.67% )
-             1,895 page-faults:HG            #    0.020 M/sec                  
-       352,187,138 cycles:HG                 #    3.724 GHz                      ( +-  1.16% ) [37.06%]
-        16,594,581 stalled-cycles-frontend:HG #    4.71% frontend cycles idle     ( +-  8.91% ) [49.76%]
-   <not supported> stalled-cycles-backend:HG
-       950,506,933 instructions:HG           #    2.70  insns per cycle        
-                                             #    0.02  stalled cycles per insn  ( +-  0.48% ) [62.40%]
-        71,852,349 branches:HG               #  759.710 M/sec                    ( +-  0.51% ) [62.38%]
-           287,921 branch-misses:HG          #    0.40% of all branches          ( +-  0.95% ) [63.55%]
-       346,066,853 L1-dcache-loads:HG        # 3659.037 M/sec                    ( +-  0.14% ) [46.76%]
-        17,507,440 L1-dcache-load-misses:HG  #    5.06% of all L1-dcache hits    ( +-  0.52% ) [25.30%]
-           658,573 LLC-loads:HG              #    6.963 M/sec                    ( +-  9.93% ) [24.57%]
-   <not supported> LLC-load-misses:HG      
+         78.497395 task-clock                #    0.966 CPUs utilized            ( +-  0.20% )
+       258,335,484 cycles                    #    3.291 GHz                      ( +-  0.17% ) [79.68%]
+       966,787,145 instructions              #    3.74  insns per cycle          ( +-  0.07% ) [89.86%]
+        34,926,057 cache-references          #  444.933 M/sec                    ( +-  0.11% ) [89.82%]
+           657,853 cache-misses              #    1.884 % of all cache refs      ( +- 13.30% ) [89.81%]
+        72,175,440 branch                    #  919.463 M/sec                    ( +-  0.12% ) [89.82%]
+           282,623 branch-misses             #    3.600 M/sec                    ( +-  0.11% ) [89.81%]
+             1,896 page-faults               #    0.024 M/sec                    ( +-  0.01% )
+       337,839,873 L1-dcache-loads           # 4303.835 M/sec                    ( +-  0.26% ) [89.78%]
+        17,461,766 L1-dcache-load-misses     #    5.17% of all L1-dcache hits    ( +-  0.16% ) [90.25%]
+           168,270 LLC-loads                 #    2.144 M/sec                    ( +-  1.47% ) [90.74%]
+            13,786 LLC-load-misses           #    8.19% of all LL-cache hits     ( +-  3.55% ) [90.33%]
 
-       0.096490157 seconds time elapsed                                          ( +-  0.58% )
+       0.081286534 seconds time elapsed                                          ( +-  0.34% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 110 ms 
+Timer - Multiplication: 124 ms 
 Ret: 0
-Timer - Multiplication: 109 ms 
+Timer - Multiplication: 124 ms 
 Ret: 0
-Timer - Multiplication: 109 ms 
+Timer - Multiplication: 124 ms 
 Ret: 0
-Timer - Multiplication: 110 ms 
+Timer - Multiplication: 123 ms 
 Ret: 0
-Timer - Multiplication: 109 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conmul 512' (5 runs):
-
-        112.457588 task-clock:HG             #    0.983 CPUs utilized            ( +-  0.23% )
-                 3 context-switches:HG       #    0.027 K/sec                  
-                 0 cpu-migrations:HG         #    0.000 K/sec                  
-             1,882 page-faults:HG            #    0.017 M/sec                  
-       428,430,400 cycles:HG                 #    3.810 GHz                      ( +-  0.25% ) [37.67%]
-        20,038,866 stalled-cycles-frontend:HG #    4.68% frontend cycles idle     ( +-  1.76% ) [50.22%]
-   <not supported> stalled-cycles-backend:HG
-     1,348,851,052 instructions:HG           #    3.15  insns per cycle        
-                                             #    0.01  stalled cycles per insn  ( +-  0.17% ) [62.67%]
-       137,866,868 branches:HG               # 1225.945 M/sec                    ( +-  0.12% ) [62.67%]
-           292,675 branch-misses:HG          #    0.21% of all branches          ( +-  0.31% ) [62.66%]
-       415,794,953 L1-dcache-loads:HG        # 3697.349 M/sec                    ( +-  0.19% ) [46.23%]
-        17,093,208 L1-dcache-load-misses:HG  #    4.11% of all L1-dcache hits    ( +-  0.47% ) [25.34%]
-           481,693 LLC-loads:HG              #    4.283 M/sec                    ( +- 13.16% ) [25.12%]
-   <not supported> LLC-load-misses:HG      
-
-       0.114394731 seconds time elapsed                                          ( +-  0.27% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 90 ms 
-Ret: 0
-Timer - Multiplication: 92 ms 
-Ret: 0
-Timer - Multiplication: 89 ms 
-Ret: 0
-Timer - Multiplication: 89 ms 
-Ret: 0
-Timer - Multiplication: 89 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conin 512' (5 runs):
-
-         93.129189 task-clock:HG             #    0.978 CPUs utilized            ( +-  0.60% )
-                 6 context-switches:HG       #    0.064 K/sec                    ( +- 31.62% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                  
-             1,885 page-faults:HG            #    0.020 M/sec                  
-       340,614,429 cycles:HG                 #    3.657 GHz                      ( +-  0.89% ) [37.75%]
-        12,206,346 stalled-cycles-frontend:HG #    3.58% frontend cycles idle     ( +-  8.24% ) [50.63%]
-   <not supported> stalled-cycles-backend:HG
-       942,877,154 instructions:HG           #    2.77  insns per cycle        
-                                             #    0.01  stalled cycles per insn  ( +-  0.38% ) [63.29%]
-        71,855,789 branches:HG               #  771.571 M/sec                    ( +-  0.58% ) [63.56%]
-           290,866 branch-misses:HG          #    0.40% of all branches          ( +-  0.36% ) [63.92%]
-       342,312,412 L1-dcache-loads:HG        # 3675.673 M/sec                    ( +-  0.27% ) [46.58%]
-        17,440,771 L1-dcache-load-misses:HG  #    5.09% of all L1-dcache hits    ( +-  0.56% ) [24.33%]
-           456,791 LLC-loads:HG              #    4.905 M/sec                    ( +- 15.48% ) [24.78%]
-   <not supported> LLC-load-misses:HG      
-
-       0.095242746 seconds time elapsed                                          ( +-  0.71% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 759 ms 
-Ret: 0
-Timer - Multiplication: 752 ms 
-Ret: 0
-Timer - Multiplication: 751 ms 
-Ret: 0
-Timer - Multiplication: 762 ms 
-Ret: 0
-Timer - Multiplication: 750 ms 
-Ret: 0
-
- Performance counter stats for './mmul_nes 1024' (5 runs):
-
-        763.916274 task-clock:HG             #    0.997 CPUs utilized            ( +-  0.32% )
-                13 context-switches:HG       #    0.016 K/sec                    ( +- 34.56% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                    ( +-100.00% )
-             6,518 page-faults:HG            #    0.009 M/sec                    ( +-  0.00% )
-     2,919,110,399 cycles:HG                 #    3.821 GHz                      ( +-  0.28% ) [37.52%]
-       227,959,633 stalled-cycles-frontend:HG #    7.81% frontend cycles idle     ( +-  3.16% ) [50.04%]
-   <not supported> stalled-cycles-backend:HG
-     7,574,728,052 instructions:HG           #    2.59  insns per cycle        
-                                             #    0.03  stalled cycles per insn  ( +-  0.07% ) [62.54%]
-       553,499,279 branches:HG               #  724.555 M/sec                    ( +-  0.11% ) [62.55%]
-         1,093,306 branch-misses:HG          #    0.20% of all branches          ( +-  0.24% ) [62.56%]
-     2,718,357,343 L1-dcache-loads:HG        # 3558.449 M/sec                    ( +-  0.12% ) [49.48%]
-       137,742,586 L1-dcache-load-misses:HG  #    5.07% of all L1-dcache hits    ( +-  0.19% ) [25.01%]
-        25,105,625 LLC-loads:HG              #   32.864 M/sec                    ( +- 10.26% ) [25.00%]
-   <not supported> LLC-load-misses:HG      
-
-       0.765982019 seconds time elapsed                                          ( +-  0.32% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 900 ms 
-Ret: 0
-Timer - Multiplication: 888 ms 
-Ret: 0
-Timer - Multiplication: 887 ms 
-Ret: 0
-Timer - Multiplication: 894 ms 
-Ret: 0
-Timer - Multiplication: 890 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conmul 1024' (5 runs):
-
-        897.814470 task-clock:HG             #    0.998 CPUs utilized            ( +-  0.26% )
-                16 context-switches:HG       #    0.017 K/sec                    ( +- 30.38% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                  
-             1,891 page-faults:HG            #    0.002 M/sec                    ( +-  0.01% )
-     3,435,306,083 cycles:HG                 #    3.826 GHz                      ( +-  0.20% ) [37.44%]
-       185,101,328 stalled-cycles-frontend:HG #    5.39% frontend cycles idle     ( +-  3.67% ) [50.00%]
-   <not supported> stalled-cycles-backend:HG
-    10,792,030,423 instructions:HG           #    3.14  insns per cycle        
-                                             #    0.02  stalled cycles per insn  ( +-  0.03% ) [62.51%]
-     1,083,900,335 branches:HG               # 1207.265 M/sec                    ( +-  0.05% ) [62.53%]
-         1,087,566 branch-misses:HG          #    0.10% of all branches          ( +-  0.16% ) [62.59%]
-     3,233,618,821 L1-dcache-loads:HG        # 3601.656 M/sec                    ( +-  0.06% ) [49.61%]
-       136,850,427 L1-dcache-load-misses:HG  #    4.23% of all L1-dcache hits    ( +-  0.10% ) [24.99%]
-        11,099,946 LLC-loads:HG              #   12.363 M/sec                    ( +-  6.63% ) [24.98%]
-   <not supported> LLC-load-misses:HG      
-
-       0.899956055 seconds time elapsed                                          ( +-  0.26% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 761 ms 
-Ret: 0
-Timer - Multiplication: 754 ms 
-Ret: 0
-Timer - Multiplication: 758 ms 
-Ret: 0
-Timer - Multiplication: 762 ms 
-Ret: 0
-Timer - Multiplication: 753 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conin 1024' (5 runs):
-
-        763.987629 task-clock:HG             #    0.997 CPUs utilized            ( +-  0.24% )
-                15 context-switches:HG       #    0.020 K/sec                    ( +- 28.94% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                    ( +-100.00% )
-             1,897 page-faults:HG            #    0.002 M/sec                    ( +-  0.01% )
-     2,916,740,466 cycles:HG                 #    3.818 GHz                      ( +-  0.23% ) [37.52%]
-       222,128,711 stalled-cycles-frontend:HG #    7.62% frontend cycles idle     ( +-  2.60% ) [50.04%]
-   <not supported> stalled-cycles-backend:HG
-     7,583,167,380 instructions:HG           #    2.60  insns per cycle        
-                                             #    0.03  stalled cycles per insn  ( +-  0.07% ) [62.54%]
-       552,698,494 branches:HG               #  723.439 M/sec                    ( +-  0.10% ) [62.54%]
-         1,087,509 branch-misses:HG          #    0.20% of all branches          ( +-  0.07% ) [62.56%]
-     2,697,626,696 L1-dcache-loads:HG        # 3530.982 M/sec                    ( +-  0.15% ) [49.50%]
-       137,030,729 L1-dcache-load-misses:HG  #    5.08% of all L1-dcache hits    ( +-  0.19% ) [25.01%]
-        12,141,135 LLC-loads:HG              #   15.892 M/sec                    ( +-  2.67% ) [25.01%]
-   <not supported> LLC-load-misses:HG      
-
-       0.766137005 seconds time elapsed                                          ( +-  0.24% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 6006 ms 
-Ret: 0
-Timer - Multiplication: 5987 ms 
-Ret: 0
-Timer - Multiplication: 5987 ms 
-Ret: 0
-Timer - Multiplication: 5979 ms 
-Ret: 0
-Timer - Multiplication: 5985 ms 
-Ret: 0
-
- Performance counter stats for './mmul_nes 2048' (5 runs):
-
-       6033.186617 task-clock:HG             #    1.000 CPUs utilized            ( +-  0.07% )
-                24 context-switches:HG       #    0.004 K/sec                    ( +- 18.87% )
-                 1 cpu-migrations:HG         #    0.000 K/sec                    ( +- 40.82% )
-            24,980 page-faults:HG            #    0.004 M/sec                    ( +-  0.00% )
-    23,167,226,501 cycles:HG                 #    3.840 GHz                      ( +-  0.03% ) [37.50%]
-     1,632,880,956 stalled-cycles-frontend:HG #    7.05% frontend cycles idle     ( +-  0.25% ) [50.00%]
-   <not supported> stalled-cycles-backend:HG
-    60,426,264,417 instructions:HG           #    2.61  insns per cycle        
-                                             #    0.03  stalled cycles per insn  ( +-  0.01% ) [62.50%]
-     4,367,672,386 branches:HG               #  723.941 M/sec                    ( +-  0.01% ) [62.50%]
-         4,295,350 branch-misses:HG          #    0.10% of all branches          ( +-  0.02% ) [62.51%]
-    21,567,949,009 L1-dcache-loads:HG        # 3574.885 M/sec                    ( +-  0.01% ) [49.94%]
-     1,222,974,383 L1-dcache-load-misses:HG  #    5.67% of all L1-dcache hits    ( +-  0.04% ) [25.00%]
-       642,641,926 LLC-loads:HG              #  106.518 M/sec                    ( +-  2.09% ) [25.00%]
-   <not supported> LLC-load-misses:HG      
-
-       6.036200176 seconds time elapsed                                          ( +-  0.07% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 7059 ms 
-Ret: 0
-Timer - Multiplication: 7025 ms 
-Ret: 0
-Timer - Multiplication: 7024 ms 
-Ret: 0
-Timer - Multiplication: 7031 ms 
-Ret: 0
-Timer - Multiplication: 7021 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conmul 2048' (5 runs):
-
-       7056.720399 task-clock:HG             #    0.999 CPUs utilized            ( +-  0.11% )
-                30 context-switches:HG       #    0.004 K/sec                    ( +-  4.08% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                    ( +- 61.24% )
-             1,927 page-faults:HG            #    0.273 K/sec                  
-    27,111,735,921 cycles:HG                 #    3.842 GHz                      ( +-  0.02% ) [37.50%]
-     1,228,832,651 stalled-cycles-frontend:HG #    4.53% frontend cycles idle     ( +-  0.81% ) [50.00%]
-   <not supported> stalled-cycles-backend:HG
-    86,039,331,659 instructions:HG           #    3.17  insns per cycle        
-                                             #    0.01  stalled cycles per insn  ( +-  0.02% ) [62.50%]
-     8,625,174,058 branches:HG               # 1222.264 M/sec                    ( +-  0.02% ) [62.50%]
-         4,265,262 branch-misses:HG          #    0.05% of all branches          ( +-  0.04% ) [62.50%]
-    25,843,613,995 L1-dcache-loads:HG        # 3662.270 M/sec                    ( +-  0.04% ) [49.95%]
-     1,117,428,188 L1-dcache-load-misses:HG  #    4.32% of all L1-dcache hits    ( +-  0.16% ) [25.01%]
-       431,218,408 LLC-loads:HG              #   61.107 M/sec                    ( +-  0.16% ) [25.00%]
-   <not supported> LLC-load-misses:HG      
-
-       7.062079859 seconds time elapsed                                          ( +-  0.13% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 5846 ms 
-Ret: 0
-Timer - Multiplication: 5869 ms 
-Ret: 0
-Timer - Multiplication: 5854 ms 
-Ret: 0
-Timer - Multiplication: 5844 ms 
-Ret: 0
-Timer - Multiplication: 5846 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conin 2048' (5 runs):
-
-       5875.436162 task-clock:HG             #    0.999 CPUs utilized            ( +-  0.08% )
-                29 context-switches:HG       #    0.005 K/sec                    ( +-  1.78% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                    ( +-100.00% )
-             1,940 page-faults:HG            #    0.330 K/sec                  
-    22,551,488,700 cycles:HG                 #    3.838 GHz                      ( +-  0.05% ) [37.50%]
-     1,049,810,656 stalled-cycles-frontend:HG #    4.66% frontend cycles idle     ( +-  0.94% ) [50.00%]
-   <not supported> stalled-cycles-backend:HG
-    60,339,196,058 instructions:HG           #    2.68  insns per cycle        
-                                             #    0.02  stalled cycles per insn  ( +-  0.01% ) [62.51%]
-     4,346,570,732 branches:HG               #  739.787 M/sec                    ( +-  0.01% ) [62.51%]
-         4,260,631 branch-misses:HG          #    0.10% of all branches          ( +-  0.03% ) [62.52%]
-    21,534,152,674 L1-dcache-loads:HG        # 3665.116 M/sec                    ( +-  0.00% ) [49.95%]
-     1,122,300,327 L1-dcache-load-misses:HG  #    5.21% of all L1-dcache hits    ( +-  0.21% ) [24.99%]
-       579,913,710 LLC-loads:HG              #   98.701 M/sec                    ( +-  0.49% ) [24.98%]
-   <not supported> LLC-load-misses:HG      
-
-       5.878766134 seconds time elapsed                                          ( +-  0.08% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 11 ms 
-Ret: 0
-Timer - Multiplication: 11 ms 
-Ret: 0
-Timer - Multiplication: 11 ms 
-Ret: 0
-Timer - Multiplication: 11 ms 
-Ret: 0
-Timer - Multiplication: 11 ms 
-Ret: 0
-
- Performance counter stats for './mmul_nes 256' (5 runs):
-
-         13.068868 task-clock:HG             #    0.886 CPUs utilized            ( +-  0.23% )
-                 3 context-switches:HG       #    0.214 K/sec                    ( +-  7.14% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                  
-               735 page-faults:HG            #    0.056 M/sec                    ( +-  0.03% )
-        31,574,111 cycles:HG                 #    2.416 GHz                      ( +-  0.54% ) [41.91%]
-         4,646,740 stalled-cycles-frontend:HG #   14.72% frontend cycles idle     ( +-  3.74% ) [58.36%]
-   <not supported> stalled-cycles-backend:HG
-        98,972,519 instructions:HG           #    3.13  insns per cycle        
-                                             #    0.05  stalled cycles per insn  ( +-  0.84% ) [71.71%]
-         8,801,603 branches:HG               #  673.479 M/sec                    ( +-  0.67% ) [74.15%]
-            80,850 branch-misses:HG          #    0.92% of all branches          ( +-  0.29% ) [76.20%]
-        44,166,755 L1-dcache-loads:HG        # 3379.539 M/sec                    ( +-  0.47% ) [26.58%]
-         2,260,746 L1-dcache-load-misses:HG  #    5.12% of all L1-dcache hits    ( +-  0.47% ) [18.93%]
-            58,415 LLC-loads:HG              #    4.470 M/sec                    ( +-  2.04% ) [15.30%]
-   <not supported> LLC-load-misses:HG      
-
-       0.014751928 seconds time elapsed                                          ( +-  0.28% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 14 ms 
-Ret: 0
-Timer - Multiplication: 14 ms 
-Ret: 0
-Timer - Multiplication: 14 ms 
-Ret: 0
-Timer - Multiplication: 14 ms 
-Ret: 0
-Timer - Multiplication: 14 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conmul 256' (5 runs):
-
-         15.568939 task-clock:HG             #    0.898 CPUs utilized            ( +-  0.34% )
-                 3 context-switches:HG       #    0.180 K/sec                    ( +-  7.14% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                  
-               730 page-faults:HG            #    0.047 M/sec                  
-        57,490,060 cycles:HG                 #    3.693 GHz                      ( +-  0.21% ) [35.84%]
-         6,912,578 stalled-cycles-frontend:HG #   12.02% frontend cycles idle     ( +-  2.95% ) [48.67%]
-   <not supported> stalled-cycles-backend:HG
-       167,759,634 instructions:HG           #    2.92  insns per cycle        
-                                             #    0.04  stalled cycles per insn  ( +-  0.11% ) [61.50%]
-        17,810,110 branches:HG               # 1143.951 M/sec                    ( +-  0.13% ) [61.50%]
-            86,787 branch-misses:HG          #    0.49% of all branches          ( +-  0.67% ) [61.54%]
-        50,986,457 L1-dcache-loads:HG        # 3274.883 M/sec                    ( +-  3.37% ) [27.81%]
-         2,158,854 L1-dcache-load-misses:HG  #    4.23% of all L1-dcache hits    ( +-  0.69% ) [27.56%]
-            80,813 LLC-loads:HG              #    5.191 M/sec                    ( +- 10.91% ) [25.76%]
-   <not supported> LLC-load-misses:HG      
-
-       0.017336245 seconds time elapsed                                          ( +-  0.43% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 11 ms 
-Ret: 0
-Timer - Multiplication: 11 ms 
-Ret: 0
-Timer - Multiplication: 11 ms 
-Ret: 0
-Timer - Multiplication: 11 ms 
-Ret: 0
-Timer - Multiplication: 11 ms 
-Ret: 0
-
- Performance counter stats for './mmul_conin 256' (5 runs):
-
-         12.904004 task-clock:HG             #    0.889 CPUs utilized            ( +-  0.55% )
-                 3 context-switches:HG       #    0.201 K/sec                    ( +-  9.42% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                  
-               731 page-faults:HG            #    0.057 M/sec                    ( +-  0.03% )
-        35,204,146 cycles:HG                 #    2.728 GHz                      ( +-  9.13% ) [37.46%]
-         4,921,798 stalled-cycles-frontend:HG #   13.98% frontend cycles idle     ( +-  5.91% ) [53.98%]
-   <not supported> stalled-cycles-backend:HG
-       104,479,136 instructions:HG           #    2.97  insns per cycle        
-                                             #    0.05  stalled cycles per insn  ( +-  4.56% ) [68.11%]
-         9,059,374 branches:HG               #  702.059 M/sec                    ( +-  2.90% ) [71.80%]
-            81,779 branch-misses:HG          #    0.90% of all branches          ( +-  1.56% ) [76.12%]
-        44,023,928 L1-dcache-loads:HG        # 3411.649 M/sec                    ( +-  0.91% ) [26.08%]
-         2,309,870 L1-dcache-load-misses:HG  #    5.25% of all L1-dcache hits    ( +-  1.68% ) [18.22%]
-            50,189 LLC-loads:HG              #    3.889 M/sec                    ( +- 13.23% ) [18.53%]
-   <not supported> LLC-load-misses:HG      
-
-       0.014521433 seconds time elapsed                                          ( +-  0.73% )
-
---------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 92 ms 
-Ret: 0
-Timer - Multiplication: 90 ms 
-Ret: 0
-Timer - Multiplication: 90 ms 
-Ret: 0
-Timer - Multiplication: 89 ms 
-Ret: 0
-Timer - Multiplication: 90 ms 
-Ret: 0
-
- Performance counter stats for './mmul_nes 512' (5 runs):
-
-         93.617097 task-clock:HG             #    0.962 CPUs utilized            ( +-  0.48% )
-                 7 context-switches:HG       #    0.073 K/sec                    ( +- 52.28% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                  
-             1,895 page-faults:HG            #    0.020 M/sec                    ( +-  0.01% )
-       344,366,660 cycles:HG                 #    3.678 GHz                      ( +-  1.25% ) [37.36%]
-        14,303,132 stalled-cycles-frontend:HG #    4.15% frontend cycles idle     ( +- 13.47% ) [50.22%]
-   <not supported> stalled-cycles-backend:HG
-       941,925,855 instructions:HG           #    2.74  insns per cycle        
-                                             #    0.02  stalled cycles per insn  ( +-  0.53% ) [62.91%]
-        71,647,476 branches:HG               #  765.325 M/sec                    ( +-  0.56% ) [63.36%]
-           290,032 branch-misses:HG          #    0.40% of all branches          ( +-  0.53% ) [63.94%]
-       345,428,197 L1-dcache-loads:HG        # 3689.798 M/sec                    ( +-  0.11% ) [46.86%]
-        17,553,902 L1-dcache-load-misses:HG  #    5.08% of all L1-dcache hits    ( +-  0.45% ) [24.56%]
-           483,216 LLC-loads:HG              #    5.162 M/sec                    ( +- 17.42% ) [24.22%]
-   <not supported> LLC-load-misses:HG      
-
-       0.097288380 seconds time elapsed                                          ( +-  1.00% )
-
---------------------------------------------------------------------------------------------------------
 Timer - Multiplication: 125 ms 
 Ret: 0
-Timer - Multiplication: 109 ms 
-Ret: 0
-Timer - Multiplication: 109 ms 
-Ret: 0
-Timer - Multiplication: 109 ms 
-Ret: 0
-Timer - Multiplication: 109 ms 
-Ret: 0
 
  Performance counter stats for './mmul_conmul 512' (5 runs):
 
-        115.543726 task-clock:HG             #    0.985 CPUs utilized            ( +-  2.92% )
-                 2 context-switches:HG       #    0.019 K/sec                    ( +-  9.09% )
-                 1 cpu-migrations:HG         #    0.007 K/sec                    ( +- 25.00% )
-             1,882 page-faults:HG            #    0.016 M/sec                    ( +-  0.01% )
-       428,288,969 cycles:HG                 #    3.707 GHz                      ( +-  0.14% ) [37.65%]
-        20,060,374 stalled-cycles-frontend:HG #    4.68% frontend cycles idle     ( +-  2.96% ) [50.16%]
-   <not supported> stalled-cycles-backend:HG
-     1,346,765,115 instructions:HG           #    3.14  insns per cycle        
-                                             #    0.01  stalled cycles per insn  ( +-  0.11% ) [62.62%]
-       137,596,246 branches:HG               # 1190.859 M/sec                    ( +-  0.02% ) [62.62%]
-           287,496 branch-misses:HG          #    0.21% of all branches          ( +-  0.19% ) [62.62%]
-       417,530,553 L1-dcache-loads:HG        # 3613.615 M/sec                    ( +-  0.24% ) [46.39%]
-        17,183,947 L1-dcache-load-misses:HG  #    4.12% of all L1-dcache hits    ( +-  0.16% ) [25.31%]
-           458,161 LLC-loads:HG              #    3.965 M/sec                    ( +-  7.19% ) [25.09%]
-   <not supported> LLC-load-misses:HG      
+        127.192192 task-clock                #    0.981 CPUs utilized            ( +-  0.20% )
+       419,558,334 cycles                    #    3.299 GHz                      ( +-  0.07% ) [79.59%]
+     1,363,560,736 instructions              #    3.25  insns per cycle          ( +-  0.06% ) [89.79%]
+        35,260,555 cache-references          #  277.223 M/sec                    ( +-  0.14% ) [89.79%]
+           642,636 cache-misses              #    1.823 % of all cache refs      ( +-  3.65% ) [89.81%]
+       137,919,096 branch                    # 1084.336 M/sec                    ( +-  0.09% ) [89.82%]
+           283,495 branch-misses             #    2.229 M/sec                    ( +-  0.15% ) [89.77%]
+             1,883 page-faults               #    0.015 M/sec                    ( +-  0.01% )
+       405,413,028 L1-dcache-loads           # 3187.405 M/sec                    ( +-  0.08% ) [90.15%]
+        17,245,530 L1-dcache-load-misses     #    4.25% of all L1-dcache hits    ( +-  0.11% ) [90.36%]
+            51,213 LLC-loads                 #    0.403 M/sec                    ( +-  1.46% ) [90.46%]
+            10,366 LLC-load-misses           #   20.24% of all LL-cache hits     ( +-  3.57% ) [90.27%]
 
-       0.117300065 seconds time elapsed                                          ( +-  2.90% )
+       0.129712046 seconds time elapsed                                          ( +-  0.27% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 95 ms 
+Timer - Multiplication: 75 ms 
 Ret: 0
-Timer - Multiplication: 91 ms 
+Timer - Multiplication: 74 ms 
 Ret: 0
-Timer - Multiplication: 90 ms 
+Timer - Multiplication: 76 ms 
 Ret: 0
-Timer - Multiplication: 88 ms 
+Timer - Multiplication: 74 ms 
 Ret: 0
-Timer - Multiplication: 88 ms 
+Timer - Multiplication: 74 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conin 512' (5 runs):
 
-         93.760311 task-clock:HG             #    0.980 CPUs utilized            ( +-  1.38% )
-                 7 context-switches:HG       #    0.070 K/sec                    ( +- 45.10% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                  
-             1,885 page-faults:HG            #    0.020 M/sec                    ( +-  0.01% )
-       338,427,400 cycles:HG                 #    3.609 GHz                      ( +-  0.23% ) [37.94%]
-        11,562,521 stalled-cycles-frontend:HG #    3.42% frontend cycles idle     ( +-  6.53% ) [50.89%]
-   <not supported> stalled-cycles-backend:HG
-       940,664,676 instructions:HG           #    2.78  insns per cycle        
-                                             #    0.01  stalled cycles per insn  ( +-  0.43% ) [63.57%]
-        71,619,854 branches:HG               #  763.861 M/sec                    ( +-  0.75% ) [63.88%]
-           287,777 branch-misses:HG          #    0.40% of all branches          ( +-  0.51% ) [64.09%]
-       343,999,200 L1-dcache-loads:HG        # 3668.921 M/sec                    ( +-  0.19% ) [46.26%]
-        17,438,818 L1-dcache-load-misses:HG  #    5.07% of all L1-dcache hits    ( +-  0.48% ) [24.17%]
-           397,287 LLC-loads:HG              #    4.237 M/sec                    ( +-  2.81% ) [24.48%]
-   <not supported> LLC-load-misses:HG      
+         78.036984 task-clock                #    0.972 CPUs utilized            ( +-  0.50% )
+       255,765,407 cycles                    #    3.277 GHz                      ( +-  0.25% ) [79.51%]
+       965,722,481 instructions              #    3.78  insns per cycle          ( +-  0.09% ) [89.76%]
+        34,585,270 cache-references          #  443.191 M/sec                    ( +-  0.12% ) [89.76%]
+           571,100 cache-misses              #    1.651 % of all cache refs      ( +-  6.68% ) [89.74%]
+        72,159,902 branch                    #  924.688 M/sec                    ( +-  0.22% ) [89.76%]
+           282,268 branch-misses             #    3.617 M/sec                    ( +-  0.14% ) [89.47%]
+             1,886 page-faults               #    0.024 M/sec                  
+       338,662,823 L1-dcache-loads           # 4339.773 M/sec                    ( +-  0.17% ) [90.21%]
+        17,270,230 L1-dcache-load-misses     #    5.10% of all L1-dcache hits    ( +-  0.29% ) [90.51%]
+           165,685 LLC-loads                 #    2.123 M/sec                    ( +-  1.39% ) [90.86%]
+            11,434 LLC-load-misses           #    6.90% of all LL-cache hits     ( +-  6.05% ) [90.20%]
 
-       0.095649851 seconds time elapsed                                          ( +-  1.31% )
+       0.080245997 seconds time elapsed                                          ( +-  0.48% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 756 ms 
+Timer - Multiplication: 685 ms 
 Ret: 0
-Timer - Multiplication: 753 ms 
+Timer - Multiplication: 683 ms 
 Ret: 0
-Timer - Multiplication: 750 ms 
+Timer - Multiplication: 685 ms 
 Ret: 0
-Timer - Multiplication: 758 ms 
+Timer - Multiplication: 687 ms 
 Ret: 0
-Timer - Multiplication: 750 ms 
+Timer - Multiplication: 687 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 1024' (5 runs):
 
-        762.920685 task-clock:HG             #    0.997 CPUs utilized            ( +-  0.21% )
-                12 context-switches:HG       #    0.016 K/sec                    ( +- 40.05% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                  
-             6,518 page-faults:HG            #    0.009 M/sec                    ( +-  0.00% )
-     2,927,666,420 cycles:HG                 #    3.837 GHz                      ( +-  0.16% ) [37.47%]
-       233,906,838 stalled-cycles-frontend:HG #    7.99% frontend cycles idle     ( +-  1.59% ) [49.99%]
-   <not supported> stalled-cycles-backend:HG
-     7,584,871,623 instructions:HG           #    2.59  insns per cycle        
-                                             #    0.03  stalled cycles per insn  ( +-  0.04% ) [62.50%]
-       554,015,863 branches:HG               #  726.178 M/sec                    ( +-  0.13% ) [62.51%]
-         1,093,019 branch-misses:HG          #    0.20% of all branches          ( +-  0.14% ) [62.56%]
-     2,715,614,120 L1-dcache-loads:HG        # 3559.497 M/sec                    ( +-  0.07% ) [49.50%]
-       137,516,766 L1-dcache-load-misses:HG  #    5.06% of all L1-dcache hits    ( +-  0.10% ) [25.01%]
-        13,727,093 LLC-loads:HG              #   17.993 M/sec                    ( +-  2.48% ) [24.98%]
-   <not supported> LLC-load-misses:HG      
+        695.778642 task-clock                #    0.995 CPUs utilized            ( +-  0.09% )
+     2,312,003,455 cycles                    #    3.323 GHz                      ( +-  0.04% ) [79.90%]
+     7,606,327,162 instructions              #    3.29  insns per cycle          ( +-  0.04% ) [89.94%]
+       279,921,599 cache-references          #  402.314 M/sec                    ( +-  0.79% ) [89.92%]
+        89,867,155 cache-misses              #   32.104 % of all cache refs      ( +-  1.70% ) [89.95%]
+       556,724,773 branch                    #  800.146 M/sec                    ( +-  0.09% ) [89.97%]
+         1,087,893 branch-misses             #    1.564 M/sec                    ( +-  0.08% ) [90.00%]
+             6,519 page-faults               #    0.009 M/sec                  
+     2,695,360,191 L1-dcache-loads           # 3873.876 M/sec                    ( +-  0.06% ) [90.05%]
+       137,396,723 L1-dcache-load-misses     #    5.10% of all L1-dcache hits    ( +-  0.06% ) [90.06%]
+         1,755,162 LLC-loads                 #    2.523 M/sec                    ( +-  1.00% ) [90.10%]
+           788,002 LLC-load-misses           #   44.90% of all LL-cache hits     ( +-  2.55% ) [90.05%]
 
-       0.765133197 seconds time elapsed                                          ( +-  0.22% )
+       0.698947111 seconds time elapsed                                          ( +-  0.12% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 898 ms 
+Timer - Multiplication: 1015 ms 
 Ret: 0
-Timer - Multiplication: 893 ms 
+Timer - Multiplication: 1011 ms 
 Ret: 0
-Timer - Multiplication: 895 ms 
+Timer - Multiplication: 1009 ms 
 Ret: 0
-Timer - Multiplication: 896 ms 
+Timer - Multiplication: 1010 ms 
 Ret: 0
-Timer - Multiplication: 898 ms 
+Timer - Multiplication: 1010 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conmul 1024' (5 runs):
 
-        902.589882 task-clock:HG             #    0.997 CPUs utilized            ( +-  0.10% )
-                19 context-switches:HG       #    0.021 K/sec                    ( +- 18.56% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                  
-             1,891 page-faults:HG            #    0.002 M/sec                  
-     3,457,904,199 cycles:HG                 #    3.831 GHz                      ( +-  0.14% ) [37.49%]
-       211,650,999 stalled-cycles-frontend:HG #    6.12% frontend cycles idle     ( +-  1.67% ) [50.00%]
-   <not supported> stalled-cycles-backend:HG
-    10,789,467,168 instructions:HG           #    3.12  insns per cycle        
-                                             #    0.02  stalled cycles per insn  ( +-  0.04% ) [62.51%]
-     1,083,992,433 branches:HG               # 1200.980 M/sec                    ( +-  0.06% ) [62.54%]
-         1,087,381 branch-misses:HG          #    0.10% of all branches          ( +-  0.12% ) [62.61%]
-     3,237,744,997 L1-dcache-loads:HG        # 3587.172 M/sec                    ( +-  0.04% ) [49.60%]
-       136,862,260 L1-dcache-load-misses:HG  #    4.23% of all L1-dcache hits    ( +-  0.08% ) [24.99%]
-         8,242,266 LLC-loads:HG              #    9.132 M/sec                    ( +-  2.92% ) [24.96%]
-   <not supported> LLC-load-misses:HG      
+       1018.364727 task-clock                #    0.998 CPUs utilized            ( +-  0.12% )
+     3,394,023,042 cycles                    #    3.333 GHz                      ( +-  0.08% ) [79.93%]
+    10,796,534,324 instructions              #    3.18  insns per cycle          ( +-  0.03% ) [89.97%]
+       295,797,653 cache-references          #  290.463 M/sec                    ( +-  0.03% ) [89.97%]
+       129,509,476 cache-misses              #   43.783 % of all cache refs      ( +-  0.54% ) [89.99%]
+     1,085,521,316 branch                    # 1065.946 M/sec                    ( +-  0.04% ) [90.00%]
+         1,084,322 branch-misses             #    1.065 M/sec                    ( +-  0.07% ) [90.00%]
+             1,892 page-faults               #    0.002 M/sec                  
+     3,226,430,257 L1-dcache-loads           # 3168.246 M/sec                    ( +-  0.04% ) [89.99%]
+       136,456,479 L1-dcache-load-misses     #    4.23% of all L1-dcache hits    ( +-  0.04% ) [90.06%]
+           404,681 LLC-loads                 #    0.397 M/sec                    ( +-  0.61% ) [90.06%]
+           155,968 LLC-load-misses           #   38.54% of all LL-cache hits     ( +-  1.42% ) [89.99%]
 
-       0.905274809 seconds time elapsed                                          ( +-  0.09% )
+       1.020750959 seconds time elapsed                                          ( +-  0.12% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 749 ms 
+Timer - Multiplication: 669 ms 
 Ret: 0
-Timer - Multiplication: 752 ms 
+Timer - Multiplication: 679 ms 
 Ret: 0
-Timer - Multiplication: 742 ms 
+Timer - Multiplication: 678 ms 
 Ret: 0
-Timer - Multiplication: 742 ms 
+Timer - Multiplication: 670 ms 
 Ret: 0
-Timer - Multiplication: 748 ms 
+Timer - Multiplication: 673 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conin 1024' (5 runs):
 
-        752.764200 task-clock:HG             #    0.997 CPUs utilized            ( +-  0.25% )
-                12 context-switches:HG       #    0.016 K/sec                    ( +- 38.30% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                    ( +-100.00% )
-             1,897 page-faults:HG            #    0.003 M/sec                    ( +-  0.01% )
-     2,875,777,518 cycles:HG                 #    3.820 GHz                      ( +-  0.36% ) [37.51%]
-       185,144,811 stalled-cycles-frontend:HG #    6.44% frontend cycles idle     ( +-  4.49% ) [50.06%]
-   <not supported> stalled-cycles-backend:HG
-     7,582,368,907 instructions:HG           #    2.64  insns per cycle        
-                                             #    0.02  stalled cycles per insn  ( +-  0.06% ) [62.58%]
-       552,529,063 branches:HG               #  734.000 M/sec                    ( +-  0.21% ) [62.63%]
-         1,084,058 branch-misses:HG          #    0.20% of all branches          ( +-  0.11% ) [62.69%]
-     2,697,186,502 L1-dcache-loads:HG        # 3583.043 M/sec                    ( +-  0.07% ) [49.52%]
-       136,828,980 L1-dcache-load-misses:HG  #    5.07% of all L1-dcache hits    ( +-  0.02% ) [24.90%]
-        15,039,572 LLC-loads:HG              #   19.979 M/sec                    ( +- 19.08% ) [24.94%]
-   <not supported> LLC-load-misses:HG      
+        680.214311 task-clock                #    0.995 CPUs utilized            ( +-  0.25% )
+     2,269,291,424 cycles                    #    3.336 GHz                      ( +-  0.17% ) [79.88%]
+     7,580,728,267 instructions              #    3.34  insns per cycle          ( +-  0.08% ) [89.94%]
+       270,832,880 cache-references          #  398.158 M/sec                    ( +-  0.71% ) [89.98%]
+       103,385,890 cache-misses              #   38.173 % of all cache refs      ( +-  1.13% ) [89.99%]
+       551,953,744 branch                    #  811.441 M/sec                    ( +-  0.12% ) [90.01%]
+         1,080,248 branch-misses             #    1.588 M/sec                    ( +-  0.06% ) [89.97%]
+             1,898 page-faults               #    0.003 M/sec                  
+     2,689,894,160 L1-dcache-loads           # 3954.480 M/sec                    ( +-  0.02% ) [89.98%]
+       136,632,811 L1-dcache-load-misses     #    5.08% of all L1-dcache hits    ( +-  0.04% ) [90.06%]
+         1,861,799 LLC-loads                 #    2.737 M/sec                    ( +-  3.39% ) [90.08%]
+         1,075,131 LLC-load-misses           #   57.75% of all LL-cache hits     ( +-  6.71% ) [90.04%]
 
-       0.755007640 seconds time elapsed                                          ( +-  0.24% )
+       0.683936954 seconds time elapsed                                          ( +-  0.32% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 5988 ms 
+Timer - Multiplication: 5696 ms 
 Ret: 0
-Timer - Multiplication: 5977 ms 
+Timer - Multiplication: 5686 ms 
 Ret: 0
-Timer - Multiplication: 5984 ms 
+Timer - Multiplication: 5686 ms 
 Ret: 0
-Timer - Multiplication: 5998 ms 
+Timer - Multiplication: 5701 ms 
 Ret: 0
-Timer - Multiplication: 6014 ms 
+Timer - Multiplication: 5696 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 2048' (5 runs):
 
-       6039.523270 task-clock:HG             #    0.999 CPUs utilized            ( +-  0.13% )
-                26 context-switches:HG       #    0.004 K/sec                    ( +-  7.28% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                    ( +- 61.24% )
-            24,980 page-faults:HG            #    0.004 M/sec                  
-    23,138,558,310 cycles:HG                 #    3.831 GHz                      ( +-  0.05% ) [37.50%]
-     1,611,153,825 stalled-cycles-frontend:HG #    6.96% frontend cycles idle     ( +-  0.52% ) [50.01%]
-   <not supported> stalled-cycles-backend:HG
-    60,415,287,134 instructions:HG           #    2.61  insns per cycle        
-                                             #    0.03  stalled cycles per insn  ( +-  0.01% ) [62.51%]
-     4,367,771,137 branches:HG               #  723.198 M/sec                    ( +-  0.02% ) [62.51%]
-         4,297,363 branch-misses:HG          #    0.10% of all branches          ( +-  0.09% ) [62.51%]
-    21,569,706,775 L1-dcache-loads:HG        # 3571.425 M/sec                    ( +-  0.02% ) [49.94%]
-     1,223,658,212 L1-dcache-load-misses:HG  #    5.67% of all L1-dcache hits    ( +-  0.02% ) [25.00%]
-       620,517,895 LLC-loads:HG              #  102.743 M/sec                    ( +-  0.63% ) [25.00%]
-   <not supported> LLC-load-misses:HG      
+       5733.942728 task-clock                #    1.000 CPUs utilized            ( +-  0.05% )
+    19,131,420,161 cycles                    #    3.337 GHz                      ( +-  0.04% ) [79.99%]
+    60,477,709,082 instructions              #    3.16  insns per cycle          ( +-  0.02% ) [89.99%]
+     2,177,682,962 cache-references          #  379.788 M/sec                    ( +-  0.07% ) [89.99%]
+     1,275,687,129 cache-misses              #   58.580 % of all cache refs      ( +-  0.04% ) [90.00%]
+     4,369,481,740 branch                    #  762.038 M/sec                    ( +-  0.01% ) [90.00%]
+         4,305,865 branch-misses             #    0.751 M/sec                    ( +-  0.06% ) [90.00%]
+            24,981 page-faults               #    0.004 M/sec                    ( +-  0.00% )
+    21,527,106,598 L1-dcache-loads           # 3754.329 M/sec                    ( +-  0.01% ) [90.01%]
+     1,209,652,751 L1-dcache-load-misses     #    5.62% of all L1-dcache hits    ( +-  0.01% ) [90.01%]
+        20,407,738 LLC-loads                 #    3.559 M/sec                    ( +-  0.19% ) [90.01%]
+        10,649,527 LLC-load-misses           #   52.18% of all LL-cache hits     ( +-  0.18% ) [90.00%]
 
-       6.043616761 seconds time elapsed                                          ( +-  0.14% )
+       5.736631705 seconds time elapsed                                          ( +-  0.05% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 7054 ms 
+Timer - Multiplication: 7684 ms 
 Ret: 0
-Timer - Multiplication: 7012 ms 
+Timer - Multiplication: 7802 ms 
 Ret: 0
-Timer - Multiplication: 7019 ms 
+Timer - Multiplication: 7528 ms 
 Ret: 0
-Timer - Multiplication: 7012 ms 
+Timer - Multiplication: 7617 ms 
 Ret: 0
-Timer - Multiplication: 7002 ms 
+Timer - Multiplication: 7560 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conmul 2048' (5 runs):
 
-       7039.168883 task-clock:HG             #    1.000 CPUs utilized            ( +-  0.13% )
-                17 context-switches:HG       #    0.002 K/sec                    ( +-  8.72% )
-                 1 cpu-migrations:HG         #    0.000 K/sec                  
-             1,927 page-faults:HG            #    0.274 K/sec                  
-    27,068,495,038 cycles:HG                 #    3.845 GHz                      ( +-  0.01% ) [37.49%]
-     1,198,635,669 stalled-cycles-frontend:HG #    4.43% frontend cycles idle     ( +-  2.42% ) [49.99%]
-   <not supported> stalled-cycles-backend:HG
-    86,015,252,416 instructions:HG           #    3.18  insns per cycle        
-                                             #    0.01  stalled cycles per insn  ( +-  0.05% ) [62.50%]
-     8,627,036,888 branches:HG               # 1225.576 M/sec                    ( +-  0.08% ) [62.50%]
-         4,257,771 branch-misses:HG          #    0.05% of all branches          ( +-  0.11% ) [62.51%]
-    25,850,493,467 L1-dcache-loads:HG        # 3672.379 M/sec                    ( +-  0.10% ) [49.96%]
-     1,116,047,592 L1-dcache-load-misses:HG  #    4.32% of all L1-dcache hits    ( +-  0.11% ) [25.00%]
-       425,339,127 LLC-loads:HG              #   60.425 M/sec                    ( +-  0.14% ) [24.99%]
-   <not supported> LLC-load-misses:HG      
+       7664.140066 task-clock                #    1.000 CPUs utilized            ( +-  0.63% )
+    25,806,716,386 cycles                    #    3.367 GHz                      ( +-  0.09% ) [79.99%]
+    86,111,589,789 instructions              #    3.34  insns per cycle          ( +-  0.02% ) [90.00%]
+     2,201,340,607 cache-references          #  287.226 M/sec                    ( +-  0.02% ) [90.00%]
+     1,418,318,945 cache-misses              #   64.430 % of all cache refs      ( +-  0.72% ) [90.00%]
+     8,633,908,901 branch                    # 1126.533 M/sec                    ( +-  0.02% ) [90.00%]
+         4,301,102 branch-misses             #    0.561 M/sec                    ( +-  0.12% ) [90.00%]
+             1,928 page-faults               #    0.252 K/sec                  
+    25,790,772,189 L1-dcache-loads           # 3365.123 M/sec                    ( +-  0.01% ) [90.00%]
+     1,119,791,163 L1-dcache-load-misses     #    4.34% of all L1-dcache hits    ( +-  0.02% ) [90.01%]
+         5,948,171 LLC-loads                 #    0.776 M/sec                    ( +-  0.99% ) [90.01%]
+         2,399,228 LLC-load-misses           #   40.34% of all LL-cache hits     ( +-  1.43% ) [90.00%]
 
-       7.042643608 seconds time elapsed                                          ( +-  0.13% )
+       7.667054289 seconds time elapsed                                          ( +-  0.63% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 5870 ms 
+Timer - Multiplication: 5341 ms 
 Ret: 0
-Timer - Multiplication: 5852 ms 
+Timer - Multiplication: 5332 ms 
 Ret: 0
-Timer - Multiplication: 5839 ms 
+Timer - Multiplication: 5308 ms 
 Ret: 0
-Timer - Multiplication: 5843 ms 
+Timer - Multiplication: 5310 ms 
 Ret: 0
-Timer - Multiplication: 5872 ms 
+Timer - Multiplication: 5301 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conin 2048' (5 runs):
 
-       5881.453223 task-clock:HG             #    0.999 CPUs utilized            ( +-  0.14% )
-                27 context-switches:HG       #    0.005 K/sec                    ( +-  7.86% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                    ( +-100.00% )
-             1,940 page-faults:HG            #    0.330 K/sec                  
-    22,530,691,162 cycles:HG                 #    3.831 GHz                      ( +-  0.06% ) [37.50%]
-     1,023,587,009 stalled-cycles-frontend:HG #    4.54% frontend cycles idle     ( +-  1.27% ) [50.00%]
-   <not supported> stalled-cycles-backend:HG
-    60,352,032,444 instructions:HG           #    2.68  insns per cycle        
-                                             #    0.02  stalled cycles per insn  ( +-  0.01% ) [62.50%]
-     4,349,535,066 branches:HG               #  739.534 M/sec                    ( +-  0.06% ) [62.50%]
-         4,264,186 branch-misses:HG          #    0.10% of all branches          ( +-  0.09% ) [62.51%]
-    21,533,547,833 L1-dcache-loads:HG        # 3661.263 M/sec                    ( +-  0.01% ) [49.94%]
-     1,126,652,381 L1-dcache-load-misses:HG  #    5.23% of all L1-dcache hits    ( +-  0.16% ) [25.00%]
-       580,650,035 LLC-loads:HG              #   98.726 M/sec                    ( +-  0.27% ) [25.00%]
-   <not supported> LLC-load-misses:HG      
+       5343.119373 task-clock                #    0.999 CPUs utilized            ( +-  0.14% )
+    18,347,444,779 cycles                    #    3.434 GHz                      ( +-  0.11% ) [79.98%]
+    60,411,288,664 instructions              #    3.29  insns per cycle          ( +-  0.02% ) [89.99%]
+     2,157,310,524 cache-references          #  403.755 M/sec                    ( +-  0.60% ) [89.99%]
+     1,203,167,991 cache-misses              #   55.772 % of all cache refs      ( +-  0.96% ) [89.99%]
+     4,356,669,705 branch                    #  815.379 M/sec                    ( +-  0.01% ) [90.00%]
+         4,266,872 branch-misses             #    0.799 M/sec                    ( +-  0.10% ) [90.01%]
+             1,941 page-faults               #    0.363 K/sec                  
+    21,487,543,179 L1-dcache-loads           # 4021.535 M/sec                    ( +-  0.02% ) [90.01%]
+     1,117,364,806 L1-dcache-load-misses     #    5.20% of all L1-dcache hits    ( +-  0.07% ) [90.01%]
+        24,035,140 LLC-loads                 #    4.498 M/sec                    ( +-  1.68% ) [90.00%]
+        15,209,796 LLC-load-misses           #   63.28% of all LL-cache hits     ( +-  3.04% ) [90.00%]
 
-       5.884791463 seconds time elapsed                                          ( +-  0.14% )
+       5.346069309 seconds time elapsed                                          ( +-  0.15% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 22 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 15 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 14 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 13 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 13 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 256' (5 runs):
 
-         17.460494 task-clock:HG             #    0.905 CPUs utilized            ( +- 10.49% )
-                 3 context-switches:HG       #    0.160 K/sec                    ( +-  7.14% )
-                 0 cpu-migrations:HG         #    0.000 K/sec                  
-               736 page-faults:HG            #    0.042 M/sec                    ( +-  0.03% )
-        48,047,743 cycles:HG                 #    2.752 GHz                      ( +-  0.69% ) [36.92%]
-         6,808,136 stalled-cycles-frontend:HG #   14.17% frontend cycles idle     ( +-  3.58% ) [49.68%]
-   <not supported> stalled-cycles-backend:HG
-       120,680,392 instructions:HG           #    2.51  insns per cycle        
-                                             #    0.06  stalled cycles per insn  ( +-  0.52% ) [62.26%]
-        10,054,869 branches:HG               #  575.864 M/sec                    ( +-  0.78% ) [61.92%]
-            85,572 branch-misses:HG          #    0.85% of all branches          ( +-  4.20% ) [65.77%]
-        46,170,570 L1-dcache-loads:HG        # 2644.288 M/sec                    ( +-  1.77% ) [27.89%]
-         2,241,070 L1-dcache-load-misses:HG  #    4.85% of all L1-dcache hits    ( +-  2.23% ) [27.22%]
-            81,609 LLC-loads:HG              #    4.674 M/sec                    ( +- 17.75% ) [24.03%]
-   <not supported> LLC-load-misses:HG      
+         10.802856 task-clock                #    0.825 CPUs utilized            ( +-  0.45% )
+        35,834,531 cycles                    #    3.317 GHz                      ( +-  0.18% ) [80.38%]
+       124,002,612 instructions              #    3.46  insns per cycle          ( +-  0.03% ) [90.77%]
+         4,433,560 cache-references          #  410.406 M/sec                    ( +-  1.07% ) [90.77%]
+            61,223 cache-misses              #    1.381 % of all cache refs      ( +-  8.53% ) [90.77%]
+        10,009,383 branch                    #  926.550 M/sec                    ( +-  0.05% ) [90.77%]
+            83,204 branch-misses             #    7.702 M/sec                    ( +-  0.28% ) [90.77%]
+               736 page-faults               #    0.068 M/sec                    ( +-  0.03% )
+        42,723,329 L1-dcache-loads           # 3954.818 M/sec                    ( +-  0.07% ) [90.77%]
+         2,252,366 L1-dcache-load-misses     #    5.27% of all L1-dcache hits    ( +-  0.05% ) [90.77%]
+            32,213 LLC-loads                 #    2.982 M/sec                    ( +-  1.63% ) [90.77%]
+               490 LLC-load-misses           #    1.52% of all LL-cache hits     ( +- 43.41% ) [84.36%]
 
-       0.019299073 seconds time elapsed                                          ( +-  9.56% )
+       0.013099260 seconds time elapsed                                          ( +-  1.27% )
 
 --------------------------------------------------------------------------------------------------------
 Timer - Multiplication: 15 ms 
 Ret: 0
-Timer - Multiplication: 14 ms 
+Timer - Multiplication: 15 ms 
 Ret: 0
-Timer - Multiplication: 14 ms 
+Timer - Multiplication: 15 ms 
 Ret: 0
-Timer - Multiplication: 14 ms 
+Timer - Multiplication: 15 ms 
 Ret: 0
-Timer - Multiplication: 14 ms 
+Timer - Multiplication: 15 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conmul 256' (5 runs):
 
-         15.813359 task-clock:HG             #    0.902 CPUs utilized            ( +-  0.84% )
-                 3 context-switches:HG       #    0.164 K/sec                    ( +-  9.42% )
-                 0 cpu-migrations:HG         #    0.013 K/sec                    ( +-100.00% )
-               730 page-faults:HG            #    0.046 M/sec                  
-        57,929,926 cycles:HG                 #    3.663 GHz                      ( +-  0.26% ) [36.83%]
-         7,514,387 stalled-cycles-frontend:HG #   12.97% frontend cycles idle     ( +-  4.00% ) [49.46%]
-   <not supported> stalled-cycles-backend:HG
-       167,621,315 instructions:HG           #    2.89  insns per cycle        
-                                             #    0.04  stalled cycles per insn  ( +-  0.16% ) [62.10%]
-        17,754,481 branches:HG               # 1122.752 M/sec                    ( +-  0.17% ) [62.09%]
-            88,579 branch-misses:HG          #    0.50% of all branches          ( +-  0.50% ) [62.44%]
-        53,835,586 L1-dcache-loads:HG        # 3404.437 M/sec                    ( +-  2.66% ) [25.96%]
-         2,144,074 L1-dcache-load-misses:HG  #    3.98% of all L1-dcache hits    ( +-  1.05% ) [27.38%]
-            71,378 LLC-loads:HG              #    4.514 M/sec                    ( +- 19.54% ) [25.38%]
-   <not supported> LLC-load-misses:HG      
+         16.756625 task-clock                #    0.886 CPUs utilized            ( +-  0.32% )
+        55,949,550 cycles                    #    3.339 GHz                      ( +-  0.10% ) [76.18%]
+       173,309,447 instructions              #    3.10  insns per cycle          ( +-  0.10% ) [88.09%]
+         4,438,294 cache-references          #  264.868 M/sec                    ( +-  1.10% ) [88.09%]
+            42,349 cache-misses              #    0.954 % of all cache refs      ( +- 17.34% ) [88.09%]
+        17,990,610 branch                    # 1073.642 M/sec                    ( +-  0.05% ) [88.09%]
+            83,070 branch-misses             #    4.957 M/sec                    ( +-  0.54% ) [87.99%]
+               731 page-faults               #    0.044 M/sec                    ( +-  0.03% )
+        51,580,115 L1-dcache-loads           # 3078.192 M/sec                    ( +-  0.17% ) [91.73%]
+         2,228,421 L1-dcache-load-misses     #    4.32% of all L1-dcache hits    ( +-  0.11% ) [93.93%]
+            16,920 LLC-loads                 #    1.010 M/sec                    ( +-  0.97% ) [94.04%]
+             1,045 LLC-load-misses           #    6.18% of all LL-cache hits     ( +- 31.68% ) [92.00%]
 
-       0.017533246 seconds time elapsed                                          ( +-  0.80% )
+       0.018913028 seconds time elapsed                                          ( +-  0.29% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 11 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 12 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 11 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 11 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
-Timer - Multiplication: 11 ms 
+Timer - Multiplication: 9 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conin 256' (5 runs):
 
-         12.993401 task-clock:HG             #    0.860 CPUs utilized            ( +-  0.79% )
-                 3 context-switches:HG       #    0.200 K/sec                    ( +-  9.42% )
-                 0 cpu-migrations:HG         #    0.015 K/sec                    ( +-100.00% )
-               731 page-faults:HG            #    0.056 M/sec                    ( +-  0.03% )
-        34,942,587 cycles:HG                 #    2.689 GHz                      ( +- 10.93% ) [37.17%]
-         5,075,880 stalled-cycles-frontend:HG #   14.53% frontend cycles idle     ( +- 14.24% ) [53.81%]
-   <not supported> stalled-cycles-backend:HG
-       103,842,576 instructions:HG           #    2.97  insns per cycle        
-                                             #    0.05  stalled cycles per insn  ( +-  5.09% ) [68.03%]
-         9,015,124 branches:HG               #  693.823 M/sec                    ( +-  3.02% ) [71.51%]
-            80,775 branch-misses:HG          #    0.90% of all branches          ( +-  0.75% ) [75.92%]
-        43,489,597 L1-dcache-loads:HG        # 3347.053 M/sec                    ( +-  1.23% ) [27.01%]
-         2,241,417 L1-dcache-load-misses:HG  #    5.15% of all L1-dcache hits    ( +-  1.43% ) [19.58%]
-            63,506 LLC-loads:HG              #    4.888 M/sec                    ( +- 10.68% ) [15.73%]
-   <not supported> LLC-load-misses:HG      
+         10.589672 task-clock                #    0.811 CPUs utilized            ( +-  0.35% )
+        35,059,239 cycles                    #    3.311 GHz                      ( +-  0.19% ) [78.48%]
+       123,684,154 instructions              #    3.53  insns per cycle          ( +-  0.08% ) [90.59%]
+         4,322,371 cache-references          #  408.169 M/sec                    ( +-  0.98% ) [90.58%]
+            42,023 cache-misses              #    0.972 % of all cache refs      ( +- 12.81% ) [90.58%]
+         9,925,183 branch                    #  937.251 M/sec                    ( +-  0.04% ) [90.58%]
+            82,708 branch-misses             #    7.810 M/sec                    ( +-  0.42% ) [90.58%]
+               732 page-faults               #    0.069 M/sec                    ( +-  0.03% )
+        42,589,912 L1-dcache-loads           # 4021.835 M/sec                    ( +-  0.09% ) [90.58%]
+         2,224,732 L1-dcache-load-misses     #    5.22% of all L1-dcache hits    ( +-  0.07% ) [90.58%]
+            31,627 LLC-loads                 #    2.987 M/sec                    ( +-  1.46% ) [90.58%]
+             1,040 LLC-load-misses           #    3.29% of all LL-cache hits     ( +- 38.52% ) [87.60%]
 
-       0.015115441 seconds time elapsed                                          ( +-  1.58% )
+       0.013057156 seconds time elapsed                                          ( +-  0.88% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 91 ms 
+Timer - Multiplication: 80 ms 
 Ret: 0
-Timer - Multiplication: 91 ms 
+Timer - Multiplication: 72 ms 
 Ret: 0
-Timer - Multiplication: 91 ms 
+Timer - Multiplication: 71 ms 
 Ret: 0
-Timer - Multiplication: 90 ms 
+Timer - Multiplication: 71 ms 
 Ret: 0
-Timer - Multiplication: 89 ms 
+Timer - Multiplication: 72 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 512' (5 runs):
 
-         93.624170 task-clock:HG             #    0.981 CPUs utilized            ( +-  0.42% )
-                 3 context-switches:HG       #    0.032 K/sec                    ( +- 14.91% )
-                 1 cpu-migrations:HG         #    0.006 K/sec                    ( +- 40.82% )
-             1,895 page-faults:HG            #    0.020 M/sec                    ( +-  0.01% )
-       350,634,825 cycles:HG                 #    3.745 GHz                      ( +-  0.79% ) [36.52%]
-        13,436,871 stalled-cycles-frontend:HG #    3.83% frontend cycles idle     ( +-  6.00% ) [49.33%]
-   <not supported> stalled-cycles-backend:HG
-       952,765,284 instructions:HG           #    2.72  insns per cycle        
-                                             #    0.01  stalled cycles per insn  ( +-  0.30% ) [62.08%]
-        71,857,607 branches:HG               #  767.511 M/sec                    ( +-  0.40% ) [62.53%]
-           285,738 branch-misses:HG          #    0.40% of all branches          ( +-  0.54% ) [63.92%]
-       345,808,184 L1-dcache-loads:HG        # 3693.578 M/sec                    ( +-  0.20% ) [46.96%]
-        17,547,516 L1-dcache-load-misses:HG  #    5.07% of all L1-dcache hits    ( +-  0.45% ) [24.85%]
-           524,536 LLC-loads:HG              #    5.603 M/sec                    ( +- 13.65% ) [24.33%]
-   <not supported> LLC-load-misses:HG      
+         77.601209 task-clock                #    0.965 CPUs utilized            ( +-  2.93% )
+       256,649,176 cycles                    #    3.307 GHz                      ( +-  0.07% ) [78.88%]
+       967,553,940 instructions              #    3.77  insns per cycle          ( +-  0.06% ) [89.44%]
+        34,970,579 cache-references          #  450.645 M/sec                    ( +-  0.15% ) [89.44%]
+           345,243 cache-misses              #    0.987 % of all cache refs      ( +- 11.56% ) [89.29%]
+        72,057,063 branch                    #  928.556 M/sec                    ( +-  0.14% ) [90.02%]
+           282,794 branch-misses             #    3.644 M/sec                    ( +-  0.11% ) [90.30%]
+             1,896 page-faults               #    0.024 M/sec                  
+       337,727,435 L1-dcache-loads           # 4352.090 M/sec                    ( +-  0.14% ) [90.62%]
+        17,373,622 L1-dcache-load-misses     #    5.14% of all L1-dcache hits    ( +-  0.02% ) [90.73%]
+           171,854 LLC-loads                 #    2.215 M/sec                    ( +-  1.03% ) [90.73%]
+            10,378 LLC-load-misses           #    6.04% of all LL-cache hits     ( +-  2.49% ) [90.04%]
 
-       0.095471272 seconds time elapsed                                          ( +-  0.38% )
+       0.080385657 seconds time elapsed                                          ( +-  2.85% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 108 ms 
+Timer - Multiplication: 119 ms 
 Ret: 0
-Timer - Multiplication: 109 ms 
+Timer - Multiplication: 119 ms 
 Ret: 0
-Timer - Multiplication: 108 ms 
+Timer - Multiplication: 119 ms 
 Ret: 0
-Timer - Multiplication: 111 ms 
+Timer - Multiplication: 124 ms 
 Ret: 0
-Timer - Multiplication: 109 ms 
+Timer - Multiplication: 119 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conmul 512' (5 runs):
 
-        112.372520 task-clock:HG             #    0.983 CPUs utilized            ( +-  0.36% )
-                 2 context-switches:HG       #    0.020 K/sec                    ( +-  9.09% )
-                 1 cpu-migrations:HG         #    0.007 K/sec                    ( +- 25.00% )
-             1,882 page-faults:HG            #    0.017 M/sec                    ( +-  0.01% )
-       426,143,947 cycles:HG                 #    3.792 GHz                      ( +-  0.28% ) [37.49%]
-        18,579,300 stalled-cycles-frontend:HG #    4.36% frontend cycles idle     ( +-  3.17% ) [50.13%]
-   <not supported> stalled-cycles-backend:HG
-     1,348,060,247 instructions:HG           #    3.16  insns per cycle        
-                                             #    0.01  stalled cycles per insn  ( +-  0.06% ) [62.63%]
-       137,783,695 branches:HG               # 1226.133 M/sec                    ( +-  0.04% ) [62.63%]
-           287,530 branch-misses:HG          #    0.21% of all branches          ( +-  0.09% ) [62.70%]
-       413,917,722 L1-dcache-loads:HG        # 3683.443 M/sec                    ( +-  0.39% ) [46.52%]
-        17,214,350 L1-dcache-load-misses:HG  #    4.16% of all L1-dcache hits    ( +-  0.41% ) [25.21%]
-           476,925 LLC-loads:HG              #    4.244 M/sec                    ( +- 13.01% ) [25.09%]
-   <not supported> LLC-load-misses:HG      
+        123.942593 task-clock                #    0.980 CPUs utilized            ( +-  1.07% )
+       418,884,179 cycles                    #    3.380 GHz                      ( +-  0.06% ) [79.22%]
+     1,363,844,639 instructions              #    3.26  insns per cycle          ( +-  0.11% ) [89.99%]
+        35,311,804 cache-references          #  284.905 M/sec                    ( +-  0.09% ) [89.89%]
+           364,461 cache-misses              #    1.032 % of all cache refs      ( +-  2.97% ) [90.10%]
+       138,001,828 branch                    # 1113.433 M/sec                    ( +-  0.02% ) [90.16%]
+           283,684 branch-misses             #    2.289 M/sec                    ( +-  0.09% ) [90.16%]
+             1,883 page-faults               #    0.015 M/sec                  
+       403,944,598 L1-dcache-loads           # 3259.127 M/sec                    ( +-  0.04% ) [90.16%]
+        17,198,650 L1-dcache-load-misses     #    4.26% of all L1-dcache hits    ( +-  0.06% ) [90.07%]
+            48,169 LLC-loads                 #    0.389 M/sec                    ( +-  1.15% ) [90.32%]
+             8,710 LLC-load-misses           #   18.08% of all LL-cache hits     ( +-  3.34% ) [89.94%]
 
-       0.114261968 seconds time elapsed                                          ( +-  0.36% )
+       0.126533489 seconds time elapsed                                          ( +-  1.12% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 89 ms 
+Timer - Multiplication: 71 ms 
 Ret: 0
-Timer - Multiplication: 90 ms 
+Timer - Multiplication: 70 ms 
 Ret: 0
-Timer - Multiplication: 89 ms 
+Timer - Multiplication: 71 ms 
 Ret: 0
-Timer - Multiplication: 90 ms 
+Timer - Multiplication: 71 ms 
 Ret: 0
-Timer - Multiplication: 89 ms 
+Timer - Multiplication: 71 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conin 512' (5 runs):
 
-         92.445580 task-clock:HG             #    0.979 CPUs utilized            ( +-  0.33% )
-                 3 context-switches:HG       #    0.028 K/sec                    ( +-  9.42% )
-                 1 cpu-migrations:HG         #    0.009 K/sec                    ( +- 25.00% )
-             1,885 page-faults:HG            #    0.020 M/sec                  
-       336,026,328 cycles:HG                 #    3.635 GHz                      ( +-  0.41% ) [37.94%]
-        10,717,863 stalled-cycles-frontend:HG #    3.19% frontend cycles idle     ( +-  4.94% ) [50.91%]
-   <not supported> stalled-cycles-backend:HG
-       938,310,974 instructions:HG           #    2.79  insns per cycle        
-                                             #    0.01  stalled cycles per insn  ( +-  0.44% ) [63.59%]
-        71,400,502 branches:HG               #  772.352 M/sec                    ( +-  0.62% ) [63.99%]
-           286,992 branch-misses:HG          #    0.40% of all branches          ( +-  0.51% ) [64.24%]
-       344,714,709 L1-dcache-loads:HG        # 3728.839 M/sec                    ( +-  0.10% ) [46.33%]
-        17,506,891 L1-dcache-load-misses:HG  #    5.08% of all L1-dcache hits    ( +-  0.35% ) [23.99%]
-           380,334 LLC-loads:HG              #    4.114 M/sec                    ( +-  1.95% ) [24.52%]
-   <not supported> LLC-load-misses:HG      
+         74.240505 task-clock                #    0.967 CPUs utilized            ( +-  0.33% )
+       253,478,633 cycles                    #    3.414 GHz                      ( +-  0.07% ) [78.31%]
+       967,845,881 instructions              #    3.82  insns per cycle          ( +-  0.07% ) [89.08%]
+        34,625,060 cache-references          #  466.390 M/sec                    ( +-  0.08% ) [89.53%]
+           331,352 cache-misses              #    0.957 % of all cache refs      ( +-  8.30% ) [89.92%]
+        71,865,938 branch                    #  968.015 M/sec                    ( +-  0.12% ) [90.12%]
+           281,815 branch-misses             #    3.796 M/sec                    ( +-  0.08% ) [90.57%]
+             1,887 page-faults               #    0.025 M/sec                    ( +-  0.01% )
+       336,940,407 L1-dcache-loads           # 4538.498 M/sec                    ( +-  0.04% ) [90.57%]
+        17,224,879 L1-dcache-load-misses     #    5.11% of all L1-dcache hits    ( +-  0.02% ) [90.57%]
+           166,755 LLC-loads                 #    2.246 M/sec                    ( +-  0.72% ) [90.57%]
+             9,507 LLC-load-misses           #    5.70% of all LL-cache hits     ( +-  3.85% ) [89.86%]
 
-       0.094431332 seconds time elapsed                                          ( +-  0.36% )
+       0.076794893 seconds time elapsed                                          ( +-  0.39% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 758 ms 
+Timer - Multiplication: 647 ms 
 Ret: 0
-Timer - Multiplication: 755 ms 
+Timer - Multiplication: 652 ms 
 Ret: 0
-Timer - Multiplication: 749 ms 
+Timer - Multiplication: 645 ms 
 Ret: 0
-Timer - Multiplication: 754 ms 
+Timer - Multiplication: 649 ms 
 Ret: 0
-Timer - Multiplication: 749 ms 
+Timer - Multiplication: 651 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 1024' (5 runs):
 
-        762.343264 task-clock:HG             #    0.998 CPUs utilized            ( +-  0.22% )
-                 3 context-switches:HG       #    0.004 K/sec                    ( +- 17.65% )
-                 1 cpu-migrations:HG         #    0.001 K/sec                    ( +- 25.00% )
-             6,518 page-faults:HG            #    0.009 M/sec                  
-     2,915,949,409 cycles:HG                 #    3.825 GHz                      ( +-  0.12% ) [37.44%]
-       223,184,079 stalled-cycles-frontend:HG #    7.65% frontend cycles idle     ( +-  1.91% ) [49.98%]
-   <not supported> stalled-cycles-backend:HG
-     7,585,112,403 instructions:HG           #    2.60  insns per cycle        
-                                             #    0.03  stalled cycles per insn  ( +-  0.04% ) [62.50%]
-       554,617,791 branches:HG               #  727.517 M/sec                    ( +-  0.14% ) [62.54%]
-         1,088,298 branch-misses:HG          #    0.20% of all branches          ( +-  0.13% ) [62.63%]
-     2,707,952,397 L1-dcache-loads:HG        # 3552.143 M/sec                    ( +-  0.02% ) [49.62%]
-       137,218,450 L1-dcache-load-misses:HG  #    5.07% of all L1-dcache hits    ( +-  0.13% ) [24.98%]
-        12,971,264 LLC-loads:HG              #   17.015 M/sec                    ( +-  2.04% ) [24.92%]
-   <not supported> LLC-load-misses:HG      
+        659.883385 task-clock                #    0.997 CPUs utilized            ( +-  0.19% )
+     2,263,573,828 cycles                    #    3.430 GHz                      ( +-  0.13% ) [79.87%]
+     7,603,324,518 instructions              #    3.36  insns per cycle          ( +-  0.04% ) [89.94%]
+       273,111,598 cache-references          #  413.879 M/sec                    ( +-  0.05% ) [89.98%]
+        74,605,287 cache-misses              #   27.317 % of all cache refs      ( +-  1.75% ) [90.00%]
+       556,154,059 branch                    #  842.807 M/sec                    ( +-  0.06% ) [90.00%]
+         1,083,742 branch-misses             #    1.642 M/sec                    ( +-  0.06% ) [90.00%]
+             6,519 page-faults               #    0.010 M/sec                  
+     2,694,937,388 L1-dcache-loads           # 4083.960 M/sec                    ( +-  0.03% ) [90.04%]
+       137,436,616 L1-dcache-load-misses     #    5.10% of all L1-dcache hits    ( +-  0.02% ) [90.05%]
+         1,614,382 LLC-loads                 #    2.446 M/sec                    ( +-  0.74% ) [90.08%]
+           582,675 LLC-load-misses           #   36.09% of all LL-cache hits     ( +-  1.81% ) [90.00%]
 
-       0.764138414 seconds time elapsed                                          ( +-  0.24% )
+       0.662193925 seconds time elapsed                                          ( +-  0.20% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 891 ms 
+Timer - Multiplication: 975 ms 
 Ret: 0
-Timer - Multiplication: 892 ms 
+Timer - Multiplication: 980 ms 
 Ret: 0
-Timer - Multiplication: 897 ms 
+Timer - Multiplication: 977 ms 
 Ret: 0
-Timer - Multiplication: 882 ms 
+Timer - Multiplication: 976 ms 
 Ret: 0
-Timer - Multiplication: 924 ms 
+Timer - Multiplication: 976 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conmul 1024' (5 runs):
 
-        903.275015 task-clock:HG             #    0.998 CPUs utilized            ( +-  0.79% )
-                 4 context-switches:HG       #    0.005 K/sec                    ( +- 13.88% )
-                 1 cpu-migrations:HG         #    0.001 K/sec                    ( +- 25.00% )
-             1,891 page-faults:HG            #    0.002 M/sec                  
-     3,459,619,629 cycles:HG                 #    3.830 GHz                      ( +-  0.72% ) [37.52%]
-       213,043,563 stalled-cycles-frontend:HG #    6.16% frontend cycles idle     ( +- 12.27% ) [50.05%]
-   <not supported> stalled-cycles-backend:HG
-    10,788,957,967 instructions:HG           #    3.12  insns per cycle        
-                                             #    0.02  stalled cycles per insn  ( +-  0.04% ) [62.54%]
-     1,084,746,347 branches:HG               # 1200.904 M/sec                    ( +-  0.04% ) [62.54%]
-         1,083,512 branch-misses:HG          #    0.10% of all branches          ( +-  0.06% ) [62.54%]
-     3,237,956,196 L1-dcache-loads:HG        # 3584.685 M/sec                    ( +-  0.04% ) [49.54%]
-       136,559,237 L1-dcache-load-misses:HG  #    4.22% of all L1-dcache hits    ( +-  0.11% ) [25.00%]
-         9,892,844 LLC-loads:HG              #   10.952 M/sec                    ( +- 11.06% ) [25.01%]
-   <not supported> LLC-load-misses:HG      
+        983.869385 task-clock                #    0.997 CPUs utilized            ( +-  0.09% )
+     3,381,113,280 cycles                    #    3.437 GHz                      ( +-  0.02% ) [79.92%]
+    10,792,384,474 instructions              #    3.19  insns per cycle          ( +-  0.02% ) [89.99%]
+       282,922,563 cache-references          #  287.561 M/sec                    ( +-  0.02% ) [89.98%]
+        92,598,909 cache-misses              #   32.729 % of all cache refs      ( +-  1.43% ) [90.01%]
+     1,086,278,463 branch                    # 1104.088 M/sec                    ( +-  0.02% ) [90.02%]
+         1,081,456 branch-misses             #    1.099 M/sec                    ( +-  0.05% ) [90.03%]
+             1,892 page-faults               #    0.002 M/sec                  
+     3,223,973,996 L1-dcache-loads           # 3276.831 M/sec                    ( +-  0.02% ) [90.02%]
+       136,417,101 L1-dcache-load-misses     #    4.23% of all L1-dcache hits    ( +-  0.01% ) [90.03%]
+           333,596 LLC-loads                 #    0.339 M/sec                    ( +-  1.07% ) [90.04%]
+           107,975 LLC-load-misses           #   32.37% of all LL-cache hits     ( +-  1.99% ) [89.96%]
 
-       0.905432526 seconds time elapsed                                          ( +-  0.79% )
+       0.986361199 seconds time elapsed                                          ( +-  0.10% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 754 ms 
+Timer - Multiplication: 638 ms 
 Ret: 0
-Timer - Multiplication: 752 ms 
+Timer - Multiplication: 637 ms 
 Ret: 0
-Timer - Multiplication: 745 ms 
+Timer - Multiplication: 647 ms 
 Ret: 0
-Timer - Multiplication: 754 ms 
+Timer - Multiplication: 641 ms 
 Ret: 0
-Timer - Multiplication: 747 ms 
+Timer - Multiplication: 642 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conin 1024' (5 runs):
 
-        756.817621 task-clock:HG             #    0.997 CPUs utilized            ( +-  0.24% )
-                 4 context-switches:HG       #    0.005 K/sec                    ( +- 15.81% )
-                 1 cpu-migrations:HG         #    0.001 K/sec                    ( +- 25.00% )
-             1,897 page-faults:HG            #    0.003 M/sec                  
-     2,897,774,592 cycles:HG                 #    3.829 GHz                      ( +-  0.16% ) [37.48%]
-       204,781,054 stalled-cycles-frontend:HG #    7.07% frontend cycles idle     ( +-  2.04% ) [50.00%]
-   <not supported> stalled-cycles-backend:HG
-     7,582,197,844 instructions:HG           #    2.62  insns per cycle        
-                                             #    0.03  stalled cycles per insn  ( +-  0.02% ) [62.51%]
-       552,821,380 branches:HG               #  730.455 M/sec                    ( +-  0.15% ) [62.52%]
-         1,081,267 branch-misses:HG          #    0.20% of all branches          ( +-  0.11% ) [62.58%]
-     2,700,652,838 L1-dcache-loads:HG        # 3568.433 M/sec                    ( +-  0.04% ) [49.50%]
-       136,795,632 L1-dcache-load-misses:HG  #    5.07% of all L1-dcache hits    ( +-  0.10% ) [25.02%]
-        10,793,647 LLC-loads:HG              #   14.262 M/sec                    ( +-  2.58% ) [24.98%]
-   <not supported> LLC-load-misses:HG      
+        648.734108 task-clock                #    0.996 CPUs utilized            ( +-  0.36% )
+     2,219,790,279 cycles                    #    3.422 GHz                      ( +-  0.07% ) [79.89%]
+     7,587,645,321 instructions              #    3.42  insns per cycle          ( +-  0.03% ) [89.94%]
+       271,073,890 cache-references          #  417.851 M/sec                    ( +-  0.08% ) [89.95%]
+        77,215,333 cache-misses              #   28.485 % of all cache refs      ( +-  1.99% ) [89.99%]
+       553,171,014 branch                    #  852.693 M/sec                    ( +-  0.06% ) [90.01%]
+         1,077,141 branch-misses             #    1.660 M/sec                    ( +-  0.05% ) [90.02%]
+             1,898 page-faults               #    0.003 M/sec                    ( +-  0.01% )
+     2,688,514,438 L1-dcache-loads           # 4144.247 M/sec                    ( +-  0.04% ) [90.02%]
+       136,670,959 L1-dcache-load-misses     #    5.08% of all L1-dcache hits    ( +-  0.01% ) [90.03%]
+         1,464,242 LLC-loads                 #    2.257 M/sec                    ( +-  1.20% ) [90.08%]
+           696,752 LLC-load-misses           #   47.58% of all LL-cache hits     ( +-  2.19% ) [90.02%]
 
-       0.758773173 seconds time elapsed                                          ( +-  0.24% )
+       0.651308560 seconds time elapsed                                          ( +-  0.39% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 5971 ms 
+Timer - Multiplication: 5454 ms 
 Ret: 0
-Timer - Multiplication: 5985 ms 
+Timer - Multiplication: 5469 ms 
 Ret: 0
-Timer - Multiplication: 6071 ms 
+Timer - Multiplication: 5478 ms 
 Ret: 0
-Timer - Multiplication: 6033 ms 
+Timer - Multiplication: 5451 ms 
 Ret: 0
-Timer - Multiplication: 6005 ms 
+Timer - Multiplication: 5454 ms 
 Ret: 0
 
  Performance counter stats for './mmul_nes 2048' (5 runs):
 
-       6046.012780 task-clock:HG             #    0.999 CPUs utilized            ( +-  0.30% )
-                15 context-switches:HG       #    0.002 K/sec                    ( +-  6.71% )
-                 1 cpu-migrations:HG         #    0.000 K/sec                    ( +- 46.77% )
-            24,980 page-faults:HG            #    0.004 M/sec                    ( +-  0.00% )
-    23,230,106,870 cycles:HG                 #    3.842 GHz                      ( +-  0.30% ) [37.50%]
-     1,700,593,786 stalled-cycles-frontend:HG #    7.32% frontend cycles idle     ( +-  4.07% ) [50.01%]
-   <not supported> stalled-cycles-backend:HG
-    60,386,371,354 instructions:HG           #    2.60  insns per cycle        
-                                             #    0.03  stalled cycles per insn  ( +-  0.05% ) [62.51%]
-     4,369,327,314 branches:HG               #  722.679 M/sec                    ( +-  0.08% ) [62.51%]
-         4,289,698 branch-misses:HG          #    0.10% of all branches          ( +-  0.04% ) [62.52%]
-    21,577,865,316 L1-dcache-loads:HG        # 3568.941 M/sec                    ( +-  0.04% ) [49.94%]
-     1,224,399,310 L1-dcache-load-misses:HG  #    5.67% of all L1-dcache hits    ( +-  0.07% ) [24.99%]
-       621,861,029 LLC-loads:HG              #  102.855 M/sec                    ( +-  2.25% ) [25.00%]
-   <not supported> LLC-load-misses:HG      
+       5502.350823 task-clock                #    0.999 CPUs utilized            ( +-  0.09% )
+    18,875,255,707 cycles                    #    3.430 GHz                      ( +-  0.06% ) [80.00%]
+    60,474,731,374 instructions              #    3.20  insns per cycle          ( +-  0.02% ) [90.00%]
+     2,177,668,282 cache-references          #  395.771 M/sec                    ( +-  0.12% ) [90.00%]
+     1,206,167,154 cache-misses              #   55.388 % of all cache refs      ( +-  0.11% ) [90.00%]
+     4,372,694,324 branch                    #  794.696 M/sec                    ( +-  0.02% ) [90.00%]
+         4,288,582 branch-misses             #    0.779 M/sec                    ( +-  0.03% ) [90.00%]
+            24,981 page-faults               #    0.005 M/sec                  
+    21,514,804,565 L1-dcache-loads           # 3910.111 M/sec                    ( +-  0.01% ) [90.00%]
+     1,209,849,052 L1-dcache-load-misses     #    5.62% of all L1-dcache hits    ( +-  0.02% ) [90.00%]
+        19,640,787 LLC-loads                 #    3.570 M/sec                    ( +-  0.59% ) [90.00%]
+        10,061,465 LLC-load-misses           #   51.23% of all LL-cache hits     ( +-  0.79% ) [90.00%]
 
-       6.049286611 seconds time elapsed                                          ( +-  0.30% )
+       5.507086896 seconds time elapsed                                          ( +-  0.08% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 7017 ms 
+Timer - Multiplication: 7467 ms 
 Ret: 0
-Timer - Multiplication: 7040 ms 
+Timer - Multiplication: 7471 ms 
 Ret: 0
-Timer - Multiplication: 7007 ms 
+Timer - Multiplication: 7468 ms 
 Ret: 0
-Timer - Multiplication: 7034 ms 
+Timer - Multiplication: 7458 ms 
 Ret: 0
-Timer - Multiplication: 7082 ms 
+Timer - Multiplication: 7468 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conmul 2048' (5 runs):
 
-       7055.201916 task-clock:HG             #    1.000 CPUs utilized            ( +-  0.18% )
-                18 context-switches:HG       #    0.003 K/sec                    ( +-  7.61% )
-                 1 cpu-migrations:HG         #    0.000 K/sec                    ( +- 25.00% )
-             1,927 page-faults:HG            #    0.273 K/sec                  
-    27,108,282,842 cycles:HG                 #    3.842 GHz                      ( +-  0.12% ) [37.50%]
-     1,239,274,501 stalled-cycles-frontend:HG #    4.57% frontend cycles idle     ( +-  2.00% ) [50.00%]
-   <not supported> stalled-cycles-backend:HG
-    85,950,628,116 instructions:HG           #    3.17  insns per cycle        
-                                             #    0.01  stalled cycles per insn  ( +-  0.03% ) [62.50%]
-     8,616,287,134 branches:HG               # 1221.267 M/sec                    ( +-  0.06% ) [62.51%]
-         4,254,106 branch-misses:HG          #    0.05% of all branches          ( +-  0.06% ) [62.52%]
-    25,854,690,156 L1-dcache-loads:HG        # 3664.628 M/sec                    ( +-  0.07% ) [49.96%]
-     1,121,896,833 L1-dcache-load-misses:HG  #    4.34% of all L1-dcache hits    ( +-  0.13% ) [25.00%]
-       427,034,740 LLC-loads:HG              #   60.528 M/sec                    ( +-  0.42% ) [24.99%]
-   <not supported> LLC-load-misses:HG      
+       7491.092089 task-clock                #    1.000 CPUs utilized            ( +-  0.03% )
+    25,735,003,352 cycles                    #    3.435 GHz                      ( +-  0.03% ) [79.99%]
+    86,120,728,501 instructions              #    3.35  insns per cycle          ( +-  0.01% ) [89.99%]
+     2,203,218,603 cache-references          #  294.112 M/sec                    ( +-  0.02% ) [90.00%]
+     1,354,796,437 cache-misses              #   61.492 % of all cache refs      ( +-  0.18% ) [90.00%]
+     8,635,311,119 branch                    # 1152.744 M/sec                    ( +-  0.01% ) [90.00%]
+         4,284,383 branch-misses             #    0.572 M/sec                    ( +-  0.07% ) [90.01%]
+             1,928 page-faults               #    0.257 K/sec                  
+    25,787,078,862 L1-dcache-loads           # 3442.366 M/sec                    ( +-  0.01% ) [90.00%]
+     1,119,446,537 L1-dcache-load-misses     #    4.34% of all L1-dcache hits    ( +-  0.01% ) [90.00%]
+         5,740,892 LLC-loads                 #    0.766 M/sec                    ( +-  0.25% ) [90.01%]
+         2,255,315 LLC-load-misses           #   39.29% of all LL-cache hits     ( +-  0.28% ) [90.00%]
 
-       7.058448699 seconds time elapsed                                          ( +-  0.18% )
+       7.493729406 seconds time elapsed                                          ( +-  0.03% )
 
 --------------------------------------------------------------------------------------------------------
-Timer - Multiplication: 5887 ms 
+Timer - Multiplication: 5277 ms 
 Ret: 0
-Timer - Multiplication: 5893 ms 
+Timer - Multiplication: 5322 ms 
 Ret: 0
-Timer - Multiplication: 5897 ms 
+Timer - Multiplication: 5304 ms 
 Ret: 0
-Timer - Multiplication: 5837 ms 
+Timer - Multiplication: 5297 ms 
 Ret: 0
-Timer - Multiplication: 5832 ms 
+Timer - Multiplication: 5302 ms 
 Ret: 0
 
  Performance counter stats for './mmul_conin 2048' (5 runs):
 
-       5890.840387 task-clock:HG             #    1.000 CPUs utilized            ( +-  0.26% )
-                 8 context-switches:HG       #    0.001 K/sec                    ( +-  5.59% )
-                 1 cpu-migrations:HG         #    0.000 K/sec                    ( +- 28.57% )
-             1,940 page-faults:HG            #    0.329 K/sec                    ( +-  0.01% )
-    22,592,523,562 cycles:HG                 #    3.835 GHz                      ( +-  0.18% ) [37.50%]
-     1,084,147,979 stalled-cycles-frontend:HG #    4.80% frontend cycles idle     ( +-  3.75% ) [50.00%]
-   <not supported> stalled-cycles-backend:HG
-    60,359,095,526 instructions:HG           #    2.67  insns per cycle        
-                                             #    0.02  stalled cycles per insn  ( +-  0.01% ) [62.50%]
-     4,352,825,865 branches:HG               #  738.914 M/sec                    ( +-  0.08% ) [62.51%]
-         4,254,795 branch-misses:HG          #    0.10% of all branches          ( +-  0.07% ) [62.51%]
-    21,538,883,284 L1-dcache-loads:HG        # 3656.335 M/sec                    ( +-  0.01% ) [49.94%]
-     1,130,174,660 L1-dcache-load-misses:HG  #    5.25% of all L1-dcache hits    ( +-  0.13% ) [25.00%]
-       583,182,093 LLC-loads:HG              #   98.998 M/sec                    ( +-  0.35% ) [25.00%]
-   <not supported> LLC-load-misses:HG      
+       5325.091788 task-clock                #    0.999 CPUs utilized            ( +-  0.14% )
+    18,292,281,936 cycles                    #    3.435 GHz                      ( +-  0.05% ) [79.99%]
+    60,386,389,433 instructions              #    3.30  insns per cycle          ( +-  0.01% ) [90.00%]
+     2,139,659,565 cache-references          #  401.807 M/sec                    ( +-  0.23% ) [90.00%]
+     1,181,313,206 cache-misses              #   55.210 % of all cache refs      ( +-  0.20% ) [90.00%]
+     4,356,322,613 branch                    #  818.075 M/sec                    ( +-  0.02% ) [90.00%]
+         4,263,186 branch-misses             #    0.801 M/sec                    ( +-  0.09% ) [90.00%]
+             1,941 page-faults               #    0.365 K/sec                  
+    21,498,766,527 L1-dcache-loads           # 4037.257 M/sec                    ( +-  0.02% ) [90.00%]
+     1,122,497,875 L1-dcache-load-misses     #    5.22% of all L1-dcache hits    ( +-  0.43% ) [90.01%]
+        23,316,711 LLC-loads                 #    4.379 M/sec                    ( +-  0.65% ) [90.01%]
+        14,601,490 LLC-load-misses           #   62.62% of all LL-cache hits     ( +-  0.49% ) [90.00%]
 
-       5.893750686 seconds time elapsed                                          ( +-  0.26% )
+       5.327851477 seconds time elapsed                                          ( +-  0.14% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nes 256' (5 runs):
+
+         10.758986 task-clock                #    0.826 CPUs utilized            ( +-  0.25% )
+        35,788,970 cycles                    #    3.326 GHz                      ( +-  0.20% ) [79.86%]
+       123,982,521 instructions              #    3.46  insns per cycle          ( +-  0.12% ) [90.72%]
+         4,387,644 cache-references          #  407.812 M/sec                    ( +-  1.03% ) [90.74%]
+            50,548 cache-misses              #    1.152 % of all cache refs      ( +- 13.77% ) [90.73%]
+        10,015,105 branch                    #  930.860 M/sec                    ( +-  0.06% ) [90.73%]
+            83,258 branch-misses             #    7.738 M/sec                    ( +-  0.36% ) [90.73%]
+               736 page-faults               #    0.068 M/sec                  
+        42,678,202 L1-dcache-loads           # 3966.750 M/sec                    ( +-  0.06% ) [90.73%]
+         2,251,918 L1-dcache-load-misses     #    5.28% of all L1-dcache hits    ( +-  0.06% ) [90.73%]
+            32,763 LLC-loads                 #    3.045 M/sec                    ( +-  1.36% ) [90.73%]
+               544 LLC-load-misses           #    1.66% of all LL-cache hits     ( +- 34.98% ) [85.16%]
+
+       0.013025726 seconds time elapsed                                          ( +-  0.72% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 15 ms 
+Ret: 0
+Timer - Multiplication: 15 ms 
+Ret: 0
+Timer - Multiplication: 15 ms 
+Ret: 0
+Timer - Multiplication: 15 ms 
+Ret: 0
+Timer - Multiplication: 15 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conmul 256' (5 runs):
+
+         16.678337 task-clock                #    0.882 CPUs utilized            ( +-  0.46% )
+        55,875,741 cycles                    #    3.350 GHz                      ( +-  0.14% ) [76.07%]
+       173,080,112 instructions              #    3.10  insns per cycle          ( +-  0.05% ) [88.03%]
+         4,320,326 cache-references          #  259.038 M/sec                    ( +-  0.59% ) [88.03%]
+            40,539 cache-misses              #    0.938 % of all cache refs      ( +- 20.29% ) [88.03%]
+        18,015,731 branch                    # 1080.187 M/sec                    ( +-  0.09% ) [88.03%]
+            82,772 branch-misses             #    4.963 M/sec                    ( +-  0.58% ) [89.00%]
+               731 page-faults               #    0.044 M/sec                    ( +-  0.03% )
+        51,592,576 L1-dcache-loads           # 3093.389 M/sec                    ( +-  0.19% ) [92.01%]
+         2,227,138 L1-dcache-load-misses     #    4.32% of all L1-dcache hits    ( +-  0.03% ) [94.01%]
+            16,953 LLC-loads                 #    1.016 M/sec                    ( +-  0.91% ) [94.02%]
+             1,041 LLC-load-misses           #    6.14% of all LL-cache hits     ( +- 31.39% ) [90.93%]
+
+       0.018909793 seconds time elapsed                                          ( +-  1.20% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+Timer - Multiplication: 9 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conin 256' (5 runs):
+
+         10.628309 task-clock                #    0.813 CPUs utilized            ( +-  0.27% )
+        35,110,039 cycles                    #    3.303 GHz                      ( +-  0.17% ) [80.51%]
+       123,599,983 instructions              #    3.52  insns per cycle          ( +-  0.03% ) [90.63%]
+         4,236,243 cache-references          #  398.581 M/sec                    ( +-  0.84% ) [90.63%]
+            41,196 cache-misses              #    0.972 % of all cache refs      ( +- 16.75% ) [90.63%]
+         9,930,207 branch                    #  934.317 M/sec                    ( +-  0.05% ) [90.62%]
+            83,274 branch-misses             #    7.835 M/sec                    ( +-  0.36% ) [90.62%]
+               732 page-faults               #    0.069 M/sec                    ( +-  0.03% )
+        42,580,219 L1-dcache-loads           # 4006.302 M/sec                    ( +-  0.11% ) [90.62%]
+         2,222,419 L1-dcache-load-misses     #    5.22% of all L1-dcache hits    ( +-  0.11% ) [90.62%]
+            31,598 LLC-loads                 #    2.973 M/sec                    ( +-  0.97% ) [90.62%]
+               372 LLC-load-misses           #    1.18% of all LL-cache hits     ( +- 47.19% ) [85.32%]
+
+       0.013070350 seconds time elapsed                                          ( +-  0.93% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 72 ms 
+Ret: 0
+Timer - Multiplication: 72 ms 
+Ret: 0
+Timer - Multiplication: 72 ms 
+Ret: 0
+Timer - Multiplication: 71 ms 
+Ret: 0
+Timer - Multiplication: 71 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nes 512' (5 runs):
+
+         75.291438 task-clock                #    0.971 CPUs utilized            ( +-  0.29% )
+       256,277,199 cycles                    #    3.404 GHz                      ( +-  0.07% ) [78.76%]
+       967,855,264 instructions              #    3.78  insns per cycle          ( +-  0.05% ) [89.38%]
+        35,004,401 cache-references          #  464.919 M/sec                    ( +-  0.14% ) [89.38%]
+           343,143 cache-misses              #    0.980 % of all cache refs      ( +-  4.00% ) [89.36%]
+        71,913,417 branch                    #  955.134 M/sec                    ( +-  0.16% ) [89.84%]
+           282,170 branch-misses             #    3.748 M/sec                    ( +-  0.16% ) [90.36%]
+             1,896 page-faults               #    0.025 M/sec                  
+       337,093,194 L1-dcache-loads           # 4477.178 M/sec                    ( +-  0.03% ) [90.71%]
+        17,385,445 L1-dcache-load-misses     #    5.16% of all L1-dcache hits    ( +-  0.06% ) [90.70%]
+           168,640 LLC-loads                 #    2.240 M/sec                    ( +-  1.09% ) [90.71%]
+            10,699 LLC-load-misses           #    6.34% of all LL-cache hits     ( +-  4.16% ) [90.21%]
+
+       0.077537501 seconds time elapsed                                          ( +-  0.21% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 119 ms 
+Ret: 0
+Timer - Multiplication: 119 ms 
+Ret: 0
+Timer - Multiplication: 119 ms 
+Ret: 0
+Timer - Multiplication: 118 ms 
+Ret: 0
+Timer - Multiplication: 119 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conmul 512' (5 runs):
+
+        122.288387 task-clock                #    0.980 CPUs utilized            ( +-  0.11% )
+       419,599,467 cycles                    #    3.431 GHz                      ( +-  0.05% ) [78.94%]
+     1,364,531,351 instructions              #    3.25  insns per cycle          ( +-  0.09% ) [90.07%]
+        35,281,463 cache-references          #  288.510 M/sec                    ( +-  0.10% ) [90.10%]
+           421,011 cache-misses              #    1.193 % of all cache refs      ( +-  6.93% ) [90.19%]
+       137,991,394 branch                    # 1128.410 M/sec                    ( +-  0.01% ) [90.19%]
+           283,832 branch-misses             #    2.321 M/sec                    ( +-  0.11% ) [90.19%]
+             1,883 page-faults               #    0.015 M/sec                    ( +-  0.01% )
+       404,251,347 L1-dcache-loads           # 3305.721 M/sec                    ( +-  0.02% ) [90.19%]
+        17,206,490 L1-dcache-load-misses     #    4.26% of all L1-dcache hits    ( +-  0.04% ) [90.19%]
+            47,666 LLC-loads                 #    0.390 M/sec                    ( +-  0.60% ) [90.19%]
+             9,276 LLC-load-misses           #   19.46% of all LL-cache hits     ( +-  8.66% ) [89.84%]
+
+       0.124723601 seconds time elapsed                                          ( +-  0.13% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 71 ms 
+Ret: 0
+Timer - Multiplication: 71 ms 
+Ret: 0
+Timer - Multiplication: 70 ms 
+Ret: 0
+Timer - Multiplication: 71 ms 
+Ret: 0
+Timer - Multiplication: 71 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conin 512' (5 runs):
+
+         74.268346 task-clock                #    0.970 CPUs utilized            ( +-  0.12% )
+       253,668,456 cycles                    #    3.416 GHz                      ( +-  0.06% ) [78.47%]
+       966,412,422 instructions              #    3.81  insns per cycle          ( +-  0.06% ) [89.23%]
+        34,686,165 cache-references          #  467.038 M/sec                    ( +-  0.12% ) [89.12%]
+           323,974 cache-misses              #    0.934 % of all cache refs      ( +-  4.90% ) [89.81%]
+        71,982,406 branch                    #  969.221 M/sec                    ( +-  0.08% ) [90.14%]
+           282,024 branch-misses             #    3.797 M/sec                    ( +-  0.06% ) [90.58%]
+             1,886 page-faults               #    0.025 M/sec                  
+       336,934,612 L1-dcache-loads           # 4536.719 M/sec                    ( +-  0.03% ) [90.58%]
+        17,229,437 L1-dcache-load-misses     #    5.11% of all L1-dcache hits    ( +-  0.05% ) [90.58%]
+           164,025 LLC-loads                 #    2.209 M/sec                    ( +-  1.16% ) [90.58%]
+            10,980 LLC-load-misses           #    6.69% of all LL-cache hits     ( +-  6.04% ) [90.18%]
+
+       0.076563920 seconds time elapsed                                          ( +-  0.10% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 654 ms 
+Ret: 0
+Timer - Multiplication: 656 ms 
+Ret: 0
+Timer - Multiplication: 646 ms 
+Ret: 0
+Timer - Multiplication: 647 ms 
+Ret: 0
+Timer - Multiplication: 652 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nes 1024' (5 runs):
+
+        663.054932 task-clock                #    0.996 CPUs utilized            ( +-  0.43% )
+     2,263,443,116 cycles                    #    3.414 GHz                      ( +-  0.13% ) [79.86%]
+     7,599,552,293 instructions              #    3.36  insns per cycle          ( +-  0.03% ) [89.96%]
+       273,031,966 cache-references          #  411.779 M/sec                    ( +-  0.05% ) [89.94%]
+        74,243,003 cache-misses              #   27.192 % of all cache refs      ( +-  1.74% ) [89.99%]
+       556,589,016 branch                    #  839.431 M/sec                    ( +-  0.03% ) [90.01%]
+         1,085,153 branch-misses             #    1.637 M/sec                    ( +-  0.03% ) [90.03%]
+             6,519 page-faults               #    0.010 M/sec                    ( +-  0.00% )
+     2,694,984,198 L1-dcache-loads           # 4064.496 M/sec                    ( +-  0.04% ) [90.05%]
+       137,428,079 L1-dcache-load-misses     #    5.10% of all L1-dcache hits    ( +-  0.04% ) [90.05%]
+         1,614,592 LLC-loads                 #    2.435 M/sec                    ( +-  0.65% ) [90.06%]
+           580,906 LLC-load-misses           #   35.98% of all LL-cache hits     ( +-  1.62% ) [90.03%]
+
+       0.665652381 seconds time elapsed                                          ( +-  0.43% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 978 ms 
+Ret: 0
+Timer - Multiplication: 980 ms 
+Ret: 0
+Timer - Multiplication: 983 ms 
+Ret: 0
+Timer - Multiplication: 977 ms 
+Ret: 0
+Timer - Multiplication: 979 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conmul 1024' (5 runs):
+
+        987.196749 task-clock                #    0.997 CPUs utilized            ( +-  0.10% )
+     3,380,826,028 cycles                    #    3.425 GHz                      ( +-  0.05% ) [79.96%]
+    10,793,119,504 instructions              #    3.19  insns per cycle          ( +-  0.02% ) [89.98%]
+       282,944,487 cache-references          #  286.614 M/sec                    ( +-  0.01% ) [89.97%]
+        92,793,742 cache-misses              #   32.796 % of all cache refs      ( +-  2.62% ) [89.97%]
+     1,086,182,615 branch                    # 1100.270 M/sec                    ( +-  0.02% ) [89.99%]
+         1,081,565 branch-misses             #    1.096 M/sec                    ( +-  0.05% ) [90.02%]
+             1,892 page-faults               #    0.002 M/sec                    ( +-  0.01% )
+     3,225,026,556 L1-dcache-loads           # 3266.853 M/sec                    ( +-  0.03% ) [90.01%]
+       136,409,441 L1-dcache-load-misses     #    4.23% of all L1-dcache hits    ( +-  0.02% ) [90.04%]
+           330,223 LLC-loads                 #    0.335 M/sec                    ( +-  1.35% ) [90.05%]
+           107,284 LLC-load-misses           #   32.49% of all LL-cache hits     ( +-  1.88% ) [89.98%]
+
+       0.990622937 seconds time elapsed                                          ( +-  0.13% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 638 ms 
+Ret: 0
+Timer - Multiplication: 637 ms 
+Ret: 0
+Timer - Multiplication: 642 ms 
+Ret: 0
+Timer - Multiplication: 642 ms 
+Ret: 0
+Timer - Multiplication: 644 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conin 1024' (5 runs):
+
+        647.552876 task-clock                #    0.996 CPUs utilized            ( +-  0.20% )
+     2,222,325,396 cycles                    #    3.432 GHz                      ( +-  0.11% ) [79.89%]
+     7,582,593,482 instructions              #    3.41  insns per cycle          ( +-  0.03% ) [89.95%]
+       270,832,899 cache-references          #  418.241 M/sec                    ( +-  0.09% ) [89.96%]
+        78,088,575 cache-misses              #   28.833 % of all cache refs      ( +-  2.26% ) [89.99%]
+       553,535,831 branch                    #  854.812 M/sec                    ( +-  0.02% ) [90.03%]
+         1,076,789 branch-misses             #    1.663 M/sec                    ( +-  0.04% ) [90.03%]
+             1,898 page-faults               #    0.003 M/sec                  
+     2,687,484,014 L1-dcache-loads           # 4150.216 M/sec                    ( +-  0.01% ) [90.05%]
+       136,665,993 L1-dcache-load-misses     #    5.09% of all L1-dcache hits    ( +-  0.03% ) [90.02%]
+         1,493,494 LLC-loads                 #    2.306 M/sec                    ( +-  1.27% ) [90.04%]
+           711,194 LLC-load-misses           #   47.62% of all LL-cache hits     ( +-  2.64% ) [90.00%]
+
+       0.649940153 seconds time elapsed                                          ( +-  0.21% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 5428 ms 
+Ret: 0
+Timer - Multiplication: 5456 ms 
+Ret: 0
+Timer - Multiplication: 5445 ms 
+Ret: 0
+Timer - Multiplication: 5443 ms 
+Ret: 0
+Timer - Multiplication: 5443 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_nes 2048' (5 runs):
+
+       5486.913470 task-clock                #    0.999 CPUs utilized            ( +-  0.05% )
+    18,814,584,048 cycles                    #    3.429 GHz                      ( +-  0.02% ) [79.98%]
+    60,475,218,654 instructions              #    3.21  insns per cycle          ( +-  0.02% ) [89.99%]
+     2,168,370,884 cache-references          #  395.190 M/sec                    ( +-  0.11% ) [90.00%]
+     1,179,255,375 cache-misses              #   54.384 % of all cache refs      ( +-  0.10% ) [90.00%]
+     4,369,685,837 branch                    #  796.383 M/sec                    ( +-  0.01% ) [90.01%]
+         4,298,332 branch-misses             #    0.783 M/sec                    ( +-  0.10% ) [90.01%]
+            24,981 page-faults               #    0.005 M/sec                    ( +-  0.00% )
+    21,522,517,948 L1-dcache-loads           # 3922.518 M/sec                    ( +-  0.02% ) [90.01%]
+     1,209,793,872 L1-dcache-load-misses     #    5.62% of all L1-dcache hits    ( +-  0.01% ) [90.01%]
+        22,938,724 LLC-loads                 #    4.181 M/sec                    ( +-  0.38% ) [90.01%]
+        13,139,250 LLC-load-misses           #   57.28% of all LL-cache hits     ( +-  0.28% ) [89.99%]
+
+       5.489882527 seconds time elapsed                                          ( +-  0.05% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 7578 ms 
+Ret: 0
+Timer - Multiplication: 7522 ms 
+Ret: 0
+Timer - Multiplication: 7649 ms 
+Ret: 0
+Timer - Multiplication: 7647 ms 
+Ret: 0
+Timer - Multiplication: 7474 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conmul 2048' (5 runs):
+
+       7599.224963 task-clock                #    1.000 CPUs utilized            ( +-  0.45% )
+    25,757,518,173 cycles                    #    3.389 GHz                      ( +-  0.09% ) [79.99%]
+    86,112,989,772 instructions              #    3.34  insns per cycle          ( +-  0.01% ) [90.00%]
+     2,203,414,656 cache-references          #  289.953 M/sec                    ( +-  0.05% ) [90.00%]
+     1,376,755,500 cache-misses              #   62.483 % of all cache refs      ( +-  0.83% ) [90.00%]
+     8,635,253,474 branch                    # 1136.333 M/sec                    ( +-  0.01% ) [90.00%]
+         4,300,635 branch-misses             #    0.566 M/sec                    ( +-  0.04% ) [90.00%]
+             1,928 page-faults               #    0.254 K/sec                    ( +-  0.01% )
+    25,783,014,227 L1-dcache-loads           # 3392.848 M/sec                    ( +-  0.01% ) [90.00%]
+     1,119,807,654 L1-dcache-load-misses     #    4.34% of all L1-dcache hits    ( +-  0.03% ) [90.00%]
+         5,556,457 LLC-loads                 #    0.731 M/sec                    ( +-  6.52% ) [90.00%]
+         2,341,412 LLC-load-misses           #   42.14% of all LL-cache hits     ( +-  0.77% ) [90.00%]
+
+       7.602209030 seconds time elapsed                                          ( +-  0.46% )
+
+--------------------------------------------------------------------------------------------------------
+Timer - Multiplication: 5296 ms 
+Ret: 0
+Timer - Multiplication: 5292 ms 
+Ret: 0
+Timer - Multiplication: 5277 ms 
+Ret: 0
+Timer - Multiplication: 5286 ms 
+Ret: 0
+Timer - Multiplication: 5307 ms 
+Ret: 0
+
+ Performance counter stats for './mmul_conin 2048' (5 runs):
+
+       5316.297552 task-clock                #    0.999 CPUs utilized            ( +-  0.09% )
+    18,256,680,504 cycles                    #    3.434 GHz                      ( +-  0.05% ) [79.99%]
+    60,390,701,788 instructions              #    3.31  insns per cycle          ( +-  0.01% ) [90.00%]
+     2,135,651,304 cache-references          #  401.718 M/sec                    ( +-  0.05% ) [90.00%]
+     1,164,823,453 cache-misses              #   54.542 % of all cache refs      ( +-  0.11% ) [90.00%]
+     4,355,758,401 branch                    #  819.322 M/sec                    ( +-  0.01% ) [90.00%]
+         4,266,625 branch-misses             #    0.803 M/sec                    ( +-  0.05% ) [90.01%]
+             1,941 page-faults               #    0.365 K/sec                    ( +-  0.01% )
+    21,494,263,406 L1-dcache-loads           # 4043.089 M/sec                    ( +-  0.01% ) [90.00%]
+     1,116,324,220 L1-dcache-load-misses     #    5.19% of all L1-dcache hits    ( +-  0.06% ) [90.00%]
+        24,460,815 LLC-loads                 #    4.601 M/sec                    ( +-  1.05% ) [90.01%]
+        15,803,798 LLC-load-misses           #   64.61% of all LL-cache hits     ( +-  1.52% ) [90.00%]
+
+       5.319332319 seconds time elapsed                                          ( +-  0.09% )
 
 --------------------------------------------------------------------------------------------------------
