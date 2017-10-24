@@ -1,6 +1,22 @@
 Part 1:
 
 Task 1: 
-NESTED: matrix is stored in a vector of vectors; data access: like 2D array; performance: probably slowest, because vectors could be arbitrarily distributed in memory;
-CONTIGUOUS_WITH_MULTIPLICATION: matrix is stored in single vector; data access: row index is calculated via multiplication for every single element; performance: fastest for small matrices, matrix is stored in contiguous data block and multiplications are much faster than creating indirection vector at initialisation;
-CONTIGUOUS_WITH_INDIRECTION: matrix is stored in single vector, indices of starts of rows are calculated on matrix creation and stored in another vector "indirection"; data access: row index is read from the indirection vector; performance: fastest for huge matrices, matrix is stored in contiguous data block, indirection vector creation time is smaller than multiplications (CONTIGUOUS_WITH_MULTIPLICATION) for huge matrix sizes
+NESTED: 
+ - matrix is stored in a vector of vectors; 
+ - data access: like 2D array; 
+ - performance: probably slowest, because vectors could be arbitrarily distributed in memory;
+
+CONTIGUOUS_WITH_MULTIPLICATION: 
+- matrix is stored in single vector; 
+- data access: row index is calculated via multiplication for every single element; 
+- performance: fastest for small matrices, matrix is stored in contiguous data block and multiplications are much faster than creating indirection vector at initialisation;
+
+CONTIGUOUS_WITH_INDIRECTION: 
+- matrix is stored in single vector, indices of starts of rows are calculated on matrix creation and stored in another vector "indirection"; 
+- data access: row index is read from the indirection vector; 
+- performance: fastest for huge matrices, matrix is stored in contiguous data block, indirection vector creation time is smaller than multiplications (CONTIGUOUS_WITH_MULTIPLICATION) for huge matrix sizes
+
+
+Part 2:
+Optimization: we skip the zero-elements of the right-hand-side matrix for calculation
+OpenMP: no complex strategy for parallelization required, workload equally distributed over threads (each thread takes a row, every row has same number of computations)
