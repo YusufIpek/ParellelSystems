@@ -111,5 +111,6 @@ int main(int argc, char** argv) {
 	// check that the result is correct
 	auto ret = (c == a) ? EXIT_SUCCESS : EXIT_FAILURE;
 	std::cout << "Ret: " << ret << std::endl;
+	fflush(stdout);
 	return ret;
 }
