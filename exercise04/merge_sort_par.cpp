@@ -65,7 +65,14 @@ void copy(const std::vector<int>& input, std::vector<int>& output) {
 	}
 }
 
-
+bool check_if_sorted(const std::vector<int>& input){
+	int size = input.size();
+	for(int i = 0; i < size-1; i++){
+		if(input[i] > input[i+1])
+			return false;
+	}
+	return true;
+}
 
 int main(int argc, char** argv) {
 	
@@ -87,5 +94,12 @@ int main(int argc, char** argv) {
 		}
 		
 	}
-
+	
+	if(!check_if_sorted(output)){
+		std::cout << "Sorting wrong!" << std::endl;
+		return 1;
+	}
+	
+	
+	return 0;
 }
