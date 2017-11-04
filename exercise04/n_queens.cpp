@@ -17,12 +17,6 @@ Board initialize_board(int n){
 	return board;
 }
 
-void reset_row(Board& board, int row, int n){
-	for(int j=0; j < n; j++){
-		board[row][j] = 0;
-	}
-}
-
 
 bool is_position_valid(const Board& board, int row, int column, int n){
 	
@@ -57,7 +51,7 @@ void board_place_queens(Board board, int n, int queens, int row, int& solutions)
 		if(is_position_valid(board, row, j, n)){
 			board[row][j] = 1;
 			board_place_queens(board, n, queens-1, row+1, solutions);
-			reset_row(board, row, n);	
+			board[row][j] = 0;
 		}
 	}
 }
