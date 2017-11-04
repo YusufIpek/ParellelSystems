@@ -1,6 +1,7 @@
 #include <vector>
 #include <iostream>
 #include <omp.h>
+#include "chrono_timer.h"
 
 using Board = std::vector<std::vector<int>>;
 
@@ -17,11 +18,6 @@ Board initialize_board(int n){
 	return board;
 }
 
-void reset_row(Board& board, int row, int n){
-	for(int j=0; j < n; j++){
-		board[row][j] = 0;
-	}
-}
 
 
 bool is_position_valid(const Board& board, int row, int column, int n){
@@ -44,22 +40,36 @@ bool is_position_valid(const Board& board, int row, int column, int n){
 	return true;
 }
 
-void board_place_queens(Board myboard, int n, int queens, int row, int& solutions){
+void board_place_queens_threads(Board& myboard, int n, int queens, int row, int& solutions){
 	
 	if(queens == 0){
-    #pragma omp atomic
+		#pragma omp atomic
 		solutions++;
 		return;
 	}
-    
-    #pragma omp for 
-  	for(int j = 0; j < n; j++){
+	
+	for(int j = 0; j < n; j++){
   		if(is_position_valid(myboard, row, j, n)){
-  		  myboard[row][j] = 1;
-  			board_place_queens(myboard, n, queens-1, row+1, solutions);
-  			reset_row(myboard, row, n);	
+  		    myboard[row][j] = 1;
+  			board_place_queens_threads(myboard, n, queens-1, row+1, solutions);
+  			myboard[row][j] = 0; //reset last set queen
   		}
   	}
+}
+
+void board_place_queens(int n, int queens, int row, int& solutions){
+	
+
+	#pragma omp parallel
+	{
+		auto board = initialize_board(n);
+		#pragma omp for 
+		for(int j = 0; j < n; j++){
+			board[row][j] = 1;
+			board_place_queens_threads(board, n, queens-1, row+1, solutions);
+			board = initialize_board(n);
+		}
+	}
   
 }
 
@@ -77,11 +87,12 @@ int main(int argc, char** argv){
 	int n = atoi(argv[1]);
 	int solutions = 0;
 	
-	#pragma omp parallel
+	
 	{
-		auto board = initialize_board(n);
-		board_place_queens(board, n, n, 0, solutions);
+		ChronoTimer t("N-Queens");
+		board_place_queens(n, n, 0, solutions);
 	}
+	
 
 	std::cout << "Solutions: " << solutions << std::endl;
 	
