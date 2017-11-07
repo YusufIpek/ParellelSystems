@@ -1,0 +1,13 @@
+
+
+NQueensproblem:
+  seqential version: 90 mins programming
+  parallel version: 60 mins programming (due messed up vector parallelization)
+  
+Mergesort:
+  seq: 90 mins
+  par: 60 mins
+  
+ Monte Carlo:
+  seq: 30 mins
+  par: 20 mins
