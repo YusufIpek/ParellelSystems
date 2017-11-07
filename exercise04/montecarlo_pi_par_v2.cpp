@@ -5,15 +5,18 @@
 #include "chrono_timer.h"
 
 #define R RAND_MAX
-#define OUR_NUM_THREADS 4
+
+
+unsigned int rand_foo;
+#pragma omp threadprivate(rand_foo)
 
 long R_sqr = static_cast<long>(R)*R;
 
 bool calc_point()
 {
 	long x, y;
-	x = rand();
-	y = rand();
+	x = rand_r(&rand_foo);
+	y = rand_r(&rand_foo);
 	
 	if (x*x + y*y < R_sqr) 
 		return true;
@@ -31,23 +34,23 @@ int main(int argc, char* argv[])
 	srand(time(NULL));
 	
 	long n = atol(argv[1]);	
-	long m[OUR_NUM_THREADS] = { 0 }; // number of points inside circle
+	long m = 0; // number of points inside circle
 	
 	ChronoTimer t("Monte Carlo pi estimation parallel v2:  ");
-	#pragma omp parallel for num_threads(OUR_NUM_THREADS)
-	for (long i = 0; i < n; i++)
-	{
-		if (calc_point())
-		{
-			m[omp_get_thread_num()]++;
-		}
-	}
+  #pragma omp parallel
+  {
+    rand_foo = omp_get_thread_num();
+    #pragma omp for reduction(+:m)
+  	for (long i = 0; i < n; i++)
+  	{
+  		if (calc_point())
+  		{
+  			m++;
+  		}
+  	}
+  }
 	
-	long m_final = 0;
-	for (int j = 0; j < OUR_NUM_THREADS; j++)
-	  m_final += m[j];
-	
-	double pi = static_cast<double>(m_final*4)/n;
+	double pi = static_cast<double>(m*4)/n;
 	
 	std::cout << "estimation of pi:  " << pi << std::endl;
 	
