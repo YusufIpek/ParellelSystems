@@ -26,22 +26,21 @@ bool is_position_valid(const Board& board, int row, int column){
 }
 
 
-int board_place_queens(Board board, int n, int queens, int row){
+void board_place_queens(Board board, int n, int queens, int row, int& solutions){
 	
-	int solutions = 0;
-  
 	if(queens == 0){
-		return 1;
+    #pragma omp atomic
+	  solutions++;
+		return;
 	}
 	
-#pragma omp for reduction(+:solutions)
+  #pragma omp for schedule(dynamic)
 	for(int j = 0; j < n; j++){
 		if(is_position_valid(board, row, j)){
 			board[row] = j;
-			solutions += board_place_queens(board, n, queens-1, row+1);
+			board_place_queens(board, n, queens-1, row+1, solutions);
 		}
 	}
-	return solutions;
 }
 
 
@@ -61,9 +60,8 @@ int main(int argc, char** argv){
   #pragma omp parallel
   {
   	auto board = Board(n,0); //std::vector<int>(n, 0);
-  	int solutions = 0;
   	
-  	solutions = board_place_queens(board, n, n, 0);
+  	board_place_queens(board, n, n, 0, solutions);
   }
 	std::cout << "Solutions: " << solutions << std::endl;
 	
