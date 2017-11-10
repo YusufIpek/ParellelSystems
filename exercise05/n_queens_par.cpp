@@ -2,6 +2,9 @@
 #include <iostream>
 #include <omp.h>
 
+#if !defined(OUR_NUMBER_OF_THREADS)
+#define OUR_NUMBER_OF_THREADS 4
+#endif
 
 using Board = std::vector<int>;
 
@@ -39,7 +42,7 @@ void board_place_queens_threads(Board board, int n, int queens, int row, int& so
 
 void board_place_queens(int n, int queens, int row, int& solutions){
 	
-	#pragma omp parallel
+	#pragma omp parallel num_threads(OUR_NUMBER_OF_THREADS)
 	{
 		auto board = Board(n);
 		#pragma omp for schedule(dynamic)

@@ -4,6 +4,9 @@
 
 #include "chrono_timer.h"
 
+#if !defined(OUR_NUMBER_OF_THREADS)
+#define OUR_NUMBER_OF_THREADS 4
+#endif
 
 
 void print(const std::vector<int>& input) {
@@ -87,7 +90,7 @@ int main(int argc, char** argv) {
 	copy(input, output);
 	{
 		ChronoTimer t("Mergesort");
-		#pragma omp parallel
+		#pragma omp parallel num_threads(OUR_NUMBER_OF_THREADS)
 		{
 			#pragma omp single
 			merge_sort(input, 0, n, output);
