@@ -8,7 +8,7 @@ fi
 
 for i in 1 2 4 8;
 do
-  if ! g++ n_queens_par.cpp -o n_queens_par_$i -Wall -O3 -std=c++11 -fopenmp -DOMP_NUM_THREADS=$i;
+  if ! g++ n_queens_par.cpp -o n_queens_par_$i -Wall -O3 -std=c++11 -fopenmp -DOUR_NUMBER_OF_THREADS=$i;
   then
     echo COMPILATION of n_queens_par_$i FAILED!
     return 1
