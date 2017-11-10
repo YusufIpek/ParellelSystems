@@ -6,10 +6,13 @@ then
   return 1
 fi
 
-if ! g++ montecarlo_pi_par.cpp -o montecarlo_pi_par -Wall -O3 -std=c++11 -fopenmp;
-then
-  echo COMPILATION of montecarlo_pi_par FAILED!
-  return 1
-fi
+for i in 1 2 4 8;
+do
+  if ! g++ montecarlo_pi_par.cpp -o montecarlo_pi_par_$i -Wall -O3 -std=c++11 -fopenmp -DOMP_NUM_THREADS=$i;
+  then
+    echo COMPILATION of montecarlo_pi_par_$i FAILED!
+    return 1
+  fi
+done
 
 echo COMPILATION SUCCESSFUL
