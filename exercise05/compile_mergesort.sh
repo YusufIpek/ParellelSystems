@@ -6,13 +6,12 @@ then
   return 1
 fi
 
-for i in 1 2 4 8;
-do
-  if ! g++ merge_sort_par.cpp -o merge_sort_par_$i -Wall -O3 -std=c++11 -fopenmp -DOMP_NUM_THREADS=$i;
-  then
-    echo COMPILATION of merge_sort_par_$i FAILED!
-    return 1
-  fi
-done
+
+if ! g++ merge_sort_par.cpp -o merge_sort_par -Wall -O3 -std=c++11 -fopenmp;
+then
+  echo COMPILATION of merge_sort_par FAILED!
+  return 1
+fi
+
 
 echo COMPILATION SUCCESSFUL

@@ -89,6 +89,8 @@ int main(int argc, char** argv) {
 		ChronoTimer t("Mergesort");
 		#pragma omp parallel
 		{
+			if(omp_get_thread_num() == 0)
+				std::cout << "NUMBER of Threads: " << omp_get_num_threads() << std::endl;
 			#pragma omp single
 			merge_sort(input, 0, n, output);
 		}
