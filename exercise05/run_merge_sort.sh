@@ -1,7 +1,5 @@
 #!/bin/bash
 
-export opt=3
-
 for i in 100000 1000000 10000000 100000000 1000000000
 do
 	LC_NUMERIC=en_US printf "Problem size: %'.f\n" $i

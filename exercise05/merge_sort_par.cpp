@@ -5,7 +5,6 @@
 #include "chrono_timer.h"
 
 
-
 void print(const std::vector<int>& input) {
 	int size = input.size();
 	for (int i = 0; i < size; i++) {

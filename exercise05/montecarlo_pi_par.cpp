@@ -6,7 +6,6 @@
 
 #define R RAND_MAX
 
-
 unsigned int rand_foo;
 #pragma omp threadprivate(rand_foo)
 
@@ -36,10 +35,11 @@ int main(int argc, char* argv[])
 	long n = atol(argv[1]);	
 	long m = 0; // number of points inside circle
 	
-	ChronoTimer t("Monte Carlo pi estimation parallel v2:  ");
+	ChronoTimer t("Monte Carlo pi estimation parallel:  ");
   #pragma omp parallel
   {
     rand_foo = omp_get_thread_num();
+    //printf("number of threads: %d  id: %d\n", omp_get_num_threads(), omp_get_thread_num());
     #pragma omp for reduction(+:m)
   	for (long i = 0; i < n; i++)
   	{
