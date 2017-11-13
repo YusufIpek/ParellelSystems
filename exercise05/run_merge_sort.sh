@@ -2,7 +2,7 @@
 
 for i in 100000 1000000 10000000 100000000 1000000000
 do
-	LC_NUMERIC=en_US printf "Problem size: %'.f\n" $i
+	printf "Problem size: %'.d\n" $i
 	printf "Seq "
 	./merge_sort $i
 	for j in 1 2 4 8
