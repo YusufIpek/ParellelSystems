@@ -10,7 +10,7 @@ do
 	for j in 1 2 4 8
 	do
 		export OMP_NUM_THREADS=$j
-		printf "Number of Threads: "$j
+		printf "Number of Threads: "$j"\n"
 		./montecarlo_pi_par $i
 	done
 	printf "\n"
