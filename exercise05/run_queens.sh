@@ -14,6 +14,6 @@ do
   do
 	export OMP_NUM_THREADS=$j
     echo "parallel: number of threads = "$j
-    time ./n_queens_par $i
+    { time ./n_queens_par $i; } 2>&1
   done
 done
