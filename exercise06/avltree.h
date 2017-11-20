@@ -17,10 +17,19 @@ public:
 class AVLtree
 {
 public: 
-	Node* root;
+	Node* root_hook;
+	unsigned level;
 	
 	unsigned insert(Node* n, unsigned new_key);
 	void rebalance(Node* n);
+	void printTree(Node* n);
+	void rotation_left(Node* n);
+	void rotation_right(Node*n);
+	
+	AVLtree()
+	{
+		root_hook = new Node(nullptr, 0);
+	}
 	
 };
 
