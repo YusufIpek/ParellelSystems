@@ -2,7 +2,7 @@
 CFLAGS=-I -Wall -O3 -std=c++11
 CFLAGS+=-DEPSILON=0.001 -DGRIDSIZE=16
 
-all: jacobi_1D par1 par2
+all: jacobi_1D par1 par2 par3
 
 jacobi_1D:
 	g++ jacobi_1D.cpp -o jacobi_1D $(CFLAGS)
