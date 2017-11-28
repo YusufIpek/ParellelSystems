@@ -16,6 +16,7 @@ double* timestep(double* cells, double& change_return, double left, double right
 	
 	double change = 0.0;
 	
+  #pragma omp parallel for reduction(+:change)
 	for (int k = 0; k < GRIDSIZE; k++)
 	{
 		int ka = k*(GRIDSIZE*GRIDSIZE);	// actual plane
@@ -304,7 +305,8 @@ int main(int argc, char* argv[])
 		cells = timestep(cells, change, left, right, top, bottom, front, back);
 	}
 	
-	print_cells(cells);
+	//print_cells(cells);
+	std::cout << std::endl << "Gridsize: " << GRIDSIZE << "\tEpsilon: " << EPSILON;
 	std::cout << std::endl << "Number of iterations: " << nr_of_iter << std::endl;
 	
 	return 0;
