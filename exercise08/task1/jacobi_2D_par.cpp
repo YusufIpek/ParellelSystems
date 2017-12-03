@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <omp.h>
-//#include "chrono_timer.h"
+#include "chrono_timer.h"
 #include "jacobi.hpp"
 
 
@@ -25,45 +25,45 @@ double* timestep(double* cells, double& change_return, double left, double right
 		
 		if (i == 0) // top row
 		{
-		  // upper left corner
-		  cells_new[0] = (left+top+cells[0]+cells[1]+cells[GRIDSIZE])/5;
-		  change += std::abs(cells_new[0] - cells[0]);
-		  // top row
-		  for (int j = 1; j < GRIDSIZE-1; j++)
-		  {
-		    cells_new[j] = (cells[j-1]+cells[j]+cells[j+1]+cells[j+GRIDSIZE]+top)/5;
-		    change += std::abs(cells_new[j] - cells[j]);
-		  }
-		  // upper right corner
-		  cells_new[GRIDSIZE-1] = (right+top+cells[GRIDSIZE-2]+cells[GRIDSIZE-1]+cells[2*GRIDSIZE-1])/5;
-		  change += std::abs(cells_new[GRIDSIZE-1] - cells[GRIDSIZE-1]);
+			// upper left corner
+			cells_new[0] = (left+top+cells[0]+cells[1]+cells[GRIDSIZE])/5;
+			change += std::abs(cells_new[0] - cells[0]);
+			// top row
+			for (int j = 1; j < GRIDSIZE-1; j++)
+			{
+				cells_new[j] = (cells[j-1]+cells[j]+cells[j+1]+cells[j+GRIDSIZE]+top)/5;
+				change += std::abs(cells_new[j] - cells[j]);
+			}
+			// upper right corner
+			cells_new[GRIDSIZE-1] = (right+top+cells[GRIDSIZE-2]+cells[GRIDSIZE-1]+cells[2*GRIDSIZE-1])/5;
+			change += std::abs(cells_new[GRIDSIZE-1] - cells[GRIDSIZE-1]);
 		}
 		else if (i == GRIDSIZE-1) // bottom row
 		{
-		  // bottom left corner
-		  cells_new[GRIDSIZE*(GRIDSIZE-1)] = (left+bottom+cells[GRIDSIZE*(GRIDSIZE-2)]+cells[GRIDSIZE*(GRIDSIZE-1)]+cells[GRIDSIZE*(GRIDSIZE-1)+1])/5;
-		  change += std::abs(cells_new[GRIDSIZE*(GRIDSIZE-1)] - cells[GRIDSIZE*(GRIDSIZE-1)]);
-		  // bottom row
-		  for (int j = GRIDSIZE*(GRIDSIZE-1)+1; j < GRIDSIZE*GRIDSIZE-1; j++)
-		  {
-		    cells_new[j] = (cells[j-1]+cells[j]+cells[j+1]+cells[j-GRIDSIZE]+bottom)/5;
-		    change += std::abs(cells_new[j] - cells[j]);
-		  }
-		  // bottom right corner
-		  cells_new[GRIDSIZE*GRIDSIZE-1] = (bottom+right+cells[GRIDSIZE*(GRIDSIZE-1)-1]+cells[GRIDSIZE*GRIDSIZE-2]+cells[GRIDSIZE*GRIDSIZE-1])/5;
-		  change += std::abs(cells_new[GRIDSIZE*GRIDSIZE-1]-cells[GRIDSIZE*GRIDSIZE-1]);
+			// bottom left corner
+			cells_new[GRIDSIZE*(GRIDSIZE-1)] = (left+bottom+cells[GRIDSIZE*(GRIDSIZE-2)]+cells[GRIDSIZE*(GRIDSIZE-1)]+cells[GRIDSIZE*(GRIDSIZE-1)+1])/5;
+			change += std::abs(cells_new[GRIDSIZE*(GRIDSIZE-1)] - cells[GRIDSIZE*(GRIDSIZE-1)]);
+			// bottom row
+			for (int j = GRIDSIZE*(GRIDSIZE-1)+1; j < GRIDSIZE*GRIDSIZE-1; j++)
+			{
+				cells_new[j] = (cells[j-1]+cells[j]+cells[j+1]+cells[j-GRIDSIZE]+bottom)/5;
+				change += std::abs(cells_new[j] - cells[j]);
+			}
+			// bottom right corner
+			cells_new[GRIDSIZE*GRIDSIZE-1] = (bottom+right+cells[GRIDSIZE*(GRIDSIZE-1)-1]+cells[GRIDSIZE*GRIDSIZE-2]+cells[GRIDSIZE*GRIDSIZE-1])/5;
+			change += std::abs(cells_new[GRIDSIZE*GRIDSIZE-1]-cells[GRIDSIZE*GRIDSIZE-1]);
 		}
 		else
 		{
-		  cells_new[a] = (left+cells[a]+cells[a+1]+cells[u]+cells[d])/5;	// left collumn
-		  change += std::abs(cells_new[a] - cells[a]);
-  		for (int j = 0; j < GRIDSIZE-1; j++)
-  		{
-  			cells_new[a+j] = (cells[a+j-1]+cells[a+j]+cells[a+j+1]+cells[u+j]+cells[d+j])/5;
-  			change += std::abs(cells_new[a+j] - cells[a+j]);
-  		}
-  		cells_new[d-1] = (cells[d-2]+cells[d-1]+right+cells[a-1]+cells[d-1+GRIDSIZE])/5;	// right collumn
-  		change += std::abs(cells_new[d] - cells[d]);
+			cells_new[a] = (left+cells[a]+cells[a+1]+cells[u]+cells[d])/5;	// left collumn
+			change += std::abs(cells_new[a] - cells[a]);
+			for (int j = 1; j < GRIDSIZE-1; j++)
+			{
+				cells_new[a+j] = (cells[a+j-1]+cells[a+j]+cells[a+j+1]+cells[u+j]+cells[d+j])/5;
+				change += std::abs(cells_new[a+j] - cells[a+j]);
+			}
+			cells_new[d-1] = (cells[d-2]+cells[d-1]+right+cells[a-1]+cells[d-1+GRIDSIZE])/5;	// right collumn
+			change += std::abs(cells_new[d] - cells[d]);
 		}
 	}
 	change_return = change;
@@ -106,7 +106,7 @@ int main(int argc, char* argv[])
 	unsigned nr_of_iter = 0;
 	double change = EPSILON;
 	
-	//ChronoTimer t("Jacobi 2D execution time:  ");
+	ChronoTimer t("Jacobi 2D execution time:  ");
 	while (change >= EPSILON)
 	{
 		nr_of_iter++;
@@ -114,6 +114,7 @@ int main(int argc, char* argv[])
 	}
 	
 	//print_cells(cells);
+	std::cout << std::endl << "Gridsize: " << GRIDSIZE << "\tEpsilon: " << EPSILON;
 	std::cout << std::endl << "Number of iterations: " << nr_of_iter << std::endl;
 	
 	return 0;
