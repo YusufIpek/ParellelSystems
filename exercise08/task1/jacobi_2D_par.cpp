@@ -114,8 +114,8 @@ int main(int argc, char* argv[])
 	}
 	
 	//print_cells(cells);
-	std::cout << std::endl << "Gridsize: " << GRIDSIZE << "\tEpsilon: " << EPSILON;
-	std::cout << std::endl << "Number of iterations: " << nr_of_iter << std::endl;
+	std::cout << "Gridsize: " << GRIDSIZE << "\tEpsilon: " << EPSILON << std::endl;
+	std::cout << "Number of iterations: " << nr_of_iter << std::endl;
 	
 	return 0;
 }
