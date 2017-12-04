@@ -6,7 +6,6 @@
 #include "jacobi.hpp"
 
 
-// todo: special case if mysize == 1
 double* timestep(double* cells, int mysize, double& change_return, double left, double right, double top, double bottom, double* front, double* back)
 {
 	double* cells_new = static_cast<double*>(malloc(mysize*GRIDSIZE*GRIDSIZE * sizeof(double)));
@@ -305,8 +304,11 @@ int main(int argc, char* argv[])
 	MPI_Comm_rank(MPI_COMM_WORLD, &myrank);	// find mpi process rank
 	MPI_Comm_size(MPI_COMM_WORLD, &nrOfProcesses);
 
-	// only really accurate when GRIDSIZE % nrOfProcesses == 0
-	int mysize = GRIDSIZE/nrOfProcesses;
+	int mysize = GRIDSIZE/nrOfProcesses;	// only really accurate when GRIDSIZE % nrOfProcesses == 0
+	if( myrank < GRIDSIZE%nrOfProcesses )	// distribute remainder over threads
+	{
+		mysize++;
+	}
 	
 	double* cells = static_cast<double*>(calloc(mysize*GRIDSIZE*GRIDSIZE, sizeof(double)));
 	if (!cells)
