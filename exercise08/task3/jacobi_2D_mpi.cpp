@@ -43,14 +43,18 @@ double* timestep(double* cells, double& change_return, short rows, double left, 
 		auto d = a + GRIDSIZE;
 		cells_new[a] = (left + cells[a] + cells[a + 1] + cells[u] + cells[d]) / 5;	// left collumn
 		change += std::abs(cells_new[a] - cells[a]);
+
 		for (int j = 1; j < GRIDSIZE - 1; j++)
 		{
 			cells_new[a + j] = (cells[a + j - 1] + cells[a + j] + cells[a + j + 1] + cells[u + j] + cells[d + j]) / 5;
 			change += std::abs(cells_new[a + j] - cells[a + j]);
 		}
+
 		cells_new[d - 1] = (cells[d - 2] + cells[d - 1] + right + cells[a - 1] + cells[d - 1 + GRIDSIZE]) / 5;	// right collumn
-		change += std::abs(cells_new[d] - cells[d]);
+		change += std::abs(cells_new[d-1] - cells[d-1]);
+
 	}
+
 
 	// bottom left corner
 	cells_new[GRIDSIZE*(rows - 1)] = (left + bottom[0] + cells[GRIDSIZE*(rows - 2)] + cells[GRIDSIZE*(rows - 1)] + cells[GRIDSIZE*(rows - 1) + 1]) / 5;
@@ -60,7 +64,7 @@ double* timestep(double* cells, double& change_return, short rows, double left, 
 	int tmp_counter = 0;
 	for (int i = GRIDSIZE * (rows - 1) + 1; i < (GRIDSIZE*rows) - 1; i++)
 	{
-	//	std::cout << "i:" << i << std::endl;
+
 		cells_new[i] = (cells[i - 1] + cells[i] + cells[i + 1] + cells[i - GRIDSIZE] + bottom[tmp_counter++]) / 5;
 		change += std::abs(cells_new[i] - cells[i]);
 	}
@@ -68,7 +72,6 @@ double* timestep(double* cells, double& change_return, short rows, double left, 
 	// bottom right corner
 	cells_new[GRIDSIZE*rows - 1] = (bottom[GRIDSIZE-1] + right + cells[GRIDSIZE*(rows - 1) - 1] + cells[GRIDSIZE*rows - 2] + cells[GRIDSIZE*rows - 1]) / 5;
 	change += std::abs(cells_new[GRIDSIZE*rows - 1] - cells[GRIDSIZE*rows - 1]);
-
 
 	change_return = change;
 	free(cells);
@@ -159,21 +162,12 @@ int main(int argc, char* argv[])
 			double* top_border = create_border(top);
 			double* bottom_border = get_last_line(cells, mysize);
 			double* bottom_border_rec = (double*)malloc(GRIDSIZE * sizeof(double));
-		//	std::cout << "Sending data:" << std::endl;
-		//	print_cells(bottom_border, 1);
-			MPI_Send(bottom_border, GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD); //master send bottom row to next process
+			MPI_Send(bottom_border, GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD);
+			free(bottom_border);
 			MPI_Recv(bottom_border_rec, GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &s);
-		//	std::cout << "Received Bottom Border: " << std::endl;
-		//	print_cells(bottom_border_rec, 1);
-		//	std::cout << "Before" << std::endl;
-		//	print_cells(cells, mysize);
 			cells = timestep(cells, change, mysize, left, right, top_border,bottom_border_rec);
-		//	std::cout << "----------------" << std::endl;
-		//	print_cells(cells, mysize);
-		//	std::cout << "----------------" << std::endl;
 			nr_of_iter++;
-			//break;
-			//std::cout << "Iter: " << nr_of_iter << std::endl;
+		
 		}
 		else if (myrank == (nrOfProcesses - 1)) {
 			MPI_Status s;
@@ -181,9 +175,8 @@ int main(int argc, char* argv[])
 			double* top_border_send = get_fist_line(cells);
 			double* bottom_border = create_border(bottom);
 			MPI_Recv(top_border_rec, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD, &s);
-			//std::cout << "Received data:" << std::endl;
-			//print_cells(top_border_rec, 1);
 			MPI_Send(top_border_send, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD);
+			free(top_border_send);
 			cells = timestep(cells, change, mysize, left, right, top_border_rec, bottom_border);
 		}
 		else {
@@ -192,20 +185,23 @@ int main(int argc, char* argv[])
 			double* bottom_border_rec = (double*)malloc(GRIDSIZE * sizeof(double));
 			double* bottom_border_send = get_last_line(cells, mysize);
 			MPI_Status s;
-			MPI_Recv(top_border_rec, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD, &s); //receive top border
+			MPI_Recv(top_border_rec, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD, &s);
 			MPI_Send(top_border_send, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD);
 			MPI_Send(bottom_border_send, GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD);
-			MPI_Recv(bottom_border_rec, GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &s); //receive top border
+			MPI_Recv(bottom_border_rec, GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &s); 
+			free(top_border_send);
+			free(bottom_border_send);
 			cells = timestep(cells, change, mysize, left, right, top_border_rec, bottom_border_rec);
 		}
+
 		MPI_Allreduce(&change, &change_recv, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
-		std::cout << "current epsilon " << change_recv << std::endl;
+
 	}
 
 	MPI_Finalize();
 
 	print_cells(cells, mysize);
-	//std::cout << std::endl << "Number of iterations: " << nr_of_iter << std::endl;
+	std::cout << std::endl << "Number of iterations: " << nr_of_iter << std::endl;
 	
 	return 0;
 }
