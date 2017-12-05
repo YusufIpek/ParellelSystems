@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include <iostream>
 #include <cmath>
 #include <omp.h>
@@ -7,10 +6,9 @@
 #include "jacobi.hpp"
 
 
-
-
 double* timestep(double* cells, double& change_return, short rows, double left, double right, double* top, double* bottom)
-{
+{	
+
 	double* cells_new = static_cast<double*>(malloc(rows*GRIDSIZE * sizeof(double)));
 	if (!cells_new)
 	{
@@ -61,7 +59,7 @@ double* timestep(double* cells, double& change_return, short rows, double left, 
 	change += std::abs(cells_new[GRIDSIZE*(rows - 1)] - cells[GRIDSIZE*(rows - 1)]);
 
 	// bottom row
-	int tmp_counter = 0;
+	int tmp_counter = 1;
 	for (int i = GRIDSIZE * (rows - 1) + 1; i < (GRIDSIZE*rows) - 1; i++)
 	{
 
@@ -75,8 +73,6 @@ double* timestep(double* cells, double& change_return, short rows, double left, 
 
 	change_return = change;
 	free(cells);
-	free(top);
-	free(bottom);
 	return cells_new;
 }
 
@@ -91,30 +87,7 @@ void print_cells(double cells[GRIDSIZE], int row)
 	}
 }
 
-double* get_last_line(double* cells, int rows) {
-	double* row = (double*)malloc(GRIDSIZE * sizeof(double));
-	for (int i = 0; i < GRIDSIZE; i++) {
-		row[i] = cells[((rows-1)*GRIDSIZE)+i];
-	}
-	return row;
-}
 
-double* get_fist_line(double* cells) {
-	double* row = (double*)malloc(GRIDSIZE * sizeof(double));
-	for (int i = 0; i < GRIDSIZE; i++) {
-		row[i] = cells[i];
-	}
-	return row;
-}
-
-
-double* create_border(double value) {
-	double* top_border = (double*)malloc(GRIDSIZE * sizeof(double));
-	for (int i = 0; i < GRIDSIZE; i++) {
-		top_border[i] = value;
-	}
-	return top_border;
-}
 
 int main(int argc, char* argv[])
 {
@@ -124,12 +97,19 @@ int main(int argc, char* argv[])
 		return 1;
 	}
 
-	double left, right, top, bottom;
+	double left, right, *top, *bottom;
 	left = atof(argv[1]);
 	right = atof(argv[2]);
-	top = atof(argv[3]);
-	bottom = atof(argv[4]);
 
+	top = static_cast<double*>(malloc(GRIDSIZE * sizeof(double)));
+	bottom = static_cast<double*>(malloc(GRIDSIZE * sizeof(double)));
+
+	for (int i = 0; i < GRIDSIZE; i++) {
+		top[i] = atof(argv[3]);
+		bottom[i] = atof(argv[4]);
+	}
+
+	
 	int myrank, nrOfProcesses;
 	int msgtag = 1;
 	double change_recv = EPSILON;
@@ -139,11 +119,16 @@ int main(int argc, char* argv[])
 	MPI_Comm_rank(MPI_COMM_WORLD, &myrank);
 	MPI_Comm_size(MPI_COMM_WORLD, &nrOfProcesses);
 	
-	
+
 	unsigned mysize = GRIDSIZE / nrOfProcesses;
+	if (myrank < GRIDSIZE%nrOfProcesses)	// distribute remainder over threads
+	{
+		mysize++;
+	}
+	
 	double* cells = static_cast<double*>(calloc(mysize*GRIDSIZE, sizeof(double)));
 	
-
+	
 	if (!cells)
 	{
 		std::cout << "Error: could not calloc!" << std::endl; fflush(stdout);
@@ -154,54 +139,54 @@ int main(int argc, char* argv[])
 	
 	double change = EPSILON;
 	
+	int offset_bottom = (mysize - 1)*GRIDSIZE;
+
+	
 	//ChronoTimer t("Jacobi 2D execution time:  ");
 	while (change_recv >= EPSILON)
 	{
 		if (myrank == 0){
 			MPI_Status s;
-			double* top_border = create_border(top);
-			double* bottom_border = get_last_line(cells, mysize);
-			double* bottom_border_rec = (double*)malloc(GRIDSIZE * sizeof(double));
-			MPI_Send(bottom_border, GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD);
-			free(bottom_border);
+			double* bottom_border_rec = static_cast<double*>(malloc(GRIDSIZE * sizeof(double)));
+			MPI_Send(&cells[offset_bottom], GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD);
 			MPI_Recv(bottom_border_rec, GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &s);
-			cells = timestep(cells, change, mysize, left, right, top_border,bottom_border_rec);
+			cells = timestep(cells, change, mysize, left, right, top,bottom_border_rec);
 			nr_of_iter++;
+			free(bottom_border_rec);
 		
 		}
 		else if (myrank == (nrOfProcesses - 1)) {
 			MPI_Status s;
-			double* top_border_rec = (double*)malloc(GRIDSIZE * sizeof(double));
-			double* top_border_send = get_fist_line(cells);
-			double* bottom_border = create_border(bottom);
+			double* top_border_rec = static_cast<double*>(malloc(GRIDSIZE * sizeof(double)));
 			MPI_Recv(top_border_rec, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD, &s);
-			MPI_Send(top_border_send, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD);
-			free(top_border_send);
-			cells = timestep(cells, change, mysize, left, right, top_border_rec, bottom_border);
+			MPI_Send(cells, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD);
+			cells = timestep(cells, change, mysize, left, right, top_border_rec, bottom);
+			free(top_border_rec);
 		}
 		else {
-			double* top_border_rec = (double*)malloc(GRIDSIZE * sizeof(double));
-			double* top_border_send = get_fist_line(cells);
-			double* bottom_border_rec = (double*)malloc(GRIDSIZE * sizeof(double));
-			double* bottom_border_send = get_last_line(cells, mysize);
+			double* top_border_rec = static_cast<double*>(malloc(GRIDSIZE * sizeof(double)));
+			double* bottom_border_rec = static_cast<double*>(malloc(GRIDSIZE * sizeof(double)));
+
 			MPI_Status s;
 			MPI_Recv(top_border_rec, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD, &s);
-			MPI_Send(top_border_send, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD);
-			MPI_Send(bottom_border_send, GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD);
+			MPI_Send(cells, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD);
+			MPI_Send(&cells[offset_bottom], GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD);
 			MPI_Recv(bottom_border_rec, GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &s); 
-			free(top_border_send);
-			free(bottom_border_send);
 			cells = timestep(cells, change, mysize, left, right, top_border_rec, bottom_border_rec);
+			free(top_border_rec);
+			free(bottom_border_rec);
 		}
-
 		MPI_Allreduce(&change, &change_recv, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
 
 	}
 
 	MPI_Finalize();
 
-	print_cells(cells, mysize);
-	std::cout << std::endl << "Number of iterations: " << nr_of_iter << std::endl;
 	
+
+	if(myrank == 0){
+		std::cout << std::endl << "Gridsize: " << GRIDSIZE << "\tEpsilon: " << EPSILON;
+		std::cout << std::endl << "Number of iterations: " << nr_of_iter << std::endl;
+	}
 	return 0;
 }
