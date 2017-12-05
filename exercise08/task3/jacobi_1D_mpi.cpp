@@ -54,6 +54,9 @@ int main(int argc, char* argv[])
 
 	// only really accurate when GRIDSIZE % nrOfProcesses == 0
 	unsigned mysize = GRIDSIZE/nrOfProcesses;
+	if(myrank < GRIDSIZE%nrOfProcesses){
+		mysize++;
+	}
 	
 	double* cells = static_cast<double*>(calloc(mysize, sizeof(double)));
 	if (!cells)
