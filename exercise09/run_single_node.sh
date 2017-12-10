@@ -1,5 +1,7 @@
 #!/bin/bash
 
+module load openmpi/1.8.5
+
 for i in 1 2 4 8
 do
 echo "Processes: " $i
