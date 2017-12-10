@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include <iostream>
 #include <cmath>
 #include <omp.h>
@@ -176,21 +175,29 @@ int main(int argc, char* argv[])
 	while (change_recv >= EPSILON)
 	{
 		if (myrank == 0) {
-			MPI_Status s;
-			MPI_Request req_send, req_recv;
-			double* ghost_bottom_recv = static_cast<double*>(malloc(GRIDSIZE * sizeof(double)));
-			MPI_Isend(&cells_old[offset_bottom], GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &req_send);
-			MPI_Irecv(ghost_bottom_recv, GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &req_recv);
-			
-			cells_updated = timestep_inner(cells_old, change, mysize);		
-			MPI_Wait(&req_recv, &s);
-			cells_updated = timestep_borders(cells_old, cells_updated, change, mysize, left, right, top, ghost_bottom_recv);
-			
-			nr_of_iter++;
+			if (nrOfProcesses == 1) {
+				cells_updated = timestep_inner(cells_old, change, mysize);
+				cells_updated = timestep_borders(cells_old, cells_updated, change, mysize, left, right, top, bottom);
+				memcpy(cells_old, cells_updated, sizeof(double)*GRIDSIZE*mysize);
+				free(cells_updated);
+			}
+			else {
 
-			free(ghost_bottom_recv);
-			memcpy(cells_old,cells_updated,sizeof(double)*GRIDSIZE*mysize);
-			free(cells_updated);
+				MPI_Status s;
+				MPI_Request req_send, req_recv;
+				double* ghost_bottom_recv = static_cast<double*>(malloc(GRIDSIZE * sizeof(double)));
+				MPI_Isend(&cells_old[offset_bottom], GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &req_send);
+				MPI_Irecv(ghost_bottom_recv, GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &req_recv);
+
+				cells_updated = timestep_inner(cells_old, change, mysize);
+				MPI_Wait(&req_recv, &s);
+				cells_updated = timestep_borders(cells_old, cells_updated, change, mysize, left, right, top, ghost_bottom_recv);
+
+				free(ghost_bottom_recv);
+				memcpy(cells_old, cells_updated, sizeof(double)*GRIDSIZE*mysize);
+				free(cells_updated);
+			}
+			nr_of_iter++;
 		}
 		else if (myrank == (nrOfProcesses - 1)) {
 			MPI_Status s;
