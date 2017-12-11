@@ -42,7 +42,7 @@ double timestep_borders(double* cells, double* cells_new, short rows, short mygr
 			change_return += std::abs(cells_new[i] - cells[i]);
 		}
 		// upper right corner
-		cells_new[mygridsize - 1] = (right + top[0] + cells[mygridsize - 2] + cells[mygridsize - 1] + cells[2 * mygridsize - 1]) / 5;
+		cells_new[mygridsize - 1] = (right[0] + top[0] + cells[mygridsize - 2] + cells[mygridsize - 1] + cells[2 * mygridsize - 1]) / 5;
 		change_return += std::abs(cells_new[mygridsize - 1] - cells[mygridsize - 1]);
 	}
 	else 
@@ -53,7 +53,7 @@ double timestep_borders(double* cells, double* cells_new, short rows, short mygr
 			change_return += std::abs(cells_new[i] - cells[i]);
 		}
 		// upper right corner
-		cells_new[mygridsize - 1] = (right + top[mygridsize - 1] + cells[mygridsize - 2] + cells[mygridsize - 1] + cells[2 * mygridsize - 1]) / 5;
+		cells_new[mygridsize - 1] = (right[0] + top[mygridsize - 1] + cells[mygridsize - 2] + cells[mygridsize - 1] + cells[2 * mygridsize - 1]) / 5;
 		change_return += std::abs(cells_new[mygridsize - 1] - cells[mygridsize - 1]);
 	}
 	
@@ -206,18 +206,12 @@ int main(int argc, char* argv[])
 		return 1;
 	}
 
-	double left, right, *top, *bottom;
+	double left, right, top, bottom;
 	left = atof(argv[1]);
 	right = atof(argv[2]);
-
-	top = static_cast<double*>(malloc(GRIDSIZE * sizeof(double)));
-	bottom = static_cast<double*>(malloc(GRIDSIZE * sizeof(double)));
-
-	for (int i = 0; i < GRIDSIZE; i++) {
-		top[i] = atof(argv[3]);
-		bottom[i] = atof(argv[4]);
-	}
-
+	top = atof(argv[3]);
+	bottom = atof(argv[4]);
+	
 
 	int myrank, nrOfProcesses;
 	int msgtag = 1;
@@ -275,8 +269,6 @@ int main(int argc, char* argv[])
 
 	double change = EPSILON;
 
-	int offset_bottom = (myrows - 1) * mycolumns;
-
 	/* global_borders order: left right top bottom */
 	bool my_global_borders[4] = { false, false, false, false };
 
@@ -289,126 +281,108 @@ int main(int argc, char* argv[])
 	if (myrank % hor_fields == hor_fields-1)
 		my_global_borders[3] = true;
 
+	MPI_Status s;
+	//MPI_Request req_recv_top_ghost, req_recv_bottom_ghost, req_send_top_ghost, req_send_bottom_ghost;
+	MPI_Request req_send_left, req_recv_left, req_send_right, req_recv_right, req_send_top, req_recv_top, req_send_bottom, req_recv_bottom;
+	
+	double *ghost_left_recv, *ghost_right_recv, *ghost_top_recv, *ghost_bottom_recv;
+	double *send_left, *send_right;
+	ghost_left_recv = static_cast<double*>(malloc(myrows * sizeof(double)));
+	send_left = static_cast<double*>(malloc(myrows * sizeof(double)));
+	ghost_right_recv = static_cast<double*>(malloc(myrows * sizeof(double)));
+	send_right = static_cast<double*>(malloc(myrows * sizeof(double)));
+	ghost_top_recv = static_cast<double*>(malloc(mycolumns * sizeof(double)));
+	ghost_bottom_recv = static_cast<double*>(malloc(mycolumns * sizeof(double)));
+	
 	//ChronoTimer t("Jacobi 2D execution time:  ");
 	while (change_recv >= EPSILON)
 	{
-		if (myrank == 0) {
-			if (nrOfProcesses == 1) {
-				cells_updated = timestep_inner(cells_old, change, mysize);
-				cells_updated = timestep_borders(cells_old, cells_updated, change, mysize, left, right, top, bottom);
-				//memcpy(cells_old, cells_updated, sizeof(double)*GRIDSIZE*mysize);
-				double* temp = cells_old;
-				cells_old = cells_updated;
-				cells_updated = temp;	
-			}
-			else {
-				
-
-
-				MPI_Status s;
-				MPI_Request req_send, req_recv;
-				double* ghost_bottom_recv = static_cast<double*>(malloc(GRIDSIZE * sizeof(double)));
-				MPI_Isend(&cells_old[offset_bottom], GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &req_send);
-				MPI_Irecv(ghost_bottom_recv, GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &req_recv);
-
-				cells_updated = timestep_inner(cells_old, change, mysize);
-				MPI_Wait(&req_recv, &s);
-				cells_updated = timestep_borders(cells_old, cells_updated, change, mysize, left, right, top, ghost_bottom_recv);
-
-				free(ghost_bottom_recv);
-				memcpy(cells_old, cells_updated, sizeof(double)*GRIDSIZE*mysize);
-				free(cells_updated);
-			}
-			nr_of_iter++;
-		}
-		else if (myrank == (nrOfProcesses - 1)) {
-			MPI_Status s;
-			MPI_Request req_recv_top_ghost, req_send_top_ghost;
-			double* ghost_top_recv = static_cast<double*>(malloc(GRIDSIZE * sizeof(double)));
+		if (nrOfProcesses == 1) {
 			
-			MPI_Irecv(ghost_top_recv, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD, &req_recv_top_ghost);
-			MPI_Isend(cells_old, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD, &req_send_top_ghost);
+			change = timestep_inner(cells_old, cells_updated, GRIDSIZE, GRIDSIZE);
+			change += timestep_borders(cells_old, cells_updated, GRIDSIZE, GRIDSIZE, &left, &right, &top, &bottom, my_global_borders);
+			//memcpy(cells_old, cells_updated, sizeof(double)*GRIDSIZE*mysize);
+			double* temp = cells_old;
+			cells_old = cells_updated;
+			cells_updated = temp;
 			
-			cells_updated = timestep_inner(cells_old, change, mysize);
-			
-			MPI_Wait(&req_recv_top_ghost, &s);
-			
-			cells_updated = timestep_borders(cells_old, cells_updated, change, mysize, left, right, ghost_top_recv, bottom);
-			
-			free(ghost_top_recv);
-			memcpy(cells_old, cells_updated, sizeof(double)*GRIDSIZE*mysize);
-			free(cells_updated);
 		}
 		else {
-			double *ghost_left_recv, *ghost_right_recv, *ghost_top_recv, *ghost_bottom_recv;
-			double *send_left, *send_right, *send_top, *send_bottom;
+			
 
 			if (!my_global_borders[0])
 			{
-				ghost_left_recv = static_cast<double*>(malloc(myrows * sizeof(double)));
-				send_left = static_cast<double*>(malloc(myrows * sizeof(double)));
 				for (int k = 0; k < myrows; k++)
 					send_left[k] = cells_old[k*mycolumns];
 				// here send to: myrank-hor_fields
+				MPI_Isend(send_left, myrows, MPI_DOUBLE, myrank - hor_fields, msgtag, MPI_COMM_WORLD, &req_send_left);
+				MPI_Irecv(ghost_left_recv, myrows, MPI_DOUBLE, myrank - hor_fields, msgtag, MPI_COMM_WORLD, &req_recv_left);
 			}
 			else
-				ghost_left_recv = &left; // yes, I know ...
+				ghost_left_recv[0] = left;
 
 			if (!my_global_borders[1])
 			{
-				ghost_right_recv = static_cast<double*>(malloc(myrows * sizeof(double)));
-				send_right = static_cast<double*>(malloc(myrows * sizeof(double)));
 				for (int k = 0; k < myrows; k++)
 					send_right[k] = cells_old[(k+1)*mycolumns - 1];
 				// here send to: myrank+hor_fields
+				MPI_Isend(send_right, myrows, MPI_DOUBLE, myrank + hor_fields, msgtag, MPI_COMM_WORLD, &req_send_right);
+				MPI_Irecv(ghost_right_recv, myrows, MPI_DOUBLE, myrank + hor_fields, msgtag, MPI_COMM_WORLD, &req_recv_right);
 			}
 			else
-				ghost_right_recv = &right;
+				ghost_right_recv[0] = right;
 
 			if (!my_global_borders[2])
 			{
-				ghost_top_recv = static_cast<double*>(malloc(mycolumns * sizeof(double)));
-				//send_top = static_cast<double*>(malloc(mycolumns * sizeof(double)));
 				// here send top line to: myrank-1 
+				MPI_Isend(cells_old, mycolumns, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD, &req_send_top);
+				MPI_Irecv(ghost_top_recv, mycolumns, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD, &req_recv_top);
 			}
 			else
-				ghost_top_recv = &top;
+				ghost_top_recv[0] = top;
 
 			if (!my_global_borders[3])
 			{
-				ghost_bottom_recv = static_cast<double*>(malloc(mycolumns * sizeof(double)));
 				// here send bottom line to: myrank+1
+				MPI_Isend(&cells_old[(myrows-1)*mycolumns], mycolumns, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &req_send_bottom);
+				MPI_Irecv(ghost_bottom_recv, mycolumns, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &req_recv_bottom);
 			}
 			else
-				ghost_bottom_recv = &bottom;
+				ghost_bottom_recv[0] = bottom;
 
 			change = timestep_inner(cells_old, cells_updated, myrows, mycolumns);
-
-			// recieve from !my_global_borders[]
-			/*MPI_Status s;
-			MPI_Request req_recv_top_ghost, req_recv_bottom_ghost, req_send_top_ghost, req_send_bottom_ghost;
-			MPI_Irecv(ghost_top_recv, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD, &req_recv_top_ghost);
-			MPI_Isend(cells_old, GRIDSIZE, MPI_DOUBLE, myrank - 1, msgtag, MPI_COMM_WORLD, &req_send_top_ghost);
-			MPI_Isend(&cells_old[offset_bottom], GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &req_send_bottom_ghost);
-			MPI_Irecv(ghost_bottom_recv, GRIDSIZE, MPI_DOUBLE, myrank + 1, msgtag, MPI_COMM_WORLD, &req_recv_bottom_ghost);*/
 			
-			/*cells_updated = timestep_inner(cells_old, change, mysize);
-			MPI_Wait(&req_recv_bottom_ghost, &s);
-			MPI_Wait(&req_recv_top_ghost, &s);*/
+			if (!my_global_borders[0])
+				MPI_Wait(&req_recv_left, &s);
+			if (!my_global_borders[1])
+				MPI_Wait(&req_recv_right, &s);
+			if (!my_global_borders[2])
+				MPI_Wait(&req_recv_top, &s);
+			if (!my_global_borders[3])
+				MPI_Wait(&req_recv_bottom, &s);
 			
-			change = timestep_borders(cells_old, cells_updated, myrows, mycolumns, ghost_left_recv, ghost_right_recv, ghost_top_recv, ghost_bottom_recv, my_global_borders);
+			change += timestep_borders(cells_old, cells_updated, myrows, mycolumns, ghost_left_recv, ghost_right_recv, ghost_top_recv, ghost_bottom_recv, my_global_borders);
 			
-			free(ghost_top_recv);
-			free(ghost_bottom_recv);
-			memcpy(cells_old, cells_updated, sizeof(double)*GRIDSIZE*mysize);
-			free(cells_updated);
+			double* temp = cells_old;
+			cells_old = cells_updated;
+			cells_updated = temp;
+			
 		}
+		
+		if (myrank == 0)
+			nr_of_iter++;
+		
 		MPI_Allreduce(&change, &change_recv, 1, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
-	}
+	} // end while
 
+	free(ghost_left_recv);
+	free(ghost_right_recv);
+	free(ghost_top_recv);
+	free(ghost_bottom_recv);
+	free(cells_old);
+	free(cells_updated);
+	
 	MPI_Finalize();
-
-
 
 	if (myrank == 0) {
 		std::cout << std::endl << "Gridsize: " << GRIDSIZE << "\tEpsilon: " << EPSILON;
