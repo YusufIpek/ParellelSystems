@@ -236,7 +236,7 @@ int main(int argc, char* argv[])
 	// splitting up the array
 	for (int i = 1; i <= procs_log2; i++)
 	{
-		if (procs_log2 % 2 == 1)
+		if (i % 2 == 1)
 		{
 			myrows = myrows / 2;
 			hor_fields *= 2;
