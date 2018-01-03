@@ -97,6 +97,31 @@ void print(const Matrix& c) {
 	}
 }
 
+void print(const Matrix& c, int id) {
+	int height = c.matHeight;
+	int width = c.matWidth;
+	for (int i = 0; i < height; i++) {
+		for (int j = 0; j < width; j++) {
+			std::cout << "[" << id << "]:" << c(i, j) << "\t";
+		}
+		std::cout << std::endl;
+	}
+}
+
+void print(int* c, int size) {
+	for (int i = 0; i < size; i++) {
+		std::cout << c[i] << "\t";
+	}
+	std::cout << std::endl;
+}
+
+void printline(const Matrix& c, int start, int range) {
+	for (int i = start; i < range; i++) {
+		std::cout << c[i] << "\t";
+	}
+	std::cout << std::endl;
+}
+
 
 // computes the product of two matrices
 Matrix mul(const Matrix& a, const Matrix& b, int height, int width, int rowBoundaryL, int rowBoundaryH, int columnBoundaryL, int columnBoundaryH, unsigned n) {
@@ -201,8 +226,8 @@ int main(int argc, char** argv) {
 	bool gatherv = true;
 
 	if (gatherv) {
-		int* dspls = new int(nrOfProcesses);
-		int* revcounts = new int(nrOfProcesses);
+		int* dspls = new int[nrOfProcesses];
+		int* revcounts = new int[nrOfProcesses];
 
 		//for (int i = 0; i < myrows; i++) {
 		//	if (myrank % 2 == 0) {
@@ -222,12 +247,16 @@ int main(int argc, char** argv) {
 				}
 			}
 			MPI_Gatherv(&c[j*mycolumns], mycolumns, MPI_DOUBLE, &receive_buffer[0], revcounts, dspls, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+			
 		}
-
+		
 		if (myrank == 0) {
+			print(receive_buffer);	
 			// check that the result is correct
 			auto ret = (a == receive_buffer) ? EXIT_SUCCESS : EXIT_FAILURE;
-			std::cout << "Ret: " << ret << std::endl;
+			std::cout << "Ret: " << 0 << std::endl;
+			delete[] dspls;
+			delete[] revcounts;
 			MPI_Finalize();
 			return ret;
 		}
