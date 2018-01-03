@@ -37,6 +37,11 @@ struct Matrix : std::vector<double> {
 	Matrix() : matHeight(0), matWidth(0) {}
 	Matrix(unsigned n, unsigned m) : matHeight(n), matWidth(m) {
 		resize(n*m);
+		
+	}
+	Matrix(unsigned n, unsigned m, int element) : matHeight(n), matWidth(m) {
+		resize(n*m);
+		assign(n*m, element);
 	}
 	double& operator()(unsigned i, unsigned j) {
 		return (*this)[i*matWidth + j];
@@ -176,30 +181,77 @@ int main(int argc, char** argv) {
 //	if (myrank == 0) {
 //		std::cout << "Myrows:" << myrows << " Mycolumns:" << mycolumns << std::endl;
 //	}
+
 //	std::cout << "Rank: " << myrank << " RowL:" << rowBoundaryL << " RowH:" << rowBoundaryH <<
 //				" ColumnL:" << columnBoundaryL << " ColumnU:" << columnBoundaryH << std::endl;
 
 
 
 	//std::vector<double> receive_buffer(n*n, -1);
-	Matrix receive_buffer(n,n);
+	Matrix receive_buffer(n,n,-1);
+
 
 	// create two matrices
 	auto a = init(n, n, [](unsigned i, unsigned j) { return (i == j)? 42.0 : 0.0; });
 	auto b = init(n, n, [](unsigned i, unsigned j) { return (i == j) ? 1.0 : 0.0; });
 
 	Matrix c = mul(a, b, myrows, mycolumns, rowBoundaryL, rowBoundaryH, columnBoundaryL, columnBoundaryH, n);
+	
 
-	//Gather all elements from each process
-	MPI_Gather(&c[0], myrows*mycolumns, MPI_DOUBLE, &receive_buffer[0], myrows*mycolumns, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+	bool gatherv = true;
 
+	if (gatherv) {
+		int* dspls = new int(nrOfProcesses);
+		int* revcounts = new int(nrOfProcesses);
 
-	if (myrank == 0) {
-		print(receive_buffer);
-		// check that the result is correct
-		auto ret = (a == receive_buffer) ? EXIT_SUCCESS : EXIT_FAILURE;
-		std::cout << "Ret: " << ret << std::endl;
-		return ret;
+		//for (int i = 0; i < myrows; i++) {
+		//	if (myrank % 2 == 0) {
+		//		std::cout << "myrank: " << myrank << " adress: " << (rowBoundaryL*n) + (i*n) << std::endl;
+		//	}
+		//	else{
+		//		std::cout << "myrank: " << myrank << " adress: " << (rowBoundaryL*n + mycolumns) + (i*n) << std::endl;
+		//	}
+		//}
+
+		for (int j = 0; j < myrows; j++) {
+			if (myrank == 0) {
+				for (int i = 0; i < nrOfProcesses; i++) {
+					int index2 = (i / ver_fields) * (myrows*n) + (i%ver_fields) * mycolumns + j*n;
+					revcounts[i] = mycolumns;
+					dspls[i] = index2;
+				}
+			}
+			MPI_Gatherv(&c[j*mycolumns], mycolumns, MPI_DOUBLE, &receive_buffer[0], revcounts, dspls, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+		}
+
+		if (myrank == 0) {
+			// check that the result is correct
+			auto ret = (a == receive_buffer) ? EXIT_SUCCESS : EXIT_FAILURE;
+			std::cout << "Ret: " << ret << std::endl;
+			MPI_Finalize();
+			return ret;
+		}
 	}
+	else {
+		MPI_Gather(&c[0], myrows*mycolumns, MPI_DOUBLE, &receive_buffer[0], myrows*mycolumns, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+		if (myrank == 0) {
+			Matrix n_result(n, n);
+
+			for (int i = 0; i < nrOfProcesses; i++) {
+				for (int j = 0; j < myrows; j++) {
+					int index = (i*mycolumns*myrows + j*mycolumns);
+					int index2 = (i / ver_fields) * (myrows*n) + (i%ver_fields) * mycolumns + j*n;
+					std::copy(&receive_buffer[0] + index, &receive_buffer[0] + index + mycolumns, n_result.begin() + index2);
+				}
+			}
+			// check that the result is correct
+			auto ret = (a == n_result) ? EXIT_SUCCESS : EXIT_FAILURE;
+			std::cout << "Ret: " << ret << std::endl;
+			MPI_Finalize();
+			return ret;
+		}
+	}
+	MPI_Finalize();
+	
 	return 0;
 }
