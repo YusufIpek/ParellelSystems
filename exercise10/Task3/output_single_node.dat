@@ -1,0 +1,72 @@
+Processes:  1
+
+Gridsize: 512	Epsilon: 1
+Number of iterations: 17318
+
+real	1m26.501s
+user	1m25.564s
+sys	0m0.073s
+
+Processes:  1
+
+Gridsize: 768	Epsilon: 1
+Number of iterations: 38915
+
+real	7m19.031s
+user	7m18.815s
+sys	0m0.077s
+
+Processes:  2
+
+Gridsize: 512	Epsilon: 1
+Number of iterations: 17318
+
+real	0m43.332s
+user	1m26.093s
+sys	0m0.158s
+
+Processes:  2
+
+Gridsize: 768	Epsilon: 1
+Number of iterations: 38915
+
+real	3m43.228s
+user	7m25.780s
+sys	0m0.522s
+
+Processes:  4
+
+Gridsize: 512	Epsilon: 1
+Number of iterations: 17318
+
+real	0m22.012s
+user	1m26.831s
+sys	0m0.308s
+
+Processes:  4
+
+Gridsize: 768	Epsilon: 1
+Number of iterations: 38915
+
+real	1m49.447s
+user	7m16.747s
+sys	0m0.533s
+
+Processes:  8
+
+Gridsize: 512	Epsilon: 1
+Number of iterations: 17318
+
+real	0m11.494s
+user	1m29.494s
+sys	0m0.824s
+
+Processes:  8
+
+Gridsize: 768	Epsilon: 1
+Number of iterations: 38915
+
+real	0m55.899s
+user	7m24.545s
+sys	0m1.353s
+

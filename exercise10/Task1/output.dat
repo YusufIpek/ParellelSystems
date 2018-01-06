@@ -1,0 +1,196 @@
+GATHER| Processes:  1  Matrix size:  512
+Ret: 0
+
+real	0m2.496s
+user	0m1.822s
+sys	0m0.084s
+
+GATHERV| Processes:  1  Matrix size:  512
+Ret: 0
+
+real	0m2.150s
+user	0m1.826s
+sys	0m0.071s
+
+GATHER| Processes:  2  Matrix size:  512
+Ret: 0
+
+real	0m1.238s
+user	0m1.857s
+sys	0m0.106s
+
+GATHERV| Processes:  2  Matrix size:  512
+Ret: 0
+
+real	0m1.254s
+user	0m1.854s
+sys	0m0.114s
+
+GATHER| Processes:  4  Matrix size:  512
+Ret: 0
+
+real	0m0.669s
+user	0m1.322s
+sys	0m0.247s
+
+GATHERV| Processes:  4  Matrix size:  512
+Ret: 0
+
+real	0m0.700s
+user	0m1.351s
+sys	0m0.211s
+
+GATHER| Processes:  8  Matrix size:  512
+Ret: 0
+
+real	0m0.569s
+user	0m1.454s
+sys	0m0.480s
+
+GATHERV| Processes:  8  Matrix size:  512
+Ret: 0
+
+real	0m0.608s
+user	0m1.473s
+sys	0m0.509s
+
+GATHER| Processes:  16  Matrix size:  512
+Ret: 0
+
+real	0m0.603s
+user	0m0.742s
+sys	0m0.550s
+
+GATHERV| Processes:  16  Matrix size:  512
+Ret: 0
+
+real	0m0.772s
+user	0m0.947s
+sys	0m0.584s
+
+GATHER| Processes:  32  Matrix size:  512
+Ret: 0
+
+real	0m1.097s
+user	0m1.203s
+sys	0m0.948s
+
+GATHERV| Processes:  32  Matrix size:  512
+Ret: 0
+
+real	0m1.335s
+user	0m1.327s
+sys	0m1.014s
+
+GATHER| Processes:  64  Matrix size:  512
+Ret: 0
+
+real	0m0.823s
+user	0m0.923s
+sys	0m1.240s
+
+GATHERV| Processes:  64  Matrix size:  512
+Ret: 0
+
+real	0m2.597s
+user	0m2.391s
+sys	0m1.710s
+
+GATHER| Processes:  1  Matrix size:  1024
+Ret: 0
+
+real	0m58.157s
+user	0m57.857s
+sys	0m0.079s
+
+GATHERV| Processes:  1  Matrix size:  1024
+Ret: 0
+
+real	0m33.401s
+user	0m32.978s
+sys	0m0.090s
+
+GATHER| Processes:  2  Matrix size:  1024
+Ret: 0
+
+real	0m29.007s
+user	0m57.371s
+sys	0m0.128s
+
+GATHERV| Processes:  2  Matrix size:  1024
+Ret: 0
+
+real	0m29.509s
+user	0m58.156s
+sys	0m0.149s
+
+GATHER| Processes:  4  Matrix size:  1024
+Ret: 0
+
+real	0m13.854s
+user	0m53.881s
+sys	0m0.289s
+
+GATHERV| Processes:  4  Matrix size:  1024
+Ret: 0
+
+real	0m14.862s
+user	0m57.912s
+sys	0m0.271s
+
+GATHER| Processes:  8  Matrix size:  1024
+Ret: 0
+
+real	0m10.868s
+user	1m23.360s
+sys	0m0.762s
+
+GATHERV| Processes:  8  Matrix size:  1024
+Ret: 0
+
+real	0m10.931s
+user	1m22.504s
+sys	0m0.743s
+
+GATHER| Processes:  16  Matrix size:  1024
+Ret: 0
+
+real	0m5.858s
+user	0m37.280s
+sys	0m0.884s
+
+GATHERV| Processes:  16  Matrix size:  1024
+Ret: 0
+
+real	0m5.765s
+user	0m39.776s
+sys	0m0.857s
+
+GATHER| Processes:  32  Matrix size:  1024
+Ret: 0
+
+real	0m3.297s
+user	0m20.791s
+sys	0m1.174s
+
+GATHERV| Processes:  32  Matrix size:  1024
+Ret: 0
+
+real	0m3.815s
+user	0m20.687s
+sys	0m1.206s
+
+GATHER| Processes:  64  Matrix size:  1024
+Ret: 0
+
+real	0m1.996s
+user	0m9.417s
+sys	0m1.530s
+
+GATHERV| Processes:  64  Matrix size:  1024
+Ret: 0
+
+real	0m3.761s
+user	0m12.245s
+sys	0m1.929s
+

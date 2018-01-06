@@ -1,0 +1,120 @@
+Processes:  1  Board size:  11
+Solutions: 2680
+
+real	0m0.206s
+user	0m0.051s
+sys	0m0.071s
+Processes:  2  Board size:  11
+Solutions: 2680
+
+real	0m0.137s
+user	0m0.088s
+sys	0m0.080s
+Processes:  4  Board size:  11
+Solutions: 2680
+
+real	0m0.151s
+user	0m0.143s
+sys	0m0.170s
+Processes:  8  Board size:  11
+Solutions: 2680
+
+real	0m0.233s
+user	0m0.358s
+sys	0m0.370s
+Processes:  1  Board size:  12
+Solutions: 14200
+
+real	0m0.268s
+user	0m0.193s
+sys	0m0.051s
+Processes:  2  Board size:  12
+Solutions: 14200
+
+real	0m0.198s
+user	0m0.218s
+sys	0m0.077s
+Processes:  4  Board size:  12
+Solutions: 14200
+
+real	0m0.191s
+user	0m0.285s
+sys	0m0.171s
+Processes:  8  Board size:  12
+Solutions: 14200
+
+real	0m0.245s
+user	0m0.478s
+sys	0m0.348s
+Processes:  1  Board size:  13
+Solutions: 73712
+
+real	0m1.114s
+user	0m1.043s
+sys	0m0.046s
+Processes:  2  Board size:  13
+Solutions: 73712
+
+real	0m0.665s
+user	0m1.145s
+sys	0m0.085s
+Processes:  4  Board size:  13
+Solutions: 73712
+
+real	0m0.447s
+user	0m1.279s
+sys	0m0.163s
+Processes:  8  Board size:  13
+Solutions: 73712
+
+real	0m0.389s
+user	0m1.606s
+sys	0m0.402s
+Processes:  1  Board size:  14
+Solutions: 365596
+
+real	0m6.863s
+user	0m6.784s
+sys	0m0.052s
+Processes:  2  Board size:  14
+Solutions: 365596
+
+real	0m3.502s
+user	0m6.814s
+sys	0m0.080s
+Processes:  4  Board size:  14
+Solutions: 365596
+
+real	0m2.294s
+user	0m8.724s
+sys	0m0.153s
+Processes:  8  Board size:  14
+Solutions: 365596
+
+real	0m1.305s
+user	0m8.986s
+sys	0m0.339s
+Processes:  1  Board size:  15
+Solutions: 2279184
+
+real	0m48.534s
+user	0m48.454s
+sys	0m0.054s
+Processes:  2  Board size:  15
+Solutions: 2279184
+
+real	0m26.232s
+user	0m52.189s
+sys	0m0.082s
+Processes:  4  Board size:  15
+Solutions: 2279184
+
+real	0m14.546s
+user	0m57.680s
+sys	0m0.182s
+Processes:  8  Board size:  15
+Solutions: 2279184
+
+real	0m7.564s
+user	0m59.033s
+sys	0m0.377s
