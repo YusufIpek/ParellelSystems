@@ -241,3 +241,26 @@ real	0m0.001s
 user	0m0.000s
 sys	0m0.001s
 parallel: number of threads = 1
+Solutions: 2279184
+
+real	1m1.709s
+user	1m1.702s
+sys	0m0.004s
+parallel: number of threads = 2
+Solutions: 2279184
+
+real	0m46.081s
+user	1m28.804s
+sys	0m0.003s
+parallel: number of threads = 4
+Solutions: 2279184
+
+real	0m25.419s
+user	1m40.230s
+sys	0m0.007s
+parallel: number of threads = 8
+Solutions: 2279184
+
+real	0m15.247s
+user	1m48.550s
+sys	0m0.005s
