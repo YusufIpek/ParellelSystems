@@ -599,6 +599,7 @@ static void rprj3(void *or, int m1k, int m2k, int m3k,
     d3 = 1;
   }
 
+  #pragma omp parallel for schedule(static) private (x1, x2, y1, y2)
   for (j3 = 1; j3 < m3j-1; j3++) {
     i3 = 2*j3-d3;
     for (j2 = 1; j2 < m2j-1; j2++) {
@@ -667,7 +668,8 @@ static void interp(void *oz, int mm1, int mm2, int mm3,
 
   if (timeron) timer_start(T_interp);
   if (n1 != 3 && n2 != 3 && n3 != 3) {
-    for (i3 = 0; i3 < mm3-1; i3++) {
+    #pragma omp parallel for schedule(static) private (z1,z2,z3)
+	for (i3 = 0; i3 < mm3-1; i3++) {
       for (i2 = 0; i2 < mm2-1; i2++) {
         for (i1 = 0; i1 < mm1; i1++) {
           z1[i1] = z[i3][i2+1][i1] + z[i3][i2][i1];
@@ -726,6 +728,7 @@ static void interp(void *oz, int mm1, int mm2, int mm3,
       t3 = 0;
     }
 
+	#pragma omp parallel for schedule(static)
     for (i3 = d3; i3 <= mm3-1; i3++) {
       for (i2 = d2; i2 <= mm2-1; i2++) {
         for (i1 = d1; i1 <= mm1-1; i1++) {
@@ -754,6 +757,7 @@ static void interp(void *oz, int mm1, int mm2, int mm3,
       }
     }
 
+	#pragma omp parallel for schedule(static)
     for (i3 = 1; i3 <= mm3-1; i3++) {
       for (i2 = d2; i2 <= mm2-1; i2++) {
         for (i1 = d1; i1 <= mm1-1; i1++) {
