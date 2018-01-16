@@ -1,0 +1,46 @@
+
+
+ Benchmark
+
+ No input file. Using compiled defaults 
+ Size:  256x 256x 256  (class B)
+ Iterations:                     20
+
+  iter   1
+  iter   5
+  iter  10
+  iter  15
+  iter  20
+
+ Benchmark completed
+ VERIFICATION SUCCESSFUL
+ L2 Norm is  1.8005644013551E-06
+ Error is    6.6330115975290E-14
+
+
+ Benchmark Completed.
+ Class           =                        B
+ Size            =            256x 256x 256
+ Iterations      =                       20
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.3.1
+
+ Performance counter stats for './real':
+
+       6411.310230 task-clock                #    0.997 CPUs utilized          
+    21,939,385,968 cycles                    #    3.422 GHz                     [72.71%]
+    49,787,524,975 instructions              #    2.27  insns per cycle         [81.80%]
+     1,927,799,404 cache-references          #  300.687 M/sec                   [81.78%]
+       839,914,054 cache-misses              #   43.569 % of all cache refs     [81.79%]
+     1,771,732,028 branch                    #  276.345 M/sec                   [81.79%]
+        10,658,628 branch-misses             #    1.662 M/sec                   [81.81%]
+             1,173 page-faults               #    0.183 K/sec                  
+     3,301,752,051 L1-dcache-stores          #  514.989 M/sec                   [81.83%]
+    24,144,313,719 L1-dcache-loads           # 3765.894 M/sec                   [81.86%]
+     1,160,630,221 L1-dcache-load-misses     #    4.81% of all L1-dcache hits   [81.85%]
+        23,197,922 LLC-loads                 #    3.618 M/sec                   [81.84%]
+        13,504,840 LLC-load-misses           #   58.22% of all LL-cache hits    [72.75%]
+
+       6.429430699 seconds time elapsed
+
